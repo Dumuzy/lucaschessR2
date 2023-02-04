@@ -786,6 +786,12 @@ class Manager:
             self.game.tag_timeend()
             self.game.set_extend_tags()
             DBgames.autosave(self.game)
+            with open('C:/Daten/Schach/BabasChess/Games/Sammlungen/My-LC-Games-2018+.pgn', 'a') as f:
+                f.write('\n')
+                f.write(self.game.pgn())
+                f.write(' ')
+                f.write(self.game.get_tag("Result"))
+                f.write('\n')
 
     def ponCapPorDefecto(self):
         self.capturasActivable = True
