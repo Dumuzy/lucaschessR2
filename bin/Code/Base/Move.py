@@ -33,6 +33,7 @@ class Move:
 
         self.li_nags = []
         self.time_ms = 0
+        self.clock_ms = 0
 
         self.is_book = False
 
@@ -43,6 +44,9 @@ class Move:
 
     def set_time_ms(self, ms):
         self.time_ms = ms
+
+    def set_clock_ms(self, ms):
+        self.clock_ms = ms
 
     def only_has_move(self) -> bool:
         return not (
@@ -230,14 +234,19 @@ class Move:
             for txt in comment.strip().split("\n"):
                 if txt:
                     resp += "{%s}" % txt.strip()
-        if self.time_ms:
-            s = self.time_ms / 1000
-            if int(s * 100) > 0:
-                h = int(s / 3600)
-                s -= h * 3600
-                m = int(s / 60)
-                s -= m * 60
-                resp += "{[%%emt :%02d:%02d:%02.2f:]}" % (h, m, s)
+        
+        if self.clock_ms:
+            s = self.clock_ms / 1000
+            h = int(s / 3600)
+            s -= h * 3600
+            m = int(s / 60)
+            s -= m * 60
+            if m != 0 or h != 0:
+                z = int(s)
+                resp += "{[%%clk %02d:%02d:%02d]}" % (h, m, z)
+            else:
+                resp += "{[%%clk %02d:%02d:%02.1f]}" % (h, m, s)
+
         if with_variations and len(self.variations):
             resp += " " + self.variations.get_pgn()
 

@@ -1,2 +1,12 @@
 UserData/
 
+/bin/.vs/bin/v17/.suo
+*.suo
+/bin/Code/.vs/Code/FileContentIndex
+/bin/.vs/bin/v17
+/bin/.vs/slnx.sqlite
+/bin/.vs/VSWorkspaceState.json
+/.vs
+/bin/Code/.vs
+/bin/OS/win32/Engines/cyrano/Backup/Cyrano.sln
+/bin/OS/win32/Engines/cyrano/UpgradeLog.htm

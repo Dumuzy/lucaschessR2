@@ -1,4 +1,5 @@
 import FasterCode
+import winsound
 
 import Code
 from Code import Util
@@ -62,7 +63,7 @@ class Game:
 
     def reset(self):
         self.set_position(self.first_position)
-
+    
     def set_fen(self, fen):
         if not fen or fen == FEN_INITIAL:
             return self.set_position(None)
@@ -415,6 +416,27 @@ class Game:
     def is_draw(self):
         return self.result == RESULT_DRAW
 
+    def set_clock_times(self):
+        tc0 = self.get_tag("TimeControl")
+        tc = tc0.split('+')
+        max_time_ms = int(tc[0]) * 1000
+        inc_ms = 0 
+        if len(tc) > 1:
+            inc_ms = int(tc[1]) * 1000
+        if self.starts_with_black:
+            salta = 1
+        else:
+            salta = 0
+        ms_white = max_time_ms
+        ms_black = max_time_ms
+        for n, move in enumerate(self.li_moves):
+            if n % 2 == salta:
+                ms_white += inc_ms - move.time_ms 
+                move.set_clock_ms(ms_white)
+            else:
+                ms_black += inc_ms - move.time_ms 
+                move.set_clock_ms(ms_black)
+
     def pgnBaseRAW(self, numJugada=None, translated=False):
         resp = ""
         if numJugada is None:
@@ -443,6 +465,7 @@ class Game:
         return resp
 
     def pgnBase(self, numJugada=None):
+        self.set_clock_times()
         resp = self.pgnBaseRAW(numJugada)
         li = []
         ln = len(resp)
