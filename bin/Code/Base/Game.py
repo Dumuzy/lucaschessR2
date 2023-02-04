@@ -1,5 +1,4 @@
 import FasterCode
-import winsound
 
 import Code
 from Code import Util
