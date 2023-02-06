@@ -417,6 +417,8 @@ class Game:
 
     def set_clock_times(self):
         tc0 = self.get_tag("TimeControl")
+        if tc0 is None or len(tc0) == 0:
+            return 
         tc = tc0.split('+')
         max_time_ms = int(tc[0]) * 1000
         inc_ms = 0 

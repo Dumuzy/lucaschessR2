@@ -10,3 +10,5 @@ UserData/
 /bin/Code/.vs
 /bin/OS/win32/Engines/cyrano/Backup/Cyrano.sln
 /bin/OS/win32/Engines/cyrano/UpgradeLog.htm
+/Resources/IntFiles/engineinfos.txt
+/Resources/IntFiles/showEngines.bsh
