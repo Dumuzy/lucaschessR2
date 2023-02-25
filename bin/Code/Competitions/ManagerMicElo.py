@@ -1,6 +1,7 @@
 import os.path
 import datetime
 import random
+import sys
 
 import Code
 from Code import Adjournments
@@ -162,14 +163,31 @@ class ManagerMicElo(Manager.Manager):
             cbook = self.engine_rival.book
         else:
             engine_rodent = Code.configuration.buscaRival("rodentii")
-            path_rodent = os.path.join(os.path.dirname(engine_rodent.path_exe), "rodent.bin")
-            cbook = random.choice([Code.tbook, path_rodent])
-
+            path_rodent = os.path.dirname(engine_rodent.path_exe)
+            path_maia = os.path.join(path_rodent, "../maia")         # buscaRival("maia") doesn''t find maia.
+            path_to_1500 = os.path.join(path_maia, "1100-1500.bin")
+            path_to_1900 = os.path.join(path_maia, "1600-1900.bin")
+            if self.engine_rival.elo < 1600:
+                cbook = path_to_1500
+            elif self.engine_rival.elo < 1900:
+                cbook = path_to_1900
+            else: 
+                path_rod_max = os.path.join(path_rodent, "rodent.bin")
+                path_rod_books = os.path.join(path_rodent, "books")
+                path_rod_micro = os.path.join(path_rod_books, "micro.bin")
+                path_rod_guide = os.path.join(path_rod_books, "guide.bin")
+                cbook = random.choice([Code.tbook, path_rod_max, path_rod_micro, path_rod_guide])
+            
         self.book = Books.Book("P", cbook, cbook, True)
         self.book.polyglot()
-
+        
         elo = self.engine_rival.elo
-        self.maxMoveBook = (elo // 100) if 0 <= elo <= 1700 else 9999
+        self.maxMoveBook = (elo // 150) if 0 <= elo <= 2200 else 9999  # AW: Changed from 100 to 150, 25.2.23
+        
+        if self.engine_rival.key == "rodentiip":
+            self.maxMoveBook = 0
+        
+        sys.stderr.writeln("engine.key=" + self.engine_rival.key + "  alias=" + self.engine_rival.alias + " cbook=" + cbook + " maxMoveBook=" + str(self.maxMoveBook))    
 
         eloengine = self.engine_rival.elo
         eloplayer = self.configuration.miceloActivo()
