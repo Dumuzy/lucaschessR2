@@ -3,6 +3,7 @@
 
 import os
 import random
+import sys
 
 import FasterCode
 
@@ -102,13 +103,14 @@ class ListBooks:
 
 
 class Book:
-    def __init__(self, tipo, name, path, pordefecto, extras=None):
+    def __init__(self, tipo, name, path, pordefecto, rr=None, maxPly=None):
         self.tipo = tipo
         self.name = name
         self.path = path
         self.pordefecto = pordefecto
         self.orden = 100  # futuro ?
-        self.extras = extras  # futuro ?
+        self.maxPly = maxPly
+        self.rr = rr
 
     def to_dic(self):
         dic = {
@@ -117,7 +119,8 @@ class Book:
             "path": self.path,
             "pordefecto": self.pordefecto,
             "orden": self.orden,
-            "extras": self.extras,
+            "maxPly": self.maxPly,
+            "rr": self.rr,
         }
         return dic
 
@@ -127,13 +130,15 @@ class Book:
         self.path = dic["path"]
         self.pordefecto = dic["pordefecto"]
         self.orden = dic["orden"]
-        self.extras = dic["extras"]
+        self.maxPly = dic["maxPly"]
+        self.rr = dic["rr"]
 
     def __eq__(self, other):
         return isinstance(other, Book) and self.igualque(other)
 
     def igualque(self, otro):
-        return self.tipo == otro.tipo and self.name == otro.name and self.path == otro.path
+        return self.tipo == otro.tipo and self.name == otro.name and self.path == otro.path \
+            and self.maxPly == otro.maxPly and self.rr == otro.rr
 
     def existe(self):
         return os.path.isfile(self.path)
@@ -213,7 +218,7 @@ class Book:
 
         return listaJugadas
 
-    def eligeJugadaTipo(self, fen, tipo):
+    def eligeJugadaTipo(self, fen, tipo, currPly=None):
         maxim = 0
         liMax = []
         li = self.book.lista(self.path, fen)
@@ -279,6 +284,71 @@ class Book:
 
 class Libro(Book):  # Cambio de denominación, error en restore wplayagainst engine
     pass
+
+
+# This class shall contain all the book configuration for a player. 
+# That is not only the book itself, but also the rr value and maxPly. 
+class BookEx(Book):
+    def __init__(self, tipo, name, path, pordefecto, rr, maxPly):
+        super().__init__(tipo, name, path, pordefecto, rr, maxPly)
+
+    def createForTourneyByEngineRival(engine):
+        if engine.book and engine.book != "*" and engine.book != "-":
+            cbook = engine.book
+        else:
+            # Same engine should always have the same book. It's a personality question.
+            if engine.elo < 1600:
+                books = ["empty", "mini", "fics15", "1100-1500", "guide", "1100-1500", "low",
+                         "_pre30", "_post06", "ph-gambitbook", "solid", "1100-1500", "ph-exoticbook"]
+            elif engine.elo < 1900:
+                books = ["empty", "mini", "fics15", "1600-1900", "guide", "1600-1900", "ph-anderssen2", "flank",
+                         "1600-1900", "_post06", "ph-gambitbook", "1600-1900", "1100-1500", "ph-exoticbook"]
+            else:
+                books = ["empty", "mini", "rodent", "micro", "guide", "GMopenings", "carlsen", "kasparov",
+                         "_pre30", "_post06", "ph-gambitbook", "solid", "ph-reti2", "ph-exoticbook"]
+            ha = my_hash(engine.alias)
+            h = ha % len(books)
+            cbook = search_book(books[h])
+            sys.stderr.writeln("createForTourney engine.alias=" + engine.alias.upper() + " ha=" + str(ha)
+                               + " ha%len=" + str(h) + " book=" + cbook)
+        elo = engine.elo
+        sys.stderr.writeln("createForTourney engine.bookMaxply=" + str(engine.bookMaxply))
+        if engine.bookMaxply:
+            maxPly = engine.bookMaxply
+        else:
+            if elo >= 2200:
+                maxPly = 9999
+            else:
+                # AW: Changed from elo//100 to quadratic formula and from moves to plies,  1.3.23
+                maxPly = int((elo / 1000) + 3.5 * (elo/1000) * (elo/1000))
+
+        maxPly = None  # mjußß weider weg
+
+        book = BookEx("P", os.path.basename(cbook), cbook, True, engine.bookRR, maxPly)
+        book.polyglot()
+
+        sys.stderr.writeln("creaForTourneyByEngine engine.alias=" + engine.alias
+                           + " engine.bookMaxply=" + str(engine.bookMaxply) + "->maxPly=" + str(maxPly)
+                           + " bookRR=" + str(engine.bookRR)
+                           + " cbook=" + cbook)
+        return book
+
+
+    def eligeJugadaTipo(self, fen, tipo, currPly):
+        pv = None
+        if self.maxPly and self.maxPly > 0 and currPly > self.maxPly:
+            pv = None
+        else:
+            if not self.rr:
+                pv = super().eligeJugadaTipo(fen, "ap", currPly)
+            elif self.rr == "auap":
+                pv = super().eligeJugadaTipo(fen, "au" if currPly > 2 else "ap", currPly)
+            elif self.rr == "au" or self.rr == "ap":
+                pv = super().eligeJugadaTipo(fen, self.rr, currPly)
+        sys.stderr.writeln("eligeJugada " + str(self.name) + " currPly=" + str(currPly) +
+                           " self.maxPly=" + str(self.maxPly) + " rr=" + str(self.rr) +
+                           " fen=" + str(fen) + "-> pv=" + str(pv))
+        return pv
 
 
 class Entry:
@@ -1307,3 +1377,33 @@ class BookGame(Book):
             else:
                 self.activo = False
         return False
+
+
+def search_book(file):
+    file = file + ".bin"
+    bk = search_file(Code.path_resource("Openings"), file)
+    if not bk:
+        bk = search_file(Code.folder_engines, file)
+    if not bk:
+        sys.stderr.writeln("ERROR NOT FOUND search_book file=" + str(file))
+    return bk
+
+
+def search_file(directory=None, file=None):
+    assert os.path.isdir(directory)
+    for cur_path, directories, files in os.walk(directory):
+        if file in files:
+            return os.path.join(directory, cur_path, file)
+    return None
+
+
+def my_hash(engine_alias):
+    s = engine_alias.upper()  # Make sure that hallgeir and Hallgeir get the same book.
+
+    # Reason for that I use only the first 6 characters of the name for hashing:
+    # This way, I can change the name of a player after char 6 and be sure it gets the same book.
+    s = s[:6]
+    x = ord(s[0])
+    for c in s[1:]:
+        x = x * 31 + ord(c)
+    return x

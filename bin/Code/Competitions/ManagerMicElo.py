@@ -159,35 +159,7 @@ class ManagerMicElo(Manager.Manager):
         self.tc_player = self.tc_white if self.is_human_side_white else self.tc_black
         self.tc_rival = self.tc_white if self.is_engine_side_white else self.tc_black
 
-        if self.engine_rival.book:
-            cbook = self.engine_rival.book
-        else:
-            engine_rodent = Code.configuration.buscaRival("rodentii")
-            path_rodent = os.path.dirname(engine_rodent.path_exe)
-            path_maia = os.path.join(path_rodent, "../maia")         # buscaRival("maia") doesn''t find maia.
-            path_to_1500 = os.path.join(path_maia, "1100-1500.bin")
-            path_to_1900 = os.path.join(path_maia, "1600-1900.bin")
-            if self.engine_rival.elo < 1600:
-                cbook = path_to_1500
-            elif self.engine_rival.elo < 1900:
-                cbook = path_to_1900
-            else: 
-                path_rod_max = os.path.join(path_rodent, "rodent.bin")
-                path_rod_books = os.path.join(path_rodent, "books")
-                path_rod_micro = os.path.join(path_rod_books, "micro.bin")
-                path_rod_guide = os.path.join(path_rod_books, "guide.bin")
-                cbook = random.choice([Code.tbook, path_rod_max, path_rod_micro, path_rod_guide])
-            
-        self.book = Books.Book("P", cbook, cbook, True)
-        self.book.polyglot()
-        
-        elo = self.engine_rival.elo
-        self.maxMoveBook = (elo // 150) if 0 <= elo <= 2200 else 9999  # AW: Changed from 100 to 150, 25.2.23
-        
-        if self.engine_rival.key == "rodentiip":
-            self.maxMoveBook = 0
-        
-        sys.stderr.writeln("engine.key=" + self.engine_rival.key + "  alias=" + self.engine_rival.alias + " cbook=" + cbook + " maxMoveBook=" + str(self.maxMoveBook))    
+        self.book = Books.BookEx.createForTourneyByEngineRival(self.engine_rival)
 
         eloengine = self.engine_rival.elo
         eloplayer = self.configuration.miceloActivo()
@@ -404,19 +376,16 @@ class ManagerMicElo(Manager.Manager):
             siEncontrada = False
 
             if self.book:
-                if self.game.last_position.num_moves >= self.maxMoveBook:
-                    self.book = None
+                fen = self.last_fen()
+                pv = self.book.eligeJugadaTipo(fen, None, len(self.game))
+                if pv:
+                    rm_rival = EngineResponse.EngineResponse("Opening", self.is_engine_side_white)
+                    rm_rival.from_sq = pv[:2]
+                    rm_rival.to_sq = pv[2:4]
+                    rm_rival.promotion = pv[4:]
+                    siEncontrada = True
                 else:
-                    fen = self.last_fen()
-                    pv = self.book.eligeJugadaTipo(fen, "au" if len(self.game) > 2 else "ap")
-                    if pv:
-                        rm_rival = EngineResponse.EngineResponse("Opening", self.is_engine_side_white)
-                        rm_rival.from_sq = pv[:2]
-                        rm_rival.to_sq = pv[2:4]
-                        rm_rival.promotion = pv[4:]
-                        siEncontrada = True
-                    else:
-                        self.book = None
+                    self.book = None
             if not siEncontrada:
                 time_white = self.tc_white.pending_time
                 time_black = self.tc_black.pending_time

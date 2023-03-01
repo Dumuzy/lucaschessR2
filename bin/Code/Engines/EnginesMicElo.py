@@ -1,6 +1,10 @@
+import os
+import sys
+
 import Code
 from Code import Util
 from Code.Base.Constantes import ENG_MICGM, ENG_MICPER
+from Code.Polyglots import Books
 
 
 def read_mic_engines():
@@ -18,6 +22,9 @@ def read_mic_engines():
             id_info = "\n".join(liinfo)
             elo = dic["ELO"]
             li_uci = [(d["name"], d["valor"]) for d in dic["LIUCI"]]
+            book = None
+            if "BOOK" in dic:
+                book = dic["BOOK"]
 
             engine = configuration.dic_engines.get(nom_base_engine)
             if engine:
@@ -27,11 +34,23 @@ def read_mic_engines():
                 eng.alias = alias
                 eng.elo = elo
                 eng.liUCI = li_uci
-                if alias.isupper():
+                eng.bookMaxply = None
+                eng.bookRR = None
+                if alias.isupper():  # These are the GM personalities.
                     eng.name = Util.primera_mayuscula(alias)
                     eng.alias = eng.name
                     eng.book = Code.path_resource("Openings", "Players", "%s.bin" % alias.lower())
                     eng.type = ENG_MICGM
+                elif book:
+                    eng.book = Books.search_book(book)
+                    if "BOOKMAXPLY" in dic:
+                        eng.bookMaxply = dic["BOOKMAXPLY"]
+                    else:
+                        # A standard value depending on the engines elo is used. Defined in BookEx.
+                        pass
+                    if "BOOKRR" in dic:
+                        eng.bookRR = dic["BOOKRR"]
+                    eng.type = ENG_MICPER
                 else:
                     eng.book = None
                     eng.type = ENG_MICPER
@@ -40,7 +59,7 @@ def read_mic_engines():
 
 
 def only_gm_engines():
-    li = [mtl for mtl in read_mic_engines() if mtl.book]
+    li = [mtl for mtl in read_mic_engines() if mtl.type == ENG_MICGM]
     li.sort(key=lambda uno: uno.name)
     return li
 
@@ -56,7 +75,7 @@ def separated_engines():
     li_gm = []
     li_per = []
     for eng in li:
-        if eng.book:
+        if eng.type == ENG_MICGM:
             li_gm.append(eng)
         else:
             li_per.append(eng)

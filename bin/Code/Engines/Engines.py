@@ -31,6 +31,8 @@ class Engine:
         self.id_name = key
         self.id_author = autor
         self.book = None
+        self.bookRR = None
+        self.bookMaxply = None
         self.emulate_movetime = False
 
         self.menu = key
