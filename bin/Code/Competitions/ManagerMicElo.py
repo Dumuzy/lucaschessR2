@@ -53,7 +53,7 @@ def lista():
         k = mt.alias
         if k in dic_elos:
             mt.elo = dic_elos[k]
-
+    li.sort(key=lambda uno: uno.elo)
     return li
 
 
