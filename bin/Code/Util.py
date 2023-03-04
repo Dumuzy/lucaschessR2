@@ -313,6 +313,12 @@ def stodext(txt):
 def primera_mayuscula(txt):
     return txt[0].upper() + txt[1:].lower() if len(txt) > 0 else ""
 
+def primeras_mayuscula(txt):
+        parts = txt.split()
+        li = []
+        for p in parts:
+            li.append(primera_mayuscula(p))
+        return " ".join(li)
 
 def ini2dic(file):
     dic_base = collections.OrderedDict()
