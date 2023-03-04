@@ -54,6 +54,7 @@ class WTournament(LCDialog.LCDialog):
         tb = Controles.TBrutina(self, icon_size=24)
         tb.new(_("Close"), Iconos.MainMenu(), self.terminar)
         tb.new(_("Launch a worker"), Iconos.Lanzamiento(), self.gm_launch)
+        tb.new(_("Launch 10 workers"), Iconos.Lanzamiento(), self.gm_launch_10)
 
         # Tabs
         self.tab = tab = Controles.Tab()
@@ -541,13 +542,23 @@ class WTournament(LCDialog.LCDialog):
         for opcion in me.li_uci_options():
             self.liEnActual.append((opcion.name, str(opcion.valor)))
 
-    def gm_launch(self):
+    def gm_launch_10(self):
         if self.torneo.num_games_queued() == 0:
+            QTUtil2.message(self, _("You must create some games (Queued Games tab/ New)"))
+            return
+        pos = 1
+        for i in range(10):
+            pos = self.gm_launch(False, pos) + 1
+            import time
+            time.sleep(1)
+
+    def gm_launch(self, showMsg=True, startPos=1):
+        if self.torneo.num_games_queued() == 0 and showMsg:
             QTUtil2.message(self, _("You must create some games (Queued Games tab/ New)"))
             return
         self.grabar()
         worker_plant = os.path.join(self.configuration.folder_tournaments_workers(), "worker.%05d")
-        pos = 1
+        pos = startPos
         while True:
             wfile = worker_plant % pos
             if Util.exist_file(wfile):
@@ -556,6 +567,7 @@ class WTournament(LCDialog.LCDialog):
                     continue
             break
         XRun.run_lucas("-tournament", self.torneo.file, wfile)
+        return pos
 
     def verSiJugar(self):
         return self.xjugar
