@@ -58,7 +58,10 @@ def read_mic_engines():
                     eng.name = Util.primeras_mayuscula(alias)
                     eng.alias = eng.name
                     dd[eng.alias] = eng
-    return list(dd.values())
+
+    li = list(dd.values())
+    li.sort(key=lambda uno: uno.elo)
+    return li
 
 
 def only_gm_engines():
@@ -69,7 +72,6 @@ def only_gm_engines():
 
 def all_engines():
     li = read_mic_engines()
-    li.sort(key=lambda uno: uno.elo)
     return li
 
 
