@@ -528,6 +528,7 @@ def import_polyglot_config(owner, configuration, titulo, with_collisions):
     dic["MINSCORE"] = min_score
     dic["CALCWEIGHT"] = calc_weight
     dic["SAVESCORE"] = save_score
+    dic["COLLISIONS"] = collisions
     configuration.write_variables("POLYGLOT_IMPORT", dic)
 
     if with_collisions:
