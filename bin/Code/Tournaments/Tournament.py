@@ -362,7 +362,7 @@ class Tournament:
 
     def remove_games_finished(self, lista=None):
         if lista is None:
-            lista = range(self.num_games_finished())
+            lista = list(range(self.num_games_finished()))
         lista.sort(reverse=True)
         for pos in lista:
             game = self.game_finished(pos)
