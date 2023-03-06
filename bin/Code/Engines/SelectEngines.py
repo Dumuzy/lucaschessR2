@@ -189,8 +189,8 @@ class SelectEngines:
             icono = rp.otro()
             submenublk = submenu.submenu("%d - %d" % (li_blk[0].elo, li_blk[-1].elo), icono)
             for cm in li_blk:
-                texto = Util.primera_mayuscula(cm.alias + " (%d, %s)" % (cm.elo, cm.id_info.replace("\n", "-")))
-                cm.name = Util.primera_mayuscula(cm.alias)
+                cm.name = Util.primeras_mayuscula(cm.alias)
+                texto = cm.name + " (%d, %s)" % (cm.elo, cm.id_info.replace("\n", "-"))
                 submenublk.opcion(cm, texto, icono)
                 submenublk.separador()
             submenu.separador()
