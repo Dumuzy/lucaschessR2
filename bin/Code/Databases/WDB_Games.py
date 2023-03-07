@@ -1095,7 +1095,7 @@ class WGames(QtWidgets.QWidget):
         resp = PolyglotImportExports.import_polyglot_config(self, self.configuration, os.path.basename(path_bin), False)
         if resp is None:
             return
-        plies, st_side, st_results, ru, min_games, min_score, calc_weight, save_score = resp
+        plies, player, st_side, st_results, ru, min_games, min_score, calc_weight, save_score = resp
         db = UtilSQL.DictBig()
 
         def fsum(keymove, pt):
@@ -1108,7 +1108,7 @@ class WGames(QtWidgets.QWidget):
         dltmp.show()
 
         ok = PolyglotImportExports.add_db(
-            self.dbGames, plies, st_results, st_side, ru, time.time, 1.2, dltmp.dispatch, fsum
+            self.dbGames, plies, player, st_results, st_side, ru, time.time, 1.2, dltmp.dispatch, fsum
         )
         dltmp.close()
 

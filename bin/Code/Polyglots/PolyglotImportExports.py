@@ -166,7 +166,7 @@ class PolyglotImport:
         resp = self.import_polyglot_config(titulo)
         if resp is None:
             return
-        plies, st_side, st_results, ru, min_games, min_score, calc_weight, save_score, collisions = resp
+        plies, player, st_side, st_results, ru, min_games, min_score, calc_weight, save_score, collisions = resp
 
         db = UtilSQL.DictBig()
 
@@ -181,7 +181,7 @@ class PolyglotImport:
 
         db_games = DBgames.DBgames(path_db)
 
-        ok = add_db(db_games, plies, st_results, st_side, ru, time.time, 1.2, dltmp.dispatch, fsum)
+        ok = add_db(db_games, plies, player, st_results, st_side, ru, time.time, 1.2, dltmp.dispatch, fsum)
         dltmp.close()
         if not ok:
             db.close()
@@ -198,7 +198,7 @@ class PolyglotImport:
         resp = self.import_polyglot_config(titulo)
         if resp is None:
             return
-        plies, st_side, st_results, ru, min_games, min_score, calc_weight, save_score, collisions = resp
+        plies, player, st_side, st_results, ru, min_games, min_score, calc_weight, save_score, collisions = resp
 
         db = UtilSQL.DictBig()
         for path_pgn in li_path_pgn:
@@ -211,7 +211,7 @@ class PolyglotImport:
 
             dltmp = ImportarPGNDB(self.wpolyglot, os.path.basename(path_pgn))
             dltmp.show()
-            ok = self.add_pgn(path_pgn, plies, st_results, st_side, ru.encode(), time.time, 1.2, dltmp.dispatch, fsum)
+            ok = self.add_pgn(path_pgn, plies, player, st_results, st_side, ru.encode(), time.time, 1.2, dltmp.dispatch, fsum)
             dltmp.close()
             if not ok:
                 db.close()
@@ -219,7 +219,7 @@ class PolyglotImport:
 
         self.merge(db, min_games, min_score, calc_weight, save_score, collisions)
 
-    def add_pgn(self, path_pgn, plies, st_results, st_side, bunknown_convert, ftime, time_dispatch, dispatch, fsum):
+    def add_pgn(self, path_pgn, plies, player, st_results, st_side, bunknown_convert, ftime, time_dispatch, dispatch, fsum):
         time_prev = ftime()
         cancelled = False
         bfen_inicial = FEN_INITIAL.encode()
@@ -258,16 +258,21 @@ class PolyglotImport:
                     bfen0 = bdCab[b"FEN"]
                 else:
                     bfen0 = bfen_inicial
+                white = bdCab[b"WHITE"].decode('UTF-8')
+                black = bdCab[b"BLACK"].decode('UTF-8')
+
                 lipv = pv.split(" ")
                 is_white = b" w" in bfen0
                 for pos, bfen in enumerate(liFens):
                     if is_white in st_side:
-                        mv = lipv[pos]
-                        move = FasterCode.string_movepolyglot(mv)
-                        key = FasterCode.hash_polyglot(bfen0)
-                        keymove = FasterCode.keymove_str(key, move)
-                        pt = pw if is_white else pb
-                        fsum(keymove, pt)
+                        if not player or player == "" or (is_white and player == white) or \
+                                (not is_white and player == black):
+                            mv = lipv[pos]
+                            move = FasterCode.string_movepolyglot(mv)
+                            key = FasterCode.hash_polyglot(bfen0)
+                            keymove = FasterCode.keymove_str(key, move)
+                            pt = pw if is_white else pb
+                            fsum(keymove, pt)
 
                     is_white = not is_white
                     bfen0 = bfen
@@ -465,6 +470,8 @@ def import_polyglot_config(owner, configuration, titulo, with_collisions):
     form.spinbox(_("Maximum movements"), 1, 999, 60, dic.get("PLIES", 50))
     form.separador()
 
+    form.edit(_("Player's name"), dic.get("PLAYER", ""))
+
     li_options = (("%s + %s" % (_("White"), _("Black")), {True, False}), (_("White"), {True}), (_("Black"), {False}))
     form.combobox(_("Side to include"), li_options, dic.get("SIDE", {True, False}))
     form.separador()
@@ -502,11 +509,12 @@ def import_polyglot_config(owner, configuration, titulo, with_collisions):
         return None
     accion, resp = resultado
     if with_collisions:
-        plies, st_side, r1_0, r0_1, r1_1, ru, min_games, min_score, calc_weight, save_score, collisions = resp
+        plies, player, st_side, r1_0, r0_1, r1_1, ru, min_games, min_score, calc_weight, save_score, collisions = resp
     else:
-        plies, st_side, r1_0, r0_1, r1_1, ru, min_games, min_score, calc_weight, save_score = resp
+        plies, player, st_side, r1_0, r0_1, r1_1, ru, min_games, min_score, calc_weight, save_score = resp
     if not (r1_0 or r0_1 or r1_1 or ru != ""):
         return None
+    player = player.strip()
 
     st_results = set()
     if r1_0:
@@ -519,6 +527,7 @@ def import_polyglot_config(owner, configuration, titulo, with_collisions):
         st_results.add(b"*")
 
     dic["PLIES"] = plies
+    dic["PLAYER"] = player
     dic["SIDE"] = st_side
     dic["1-0"] = r1_0
     dic["0-1"] = r0_1
@@ -528,13 +537,14 @@ def import_polyglot_config(owner, configuration, titulo, with_collisions):
     dic["MINSCORE"] = min_score
     dic["CALCWEIGHT"] = calc_weight
     dic["SAVESCORE"] = save_score
-    dic["COLLISIONS"] = collisions
+    if with_collisions:
+        dic["COLLISIONS"] = collisions
     configuration.write_variables("POLYGLOT_IMPORT", dic)
 
     if with_collisions:
-        return plies, st_side, st_results, ru, min_games, min_score, calc_weight, save_score, collisions
+        return plies, player, st_side, st_results, ru, min_games, min_score, calc_weight, save_score, collisions
     else:
-        return plies, st_side, st_results, ru, min_games, min_score, calc_weight, save_score
+        return plies, player, st_side, st_results, ru, min_games, min_score, calc_weight, save_score
 
 
 def export_polyglot_config(owner, configuration, file_nom_def):
@@ -578,13 +588,13 @@ def export_polyglot_config(owner, configuration, file_nom_def):
     return path_bin, uniform
 
 
-def add_db(db, plies, st_results, st_side, unknown_convert, ftime, time_dispatch, dispatch, fsum):
+def add_db(db, plies, player, st_results, st_side, unknown_convert, ftime, time_dispatch, dispatch, fsum):
     time_prev = ftime()
     cancelled = False
     st_results = {x.decode() for x in st_results}
 
     dispatch(True, len(db), 0)
-    for num_games, (xpv, result) in enumerate(db.yield_polyglot()):
+    for num_games, (xpv, white, black, result) in enumerate(db.yield_polyglot(player)):
         if (ftime() - time_prev) >= time_dispatch:
             time_prev = ftime()
             if not dispatch(False, num_games, num_games):
@@ -614,12 +624,14 @@ def add_db(db, plies, st_results, st_side, unknown_convert, ftime, time_dispatch
         FasterCode.set_fen(fen)
         for mv in lipv:
             if is_white in st_side:
-                move = FasterCode.string_movepolyglot(mv)
-                fen = FasterCode.get_fen()
-                key = FasterCode.hash_polyglot8(fen)
-                keymove = FasterCode.keymove_str(key, move)
-                pt = pw if is_white else pb
-                fsum(keymove, pt)
+                if not player or player == "" or (is_white and player == white) or \
+                        (not is_white and player == black):
+                    move = FasterCode.string_movepolyglot(mv)
+                    fen = FasterCode.get_fen()
+                    key = FasterCode.hash_polyglot8(fen)
+                    keymove = FasterCode.keymove_str(key, move)
+                    pt = pw if is_white else pb
+                    fsum(keymove, pt)
             FasterCode.make_move(mv)
             is_white = not is_white
 

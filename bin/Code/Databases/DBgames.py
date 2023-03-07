@@ -417,15 +417,21 @@ class DBgames:
             else:
                 return
 
-    def yield_polyglot(self):
-        select = "XPV"
+    def yield_polyglot(self, player=None):
+        select = "XPV,WHITE,BLACK"
         si_result = "RESULT" in self.li_fields
         if si_result:
             select += ",RESULT"
         sql = "SELECT %s FROM Games" % (select,)
 
-        if self.filter:
-            sql += " WHERE %s" % self.filter
+        if self.filter or player:
+            sql += " WHERE "
+            x = []
+            if self.filter:
+                x.append(" ( %s ) " % self.filter)
+            if player:
+                x.append(f" (WHITE='{player}' OR BLACK='{player}') ")
+            sql += " AND ".join(x)
 
         cursor = self.conexion.execute(sql)
         while True:
@@ -435,7 +441,7 @@ class DBgames:
                     if si_result:
                         yield row
                     else:
-                        yield row[0], "*"
+                        yield row[0],row[1],row[2], "*"
             else:
                 return
 
