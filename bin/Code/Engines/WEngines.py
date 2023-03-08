@@ -82,13 +82,15 @@ class WSelectEngineElo(LCDialog.LCDialog):
             ("---", None),
             (">=", ">"),
             ("<=", "<"),
+            ("+-50", "50"),
             ("+-100", "100"),
             ("+-200", "200"),
             ("+-400", "400"),
             ("+-800", "800"),
         )
 
-        self.cbElo = Controles.CB(self, liFiltro, None).capture_changes(self.filtrar)
+        conf = self.manager.configuration.read_variables("WEngines")
+        self.cbElo = Controles.CB(self, liFiltro, conf.get("filtro")).capture_changes(self.filtrar)
 
         minimo = 9999
         maximo = 0
@@ -113,7 +115,7 @@ class WSelectEngineElo(LCDialog.LCDialog):
                         liCaract.append((_F(x), x))
             liCaract.sort(key=lambda x: x[1])
             liCaract.insert(0, ("---", None))
-            self.cbCaract = Controles.CB(self, liCaract, None).capture_changes(self.filtrar)
+            self.cbCaract = Controles.CB(self, liCaract, conf.get("caract")).capture_changes(self.filtrar)
 
         ly = Colocacion.H().control(lbElo).control(self.cbElo).control(self.sbElo)
         if self.siMic:
@@ -167,7 +169,7 @@ class WSelectEngineElo(LCDialog.LCDialog):
                 self.liMotoresActivos = [x for x in self.liMotores if x.elo >= elo]
             elif cb == "<":
                 self.liMotoresActivos = [x for x in self.liMotores if x.elo <= elo]
-            elif cb in ("100", "200", "400", "800"):
+            elif cb in ("50", "100", "200", "400", "800"):
                 mx = int(cb)
                 self.liMotoresActivos = [x for x in self.liMotores if abs(x.elo - elo) <= mx]
         if self.siMic:
@@ -197,6 +199,11 @@ class WSelectEngineElo(LCDialog.LCDialog):
             self.accept()
         else:
             QTUtil.beep()
+        conf = self.manager.configuration.read_variables("WEngines")
+        conf["filtro"] = self.cbElo.valor()
+        if self.siMic:
+            conf["caract"] = self.cbCaract.valor()
+        Code.configuration.write_variables("WEngines", conf)
 
     def selectRandom(self):
         li = []
