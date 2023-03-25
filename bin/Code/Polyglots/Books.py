@@ -298,21 +298,21 @@ class BookEx(Book):
         else:
             # Same engine should always have the same book. It's a personality question.
             if engine.elo < 1600:
-                books = ["empty", "mini", "fics15", "1100-1500", "guide", "1100-1500", "low",
-                         "_pre30", "_post06", "ph-gambitbook", "solid", "1100-1500", "ph-exoticbook"]
+                books = ["TheChessArchives", "mini", "fics15", "1100-1500", "guide", "JackNine", "low",
+                         "_pre30", "_post06", "ph-gambitbook", "solid", "clon22", "ph-exoticbook"]
             elif engine.elo < 1900:
-                books = ["empty", "mini", "fics15", "1600-1900", "guide", "1600-1900", "ph-anderssen2", "flank",
-                         "1600-1900", "_post06", "ph-gambitbook", "1600-1900", "1100-1500", "ph-exoticbook"]
+                books = ["TheChessArchives", "mini", "fics15", "1600-1900", "guide", "Javilon6351xd",
+                         "ph-anderssen2", "flank", "r3-steinitz", "_post06", "ph-gambitbook", "clon22",
+                         "1100-1500", "ph-exoticbook"]
             else:
-                books = ["empty", "mini", "rodent", "micro", "guide", "GMopenings", "carlsen", "kasparov",
+                books = ["TheChessArchives", "mini", "rodent", "micro", "guide", "GMopenings", "carlsen", "kasparov",
                          "_pre30", "_post06", "ph-gambitbook", "solid", "ph-reti2", "ph-exoticbook"]
             ha = my_hash(engine.alias)
             h = ha % len(books)
             cbook = search_book(books[h])
-            sys.stderr.writeln("createForTourney engine.alias=" + engine.alias.upper() + " ha=" + str(ha)
-                               + " ha%len=" + str(h) + " book=" + cbook)
+
         elo = engine.elo
-        sys.stderr.writeln("createForTourney engine.bookMaxply=" + str(engine.bookMaxply))
+        sys.stderr.writeln("createForTourney engine.bookMaxply=" + str(engine.bookMaxply) + " elo=" + str(elo))
         if engine.bookMaxply:
             maxPly = engine.bookMaxply
         else:
@@ -320,14 +320,12 @@ class BookEx(Book):
                 maxPly = 9999
             else:
                 # AW: Changed from elo//100 to quadratic formula and from moves to plies,  1.3.23
-                maxPly = int((elo / 1000) + 3.5 * (elo/1000) * (elo/1000))
-
-        maxPly = None  # mjußß weider weg
+                maxPly = round((elo / 1000) + 3.5 * (elo/1000) * (elo/1000))
 
         book = BookEx("P", os.path.basename(cbook), cbook, True, engine.bookRR, maxPly)
         book.polyglot()
 
-        sys.stderr.writeln("creaForTourneyByEngine engine.alias=" + engine.alias
+        sys.stderr.writeln("##### BookEx " + engine.alias.upper() + " book=" + os.path.basename(cbook)
                            + " engine.bookMaxply=" + str(engine.bookMaxply) + "->maxPly=" + str(maxPly)
                            + " bookRR=" + str(engine.bookRR)
                            + " cbook=" + cbook)
@@ -343,9 +341,10 @@ class BookEx(Book):
                 pv = super().eligeJugadaTipo(fen, "ap", currPly)
             elif self.rr == "auap":
                 pv = super().eligeJugadaTipo(fen, "au" if currPly > 2 else "ap", currPly)
-            elif self.rr == "au" or self.rr == "ap":
+            else:
                 pv = super().eligeJugadaTipo(fen, self.rr, currPly)
         sys.stderr.writeln("eligeJugada " + str(self.name) + " currPly=" + str(currPly) +
+                           " tipo=" + str(tipo) +
                            " self.maxPly=" + str(self.maxPly) + " rr=" + str(self.rr) +
                            " fen=" + str(fen) + "-> pv=" + str(pv))
         return pv
