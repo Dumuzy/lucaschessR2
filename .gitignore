@@ -22,3 +22,7 @@ UserData/
 *.bsh
 *.pyd
 /Resources/Openings/pgns
+/bin/LICENSE.txt
+/bin/LICENSE_PYTHON.txt
+/bin/python37.zip
+/bin/python37._pth

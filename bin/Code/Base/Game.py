@@ -405,15 +405,19 @@ class Game:
     # True if it is an endgame with Q or R plus X against a single K and number of full moves > 45
     def is_simple_k_endgame(self):
         ok = False
-        if len(self.li_moves) > 90:
+        fullmove = 0
+        if len(self.li_moves) > 0:
             posi = self.li_moves[-1].position
-            board = posi.fen().split()[0]
-            pieces_black = board.count('q') + board.count('r') + board.count('b') + board.count('n') + board.count('p')
-            pieces_white = board.count('Q') + board.count('R') + board.count('B') + board.count('N') + board.count('P')
-            if posi.is_white and pieces_black == 0:
-                ok = (board.count('Q') + board.count('R')) >= 1
-            if not posi.is_white and pieces_white == 0:
-                ok = (board.count('q') + board.count('r')) >= 1
+            fen_splitted = posi.fen().split()
+            fullmove = int(fen_splitted[5])
+            if fullmove > 45:
+                board = fen_splitted[0]
+                pieces_black = board.count('q') + board.count('r') + board.count('b') + board.count('n') + board.count('p')
+                pieces_white = board.count('Q') + board.count('R') + board.count('B') + board.count('N') + board.count('P')
+                if posi.is_white and pieces_black == 0:
+                    ok = (board.count('Q') + board.count('R')) >= 1
+                if not posi.is_white and pieces_white == 0:
+                    ok = (board.count('q') + board.count('r')) >= 1
         return ok
 
     def fensActual(self):
