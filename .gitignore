@@ -19,3 +19,6 @@ UserData/
 /bin/OS/win32/Engines/rodentII/Kinghunter.uci_options
 *.pyc
 *.dll
+*.bsh
+*.pyd
+/Resources/Openings/pgns

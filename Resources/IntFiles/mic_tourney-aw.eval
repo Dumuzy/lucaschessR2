@@ -1,0 +1,30 @@
+# Allowed abbreviations defined in ...abb.eval file. 
+
+##### FINISHED #####
+
+
+### Monkey, Donkey etc
+{%eng=irina, %idi=???, %liu= [%ob=f, %ha=2, %pers=Monkey], %elo=274, %ali=Monkey, %boo=empty}    
+{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Bull], %elo=378, %ali=Bull}    
+{%eng=irina, %idi=???, %liu= [%ob=f, %ha=2, %pers=Donkey], %elo=436, %ali=Donkey, %boo=empty}    
+{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Wolf], %elo=578, %ali=Wolf}    
+{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Lion], %elo=624, %ali=Lion}   
+{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Rat], %elo=751, %ali=Rat}     
+{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Snake], %elo=838, %ali=Snake}    
+{%eng=irina, %idi=balanced, %liu= [%ob=f, %ha=2, %pers=Steven], %elo=1705, %ali=Steven}    
+
+### GREKO 9.8
+{%ali=Noob,     %elo=911,  %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1, %raev=150, %boco=10, %mobi=10, %past=0, %kisa=10, %mate=40], %idi=noob\nslow}
+{%ali=Curcuma,  %elo=1047, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1,  %raev=90, %boco=15, %mobi=20, %past=12, %kisa=70, %mate=50], %idi=noob\nslow}
+{%ali=Basilico, %elo=1210, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=8, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=slow}
+{%ali=Estragon, %elo=1296, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=4, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=development is nonsense\nslow}
+{%ali=Oregano,  %elo=1403, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=3, %likn=2, %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=may forget development\nsolid\nslow}
+
+{%ali=Tlazolteotl, %elo=1427,  %eng=greko98, %liu=[%ha=1, %likn=2, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=12], %idi=ignores pawn structure\nslow}
+{%ali=Tezcatlipoca, %elo=1617, %eng=greko98, %liu=[%ha=1, %likn=4, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
+{%ali=Quetzalcoatl, %elo=1845, %eng=greko98, %liu=[%ha=1, %likn=2, %mupv=1, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
+
+{%ali=haflidi, %elo=1126, %eng=greko98, %idi=aggresive\nslow,  %liu=[%ob=f, %ha=3, %likn=1, %mupv=2, %raev=70, %boco=65, %mate=45, %mobi=65, %kisa=55, %past=30]}
+{%ali=halldis, %elo=1414,  %eng=greko98, %idi=balanced\nslow,  %liu=[%ob=f, %ha=6, %likn=2, %mupv=3, %raev=55]}
+{%ali=hallgrim, %elo=1507, %eng=greko98, %idi=no book\nslow,   %liu=[%ob=f, %ha=2, %likn=2, %mupv=3, %raev=50, %kisa=60, %past=30]}
+

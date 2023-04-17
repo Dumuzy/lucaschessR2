@@ -1,0 +1,32 @@
+
+# Allowed abbreviations defined here. Syntax of an abbrev line is: starts with #abb: , then regex to match, 
+# then 2 or more spaces, then regex for replacement. 
+
+#abb: %ali=([ \w]+\w)   "ALIAS": "\1" 
+#abb: %boo=([-\w]+)     "BOOK": "\1"
+#abb: %bmp=(\d+)      "BOOKMAXPLY": \1
+#abb: %elo=(\d+)      "ELO": \1
+#abb: %eng=(\w+)      "ENGINE": "\1"
+#abb: %idi=([^,\}]+)    "IDINFO": "\1"
+#abb: %liu=           "LIUCI": 
+
+#abb: %ha=(\d+)        {"name": "Hash", "valor": \1}  
+#abb: %mupv=(\d+)      {"name": "MultiPV", "valor": \1}
+#abb: %ob=f            {"name": "OwnBook", "valor": False}
+#abb: %uelo=(\d+)      {"name": "UCI_Elo", "valor": \1}
+#abb: %ulis=t          {"name": "UCI_LimitStrength", "valor": True}
+
+#abb: %boco=(\d+)      {"name": "BoardControl", "valor": \1}
+#abb: %drsc=([-\d]+)   {"name": "DrawScore", "valor": \1}
+#abb: %kisa=(\d+)      {"name": "KingSafety", "valor": \1}
+#abb: %likn=(\d+)      {"name": "LimitKnps", "valor": \1}
+#abb: %mate=(\d+)      {"name": "Material", "valor": \1}
+#abb: %mobi=(\d+)      {"name": "Mobility", "valor": \1}
+#abb: %papa=(\d+)      {"name": "PawnPassed", "valor": \1}
+#abb: %past=(\d+)      {"name": "PawnStruct", "valor": \1}
+#abb: %pefi=([\./\w]+)   {"name": "PersonalityFile", "valor": "\1"}
+#abb: %pers=([/\w]+)   {"name": "Personality", "valor": "\1"}
+#abb: %raev=(\d+)      {"name": "RandomEval", "valor": \1}
+
+#abb: %nmmdpmlm    {"name": "NullMoveMinDepth", "valor": 3}, {"name": "PruningMargin1", "valor": 20}, {"name": "PruningMargin2", "valor": 40}, {"name": "PruningMargin3", "valor": 60}, {"name": "LmrMinMoveNumber", "valor": 3}
+#abb: %lemnmmpm    {"name": "LazyEvalMargin", "valor": 200}, {"name": "NullMoveMinDepth", "valor": 3}, {"name": "PruningMargin1", "valor": 40}, {"name": "PruningMargin2", "valor": 80}, {"name": "PruningMargin3", "valor": 120}, {"name": "LmrMinMoveNumber", "valor": 3}

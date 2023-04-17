@@ -1,5 +1,6 @@
 import glob
 import os
+import re
 import sys
 
 import Code
@@ -8,16 +9,72 @@ from Code.Base.Constantes import ENG_MICGM, ENG_MICPER
 from Code.Polyglots import Books
 
 
+class DicMicElos:
+    def __init__(self):
+        self.variable = "DicMicElos"
+        self.configuration = Code.configuration
+        self._dic = self.configuration.read_variables(self.variable)
+
+    def get_elo(self, alias):
+        k = alias.lower()
+        elo = None
+        if k in self._dic:
+            elo = self._dic[k]
+        elif alias in self._dic:
+            elo = self._dic[alias]
+            del self._dic[alias]
+            self._dic[k] = elo
+            self.configuration.write_variables(self.variable, self._dic)
+        return elo
+
+    def dic(self):
+        return self._dic
+
+    def cambia_elo(self, clave_motor, nuevo_elo):
+        clave_motor = clave_motor.lower()
+        self._dic = self.configuration.read_variables(self.variable)
+        if clave_motor in self._dic:
+            old_elo = self._dic[clave_motor]
+        else:
+            old_elo = "?"
+
+        sys.stderr.writeln(f"cambia_elo {clave_motor} {old_elo} -> {nuevo_elo}")
+        self._dic[clave_motor] = nuevo_elo
+        self.configuration.write_variables(self.variable, self._dic)
+
+
+def add_abbrev(abbrevs, linea):
+    linea = linea[5:].strip()
+    x = re.split(r"\s\s+", linea)
+    abbrevs.append(x)
+    return abbrevs
+
+
+def apply_abbrevs(abbrevs, linea):
+    li = linea
+    for abb in abbrevs:
+        li = re.sub(abb[0], abb[1], li)
+    sys.stderr.writeln("REPABBR MIC=" + li)
+    return li
+
+
 def read_mic_engines():
     configuration = Code.configuration
     intdir = Code.path_resource("IntFiles")
     file_list = sorted(glob.glob(intdir + "/mic_tourney*.eval"))
-
+    abbrevs = []
     dd = {}
     for file in file_list:
         with open(file) as f:
             for linea in f:
-                dic = eval(linea.strip())
+                linea = linea.strip()
+                if linea == "" or linea.startswith("#"):
+                    if linea.startswith("#abb:"):  # it is a line defining an abbreviation.
+                        abbrevs = add_abbrev(abbrevs, linea)
+                    continue
+                sys.stderr.writeln("READING MIC=" + linea)
+                linea = apply_abbrevs(abbrevs, linea)
+                dic = eval(linea)
                 alias = dic["ALIAS"]
                 nom_base_engine = dic["ENGINE"]
                 id_info = dic["IDINFO"]
@@ -60,6 +117,12 @@ def read_mic_engines():
                     dd[eng.alias] = eng
 
     li = list(dd.values())
+    dme = DicMicElos()
+    for eng in li:
+        elo = dme.get_elo(eng.alias)
+        if elo:
+            eng.elo = elo
+
     li.sort(key=lambda uno: uno.elo)
     return li
 
