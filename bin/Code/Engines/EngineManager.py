@@ -215,6 +215,16 @@ class EngineManager:
         if self.mstime_engine or self.depth_engine:
             mrm = self.engine.bestmove_game(game, self.mstime_engine, self.depth_engine)
         else:
+            # Endgame improvement for weak engines, currently just with upping UCI_Elo.
+            # Using Gaviota tablebases would have the advantage of working also with engines which don't have UCI_Elo
+            # and the disadvantage that it wouldn't work with endagmes where number of pieces is > 4.
+            # AW, TODO  only for MIC type engines!
+            if game.is_simple_k_endgame():
+                # would like to have it not for engines below 1000.
+                # if self.engine.elo > 1000:  # But engine.elo does not exist here
+                self.engine.set_option("UCI_LimitStrength", "true")
+                self.engine.set_option("UCI_Elo", "2300")
+
             mseconds_white = int(seconds_white * 1000)
             mseconds_black = int(seconds_black * 1000)
             mseconds_move = int(seconds_move * 1000) if seconds_move else 0

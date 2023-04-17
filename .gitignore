@@ -12,3 +12,10 @@ UserData/
 /bin/OS/win32/Engines/cyrano/UpgradeLog.htm
 /Resources/IntFiles/engineinfos.txt
 /Resources/IntFiles/showEngines.bsh
+/bin/OS/win32/Engines/rodentII/Sam.uci_options
+/bin/OS/win32/Engines/rodentII/Riiiip.uci_options
+/bin/OS/win32/Engines/rodentII/Indizes - RodentII.uci_options
+/bin/OS/win32/Engines/rodentII/Kandidaten_ rodentii.uci_options
+/bin/OS/win32/Engines/rodentII/Kinghunter.uci_options
+*.pyc
+*.dll
