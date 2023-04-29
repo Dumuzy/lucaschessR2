@@ -297,30 +297,9 @@ class BookEx(Book):
             cbook = engine.book
         else:
             # Same engine should always have the same book. It's a personality question.
-            if engine.elo < 1600:
-                books = ["TheChessArchives", "mini", "fics15", "1100-1500", "guide", "JackNine", "low",
-                         "_pre30", "_post06", "ph-gambitbook", "solid", "clon22", "ph-exoticbook"]
-            elif engine.elo < 1900:
-                books = ["TheChessArchives", "mini", "fics15", "1600-1900", "guide", "Javilon6351xd",
-                         "ph-anderssen2", "flank", "r3-steinitz", "_post06", "ph-gambitbook", "clon22",
-                         "1100-1500", "ph-exoticbook"]
-            else:
-                books = ["TheChessArchives", "mini", "rodent", "micro", "guide", "GMopenings", "carlsen", "kasparov",
-                         "_pre30", "_post06", "ph-gambitbook", "solid", "ph-reti2", "ph-exoticbook"]
-            ha = my_hash(engine.alias)
-            h = ha % len(books)
-            cbook = search_book(books[h])
+            cbook = getBook(engine)
 
-        elo = engine.elo
-        sys.stderr.writeln("createForTourney engine.bookMaxply=" + str(engine.bookMaxply) + " elo=" + str(elo))
-        if engine.bookMaxply:
-            maxPly = engine.bookMaxply
-        else:
-            if elo >= 2200:
-                maxPly = 9999
-            else:
-                # AW: Changed from elo//100 to quadratic formula and from moves to plies,  1.3.23
-                maxPly = round((elo / 1000) + 3.5 * (elo/1000) * (elo/1000))
+        maxPly = getBookMaxPly(engine)
 
         book = BookEx("P", os.path.basename(cbook), cbook, True, engine.bookRR, maxPly)
         book.polyglot()
@@ -330,7 +309,6 @@ class BookEx(Book):
                            + " bookRR=" + str(engine.bookRR)
                            + " cbook=" + cbook)
         return book
-
 
     def eligeJugadaTipo(self, fen, tipo, currPly):
         pv = None
@@ -1378,13 +1356,68 @@ class BookGame(Book):
         return False
 
 
+def getBook(engine):
+    books = getBookListForElo(engine.elo)
+    ha = my_hash(engine.alias)
+    h = ha % len(books)
+    cbook = search_book(books[h])
+    return cbook
+
+
+def getBookListForElo(elo):
+    books = getFullBookList()
+    filteredBooks = []
+    import re
+    for b in books:
+        x = re.search(r"\d{4}(?!-)", b)
+        # Make sure that a 2000 player does not get a book of a 1200 player.
+        if x:
+            if elo <= int(x.group()) - 150:
+                filteredBooks.append(b)
+        else:
+            filteredBooks.append(b)
+    e = (2000 - elo) // 140
+    while e > 0:
+        del filteredBooks[-1]
+        e = e-1
+    sys.stderr.writeln("elo=" + str(elo) + " fiBoo=" + str(filteredBooks))
+    return filteredBooks
+
+
+def getFullBookList():
+    books = ["Ag2000", "Ch2100", "Ch2250", "Da1550", "Ga1900", "Ia2660", "Jack1918",
+             "Javi6351", "Kk2440", "Mo2180", "Ob2600", "Pc1800", "Pe1600", "Pj1450", "Qs1450",
+             "Ro1600", "Tca", "We1700", "Zv2300", "axel1950", "ceme1920", "clon2180",
+             "1100-1500", "1600-1900", "fics15", "flank", "guide", "low", "micro",
+             "ph-exoticbook", "ph-gambitbook", "capablanca", "carlsen", "lasker",
+             "steinitz", "solid", "rodent", "GMopenings"]
+    return books
+
+
+def getBookMaxPly(engine):
+    if engine.bookMaxply:
+        maxPly = engine.bookMaxply
+    else:
+        elo = engine.elo
+        if elo >= 2200:
+            maxPly = 9999
+        else:
+            # AW: Changed from elo//100 to quadratic formula and from moves to plies,  1.3.23
+            maxPly = round((elo / 1000) + 3.5 * (elo / 1000) * (elo / 1000))
+    return maxPly
+
+
 def search_book(file):
     file = file + ".bin"
     bk = search_file(Code.path_resource("Openings"), file)
     if not bk:
         bk = search_file(Code.folder_engines, file)
     if not bk:
-        sys.stderr.writeln("ERROR NOT FOUND search_book file=" + str(file))
+        sys.stderr.writeln("ERROR NOT FOUND search_book file=" + str(file) + " USING fischer instead.")
+        bk = search_file(Code.path_resource("Openings"), "fischer.bin")
+        if not bk:
+            sys.stderr.writeln("ERROR NOT FOUND search_book file=" + str(file) + " USING fics15 instead.")
+            bk = search_file(Code.path_resource("Openings"), "fics15.bin")
     return bk
 
 
@@ -1397,11 +1430,14 @@ def search_file(directory=None, file=None):
 
 
 def my_hash(engine_alias):
-    s = engine_alias.upper()  # Make sure that hallgeir and Hallgeir get the same book.
+    # Make sure that hallgeir and Hallgeir get the same book.
+    # But make hash more different than withtouppering all names. It's not clear to me, why uppering all
+    # names does not produce a good distiribution of books.
+    s = engine_alias.upper()
 
     # Reason for that I use only the first 6 characters of the name for hashing:
     # This way, I can change the name of a player after char 6 and be sure it gets the same book.
-    s = s[:6]
+    s = s[:6] + s[1:3].lower()
     x = ord(s[0])
     for c in s[1:]:
         x = x * 31 + ord(c)
