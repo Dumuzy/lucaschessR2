@@ -215,10 +215,10 @@ class EngineManager:
         # AW: TODO Maybe use it only for New Tourney type engines! Bu how to find out?
         # I've got a RunEngine here which hasn't got most of the information. IT's got a name and an exe property
         # and the possibility to send commands via put_line.
-        import sys
+        # import sys
         ha = hasattr(self.engine, "is_endgame_strength_handled")
         if not hasattr(self.engine, "is_endgame_strength_handled") and game.is_simple_k_endgame():
-            sys.stderr.writeln(f"is_simple_k_endgame name={self.engine.name} exe={self.engine.exe}")
+            # sys.stderr.writeln(f"is_simple_k_endgame name={self.engine.name} exe={self.engine.exe}")
             # I would like to have it not for engines below 1000. But engine.elo does not exist here.
             # Anyway, it doesn't matter too much.
             # Nearly all engines below 1000 are Monkey and similar and they do not understand UCI_Elo anyway.
