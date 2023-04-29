@@ -1,8 +1,10 @@
 import os
+import re
 
 from PySide2 import QtWidgets, QtCore
 
 import Code
+import random
 from Code import Util
 from Code import XRun
 from Code.Base import Game, Position
@@ -54,7 +56,9 @@ class WTournament(LCDialog.LCDialog):
         tb = Controles.TBrutina(self, icon_size=24)
         tb.new(_("Close"), Iconos.MainMenu(), self.terminar)
         tb.new(_("Launch a worker"), Iconos.Lanzamiento(), self.gm_launch)
-        tb.new(_("Launch 10 workers"), Iconos.Lanzamiento(), self.gm_launch_10)
+        tb.new(_("Launch 20 workers"), Iconos.Lanzamiento(), self.gm_launch_20)
+        tb.new(_("Launch 50 workers"), Iconos.Lanzamiento(), self.gm_launch_50)
+        tb.new(_("Write back elo"), Iconos.Lanzamiento(), self.write_back_elo)
 
         # Tabs
         self.tab = tab = Controles.Tab()
@@ -278,6 +282,8 @@ class WTournament(LCDialog.LCDialog):
         o_columns.nueva("DRAW-BLACK", "%s %s" % (bl, _("Draws")), 60, align_center=True)
         o_columns.nueva("LOST-BLACK", "%s %s" % (bl, _("Losses")), 60, align_center=True)
         o_columns.nueva("GAMES", _("Games"), 50, align_center=True)
+        o_columns.nueva("DELTAELO", _("D-Elo"), 50, align_center=True)
+        o_columns.nueva("PERF-ELO", _("P-Elo"), 60, align_center=True)
         self.gridResults = Grid.Grid(self, o_columns, siSelecFilas=True, xid=GRID_RESULTS)
         self.register_grid(self.gridResults)
 
@@ -329,10 +335,77 @@ class WTournament(LCDialog.LCDialog):
         self.tab.set_value(3, "%d %s" % (self.torneo.num_games_finished(), _("Games finished")))
         self.calc_results()
 
+
+    def write_back_elo(self):
+        import sys
+        sys.stderr.writeln("***** write_back_elo *****")
+        from Code.Engines import EnginesMicElo
+        dme = EnginesMicElo.DicMicElos()
+        nuevo_elo_dic = {}
+        for num in range(self.torneo.num_engines()):
+            eng = self.torneo.engine(num)
+            delta_elo = self.calc_delta_elo_eng(eng)
+            nuevo_elo = eng.elo + delta_elo
+            nuevo_elo_dic[eng.alias] = nuevo_elo
+            if delta_elo != 0:
+                dme.cambia_elo(eng.alias, nuevo_elo)
+        for num in range(self.torneo.num_engines()):
+            eng = self.torneo.engine(num)
+            eng.elo = nuevo_elo_dic[eng.alias]
+        self.torneo.remove_games_finished()
+        self.gridGamesFinished.refresh()
+        self.gridGamesQueued.refresh()
+        self.gridResults.refresh()
+        self.rotulos_tabs()
+
+
+    def calc_delta_elo(self, eng, li, resultado):
+        delta_total = 0
+        for h in li:
+            rival = self.torneo.buscaHEngine(h)
+            ## only if both are mic-engines.  TODO
+            delta = Util.fideELO(eng.elo, rival.elo, resultado)
+            import sys
+            sys.stderr.writeln(f"calc_delta_elo eng={eng.alias}/{eng.elo}  riv={rival.alias}/{rival.elo} "
+                               + f" res= {resultado}   d-elo={delta}")
+            delta_total += delta
+        return delta_total
+
+    def calc_delta_elo_eng(self, eng):
+        import sys
+        sys.stderr.writeln(f"****calc_delta_elo_eng {eng.alias}")
+        d_tot = 0
+        d_tot += self.calc_delta_elo(eng, eng.win_white, 1)
+        d_tot += self.calc_delta_elo(eng, eng.win_black, 1)
+        d_tot += self.calc_delta_elo(eng, eng.draw_white, 0)
+        d_tot += self.calc_delta_elo(eng, eng.draw_black, 0)
+        d_tot += self.calc_delta_elo(eng, eng.lost_white, -1)
+        d_tot += self.calc_delta_elo(eng, eng.lost_black, -1)
+        sys.stderr.writeln(f"****calc_delta_elo_eng {eng.alias} total={d_tot}")
+        return d_tot
+
+    def calc_perf_elo_eng(self, eng):
+        num_wins_minus_num_losses = len(eng.win_white) + len(eng.win_black) - len(eng.lost_white) - len(eng.lost_black)
+        num_total = 0
+        for li in [eng.win_white, eng.win_black, eng.lost_white, eng.lost_black, eng.draw_white, eng.draw_black]:
+            num_total += len(li)
+        total_opp_elo = 0
+        for li in [eng.win_white, eng.win_black, eng.lost_white, eng.lost_black, eng.draw_white, eng.draw_black]:
+            for h in li:
+                rival = self.torneo.buscaHEngine(h)
+                ## only if both are mic-engines.  TODO
+                total_opp_elo += rival.elo
+        perf_elo = ((total_opp_elo + 400*num_wins_minus_num_losses) / num_total) if num_total else 0
+        import sys
+        sys.stderr.writeln(f"calc_perf_elo eng={eng.alias}/{eng.elo}  perf-elo={perf_elo}")
+        return perf_elo
+
     def calc_results(self):
         self.li_results = []
         for num in range(self.torneo.num_engines()):
             eng = self.torneo.engine(num)
+            delta_elo = self.calc_delta_elo_eng(eng)
+            perf_elo = self.calc_perf_elo_eng(eng)
             ww, wb, dw, db, lw, lb = (
                 len(eng.win_white),
                 len(eng.win_black),
@@ -344,7 +417,7 @@ class WTournament(LCDialog.LCDialog):
             tt = ww + wb + dw + db + lw + lb
             p = (ww + wb) * 2 + (dw + db) * 1
             score = (p * 50 / tt) if tt > 0 else 0
-            self.li_results.append((eng.key, score, ww, wb, dw, db, lw, lb))
+            self.li_results.append((eng.key, score, ww, wb, dw, db, lw, lb, delta_elo, perf_elo))
         self.li_results.sort(key=lambda x: x[1], reverse=True)
         self.gridResults.refresh()
 
@@ -450,7 +523,7 @@ class WTournament(LCDialog.LCDialog):
             return str(li[1])
 
     def gridDatoResult(self, row, column):
-        key, score, ww, wb, dw, db, lw, lb = self.li_results[row]
+        key, score, ww, wb, dw, db, lw, lb, delo, pelo = self.li_results[row]
         if column == "NUM":
             return str(row + 1)
         elif column == "ENGINE":
@@ -477,6 +550,10 @@ class WTournament(LCDialog.LCDialog):
             return "%d" % db
         elif column == "GAMES":
             return "%s" % (ww + wb + lw + lb + dw + db)
+        elif column == "DELTAELO":
+            return "%d" % delo
+        elif column == "PERF-ELO":
+            return "%d" % pelo
 
     def gridDatoGamesQueued(self, row, column):
         gm = self.torneo.game_queued(row)
@@ -542,15 +619,21 @@ class WTournament(LCDialog.LCDialog):
         for opcion in me.li_uci_options():
             self.liEnActual.append((opcion.name, str(opcion.valor)))
 
-    def gm_launch_10(self):
+    def gm_launch_20(self):
+        self.gm_launch_n(20)
+
+    def gm_launch_50(self):
+        self.gm_launch_n(50)
+
+    def gm_launch_n(self, n):
         if self.torneo.num_games_queued() == 0:
             QTUtil2.message(self, _("You must create some games (Queued Games tab/ New)"))
             return
         pos = 1
-        for i in range(10):
+        for i in range(n):
             pos = self.gm_launch(False, pos) + 1
             import time
-            time.sleep(1)
+            time.sleep(1 + i/70 if i >= 20 else 1)
 
     def gm_launch(self, showMsg=True, startPos=1):
         if self.torneo.num_games_queued() == 0 and showMsg:
@@ -755,6 +838,8 @@ class WTournament(LCDialog.LCDialog):
         form.separador()
         form.spinbox(_("Rounds"), 1, 999, 50, get("ROUNDS", 1))
 
+        form.float(_("Games"), get("GAMES", 1))
+
         form.separador()
         form.float(_("Total minutes"), get("MINUTES", 10.00))
 
@@ -763,7 +848,7 @@ class WTournament(LCDialog.LCDialog):
 
         form.add_tab(_("Options"))
 
-        li_groups = Util.div_list(li_engines, 30)
+        li_groups = Util.div_list(li_engines, 20)
         for ngroup, group in enumerate(li_groups):
             for en in group:
                 form.checkbox(en.key, get(en.huella, True))
@@ -778,8 +863,9 @@ class WTournament(LCDialog.LCDialog):
         options = li_resp[0]
 
         dicValores["ROUNDS"] = rounds = options[0]
-        dicValores["MINUTES"] = minutos = options[1]
-        dicValores["SECONDS"] = seconds = options[2]
+        dicValores["GAMES"] = games = options[1]
+        dicValores["MINUTES"] = minutos = options[2]
+        dicValores["SECONDS"] = seconds = options[3]
 
         li_resp_engines = []
         for group in li_resp[1:]:
@@ -789,7 +875,7 @@ class WTournament(LCDialog.LCDialog):
             en = li_engines[num]
             dicValores[en.huella] = si = li_resp_engines[num]
             if si:
-                liSel.append(en.huella)
+                liSel.append(en)
 
         self.configuration.write_variables("crear_torneo", dicValores)
 
@@ -797,12 +883,56 @@ class WTournament(LCDialog.LCDialog):
         if nSel < 2:
             QTUtil2.message_error(self, _("You must use at least two engines"))
             return
+        if games != 0 and re.match(r"^\d+\.0*$", str(games)):
+            liSel.sort(key=lambda e: -e.elo)
+            liSelOrig = liSel
+            while games > 0:
+                liSel = liSelOrig.copy()
+                while len(liSel) > 1 and games > 0:
+                    m = random.randint(1, min(nSel // 2, len(liSel) - 1))
+                    revertCol = random.randint(0, 1)
+                    if revertCol == 1:
+                        self.torneo.nuevoGame(liSel[0].huella, liSel[m].huella, minutos, seconds)
+                    else:
+                        self.torneo.nuevoGame(liSel[m].huella, liSel[0].huella, minutos, seconds)
+                    del liSel[m]
+                    del liSel[0]
+                    games = games - 1
+        elif games != 0 and "." in str(games):
+            # Create a gauntlet for one or more players
+            # number after comma is used as number of players who make a game against all others.
+            # number before comma is total number of games to create.
+            parts = str(games).split(".")
+            games = int(parts[0])
+            numGauntletters = int(parts[1] if len(parts) == 2 else 1)
+            gauntletters = liSel[-numGauntletters:]
+            del liSel[-numGauntletters:]
 
-        for r in range(rounds):
-            for x in range(nSel - 1):
-                for y in range(x + 1, nSel):
-                    self.torneo.nuevoGame(liSel[x], liSel[y], minutos, seconds)
-                    self.torneo.nuevoGame(liSel[y], liSel[x], minutos, seconds)
+            liSel.sort(key=lambda e: -e.elo)
+            liSelOrig = liSel
+            while games > 0:
+                liSel = liSelOrig.copy()
+                while len(liSel) > 0 and games > 0:
+                    for gl in gauntletters:
+                        if not len(liSel):
+                            break
+                        m = random.randint(0, len(liSel)-1)
+                        revertCol = games % 2
+                        if revertCol == 1:
+                            self.torneo.nuevoGame(gl.huella, liSel[m].huella, minutos, seconds)
+                        else:
+                            self.torneo.nuevoGame(liSel[m].huella, gl.huella, minutos, seconds)
+                        del liSel[m]
+                        games = games - 1
+                        if games == 0:
+                            break
+                    gauntletters.reverse()
+        else:
+            for r in range(rounds):
+                for x in range(nSel - 1):
+                    for y in range(x + 1, nSel):
+                        self.torneo.nuevoGame(liSel[x].huella, liSel[y].huella, minutos, seconds)
+                        self.torneo.nuevoGame(liSel[y].huella, liSel[x].huella, minutos, seconds)
 
         self.gridGamesQueued.refresh()
         self.gridGamesQueued.gobottom()
