@@ -208,6 +208,37 @@ class EngineManager:
 
         return self.engine.bestmove_game(game, self.mstime_engine, self.depth_engine)
 
+    def increase_endgame_strength(self, game):
+        # Endgame improvement for weak engines, currently just with upping UCI_Elo or NPS, depending on engine.
+        # Using Gaviota tablebases would have the advantage of working also with engines which don't have UCI_Elo
+        # and the disadvantage that it wouldn't work with endagmes where number of pieces is > 4.
+        # AW: TODO Maybe use it only for New Tourney type engines! Bu how to find out?
+        # I've got a RunEngine here which hasn't got most of the information. IT's got a name and an exe property
+        # and the possibility to send commands via put_line.
+        import sys
+        ha = hasattr(self.engine, "is_endgame_strength_handled")
+        if not hasattr(self.engine, "is_endgame_strength_handled") and game.is_simple_k_endgame():
+            sys.stderr.writeln(f"is_simple_k_endgame name={self.engine.name} exe={self.engine.exe}")
+            # I would like to have it not for engines below 1000. But engine.elo does not exist here.
+            # Anyway, it doesn't matter too much.
+            # Nearly all engines below 1000 are Monkey and similar and they do not understand UCI_Elo anyway.
+            self.engine.set_option("UCI_LimitStrength", "true")
+            self.engine.set_option("UCI_Elo", "2300")
+            self.engine.set_option("Hash", "16")
+            import re
+            if re.search(r"\brodentii", self.engine.exe):
+                # Rodent doesn't understand UCI_Elo when in Nps/Blur mode. Which is what I use in tourney-play.
+                # But I don't know it here, if Nps/Blur or ELO-mode is used. Submitting both should be ok.
+                self.engine.set_option("NpsLimit", "10000")
+            elif re.search(r"\bgreko98", self.engine.exe):
+                # Greko98 cannot mate when RandomEval or MultiPV are too high.
+                self.engine.set_option("RandomEval", "2")
+                self.engine.set_option("MultiPV", "1")
+            elif re.search(r"\bmaia\Wlc0", self.engine.exe):
+                # Maia doesn't understand UCI_Elo and needs a high NPS value.
+                self.engine.set_option("NodesPerSecondLimit", "170")
+            self.engine.is_endgame_strength_handled = 1
+
     def play_time_tourney(self, game, seconds_white, seconds_black, seconds_move):
         self.check_engine()
         if self.engine.pondering:
@@ -215,15 +246,7 @@ class EngineManager:
         if self.mstime_engine or self.depth_engine:
             mrm = self.engine.bestmove_game(game, self.mstime_engine, self.depth_engine)
         else:
-            # Endgame improvement for weak engines, currently just with upping UCI_Elo.
-            # Using Gaviota tablebases would have the advantage of working also with engines which don't have UCI_Elo
-            # and the disadvantage that it wouldn't work with endagmes where number of pieces is > 4.
-            # AW, TODO  only for MIC type engines!
-            if game.is_simple_k_endgame():
-                # would like to have it not for engines below 1000.
-                # if self.engine.elo > 1000:  # But engine.elo does not exist here
-                self.engine.set_option("UCI_LimitStrength", "true")
-                self.engine.set_option("UCI_Elo", "2300")
+            self.increase_endgame_strength(game)
 
             mseconds_white = int(seconds_white * 1000)
             mseconds_black = int(seconds_black * 1000)
