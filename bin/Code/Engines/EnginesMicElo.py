@@ -72,6 +72,7 @@ def read_mic_engines():
                     if linea.startswith("#abb:"):  # it is a line defining an abbreviation.
                         abbrevs = add_abbrev(abbrevs, linea)
                     continue
+                linea = linea.split("#", 1)[0]      # allow comments in line
                 sys.stderr.writeln("READING MIC=" + linea)
                 linea = apply_abbrevs(abbrevs, linea)
                 dic = eval(linea)
