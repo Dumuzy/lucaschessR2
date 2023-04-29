@@ -42,8 +42,8 @@ setoption name BackwardPawnEg value -10
 setoption name BackwardOnOpenMg value -8
 setoption name PstStyle value 0
 setoption name MobilityStyle value 1
-setoption name NpsLimit value 270
-setoption name EvalBlur value 36
+setoption name NpsLimit value 220
+setoption name EvalBlur value 40
 setoption name Contempt value 0
 setoption name SlowMover value 140
 setoption name Selectivity value 175

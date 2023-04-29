@@ -4,3 +4,5 @@ option name Hash type spin default 16 min 1 max 4096
 option name Clear Hash type button
 option name PersonalityFile type string default rodent.txt
 option name OwnBook type check default true
+option name GuideBookFile type string default guide.bin
+option name MainBookFile type string default rodent.bin

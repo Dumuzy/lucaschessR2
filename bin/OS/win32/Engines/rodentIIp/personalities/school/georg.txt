@@ -1,8 +1,8 @@
 ; Frederick personality for Rodent II chess engine
-; author: Pawel Koziol
+; author: Pawel Koziol  & A. Wicker
 ; plays e4 + f4 on everything and likes attacking
-; bad endgame play, weak player, slow
-;
+; bad endgame play, slow
+
 setoption name PawnValue value 95
 setoption name KnightValue value 335
 setoption name BishopValue value 345
@@ -12,9 +12,9 @@ setoption name KeepPawn value 0
 setoption name KeepKnight value 0
 setoption name KeepBishop value 0
 setoption name KeepRook value 0
-setoption name KeepQueen value 0
+setoption name KeepQueen value 20
 setoption name BishopPair value 33
-setoption name KnightPair value -10
+setoption name KnightPair value 0
 setoption name ExchangeImbalance value 25
 setoption name KnightLikesClosed value 5
 setoption name RookLikesOpen value 3
@@ -27,27 +27,25 @@ setoption name KingTropism value 100
 setoption name PiecePlacement value 100
 setoption name PiecePressure value 100
 setoption name PassedPawns value 100
-setoption name PawnStructure value 80
+setoption name PawnStructure value 60
 setoption name Lines value 100
 setoption name Outposts value 100
 setoption name PawnShield value 100
 setoption name PawnStorm value 100
-setoption name Forwardness value 20
+setoption name Forwardness value 40
 setoption name DoubledPawnMg value -10
 setoption name DoubledPawnEg value -10
 setoption name IsolatedPawnMg value -10
 setoption name IsolatedPawnEg value -10
 setoption name IsolatedOnOpenMg value -10
-setoption name BackwardPawnMg value -5
+setoption name BackwardPawnMg value 0
 setoption name BackwardPawnEg value -5
-setoption name BackwardOnOpenMg value -5
+setoption name BackwardOnOpenMg value 0
 setoption name PstStyle value 0
-setoption name MobilityStyle value 0
-setoption name NpsLimit value 320
+setoption name MobilityStyle value 1
+setoption name NpsLimit value 120
 setoption name EvalBlur value 50
 setoption name Contempt value 0
 setoption name SlowMover value 150
-setoption name Selectivity value 175
-setoption name BookFilter value 10
 setoption name GuideBookFile value empty.bin
 setoption name MainBookFile value empty.bin

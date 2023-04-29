@@ -1,23 +1,23 @@
-; Sue personality for Rodent II
+; Matthew personality for Rodent chess engine
 ; author: Pawel Koziol
-; weak to moderate, likes to sacrifice
-;
+; materialist, approaching 2000 Elo mark
+
 setoption name PawnValue value 100
 setoption name KnightValue value 325
 setoption name BishopValue value 335
-setoption name RookValue value 600
+setoption name RookValue value 500
 setoption name QueenValue value 1000
 setoption name KeepPawn value 0
 setoption name KeepKnight value 0
 setoption name KeepBishop value 0
 setoption name KeepRook value 0
-setoption name KeepQueen value 20
+setoption name KeepQueen value -10
 setoption name BishopPair value 50
 setoption name KnightPair value -10
 setoption name ExchangeImbalance value 25
-setoption name KnightLikesClosed value 6
+setoption name KnightLikesClosed value 5
 setoption name RookLikesOpen value 3
-setoption name Material value 80
+setoption name Material value 120
 setoption name OwnAttack value 100
 setoption name OppAttack value 100
 setoption name OwnMobility value 100
@@ -40,13 +40,11 @@ setoption name IsolatedOnOpenMg value -10
 setoption name BackwardPawnMg value -8
 setoption name BackwardPawnEg value -10
 setoption name BackwardOnOpenMg value -8
-setoption name PstStyle value 0
-setoption name MobilityStyle value 0
-setoption name NpsLimit value 240
-setoption name EvalBlur value 24
-setoption name Contempt value 0
-setoption name SlowMover value 132
+setoption name PstStyle value 2
+setoption name MobilityStyle value 1
+setoption name NpsLimit value 3600
+setoption name EvalBlur value 0
+setoption name Contempt value 10
+setoption name SlowMover value 105
 setoption name Selectivity value 175
-setoption name BookFilter value 5
-setoption name GuideBookFile value empty.bin
-setoption name MainBookFile value empty.bin
+
