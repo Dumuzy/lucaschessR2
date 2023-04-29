@@ -1,0 +1,13 @@
+# Die Togas mit NPS < 3000 ham a großes Zeitmanagementproblem.
+# Viele der Spiele, die die verlieren, verlieren sie in gewonnener Stellung durch Zeit. Falls NPS < 1000  die Hälfte oder mehr. 
+
+### All finished, 22.4.23
+
+{%ali=Ishigaki,  %elo=2041, %liu=[%MaNP=3400, %bfbp=0, %PlSt=Mixed,      %fdhdd=1, %MAJDTA=3, %KiAt=95,                                   %PiSq=110, %PiAc=90,  %PiIn=90,  %mate=95, %MaIm=25, %ToEB=25, %BPEg=50, %MoMa=100, %DePr=t, %DeMa=70, %fummm], %eng=toga, %idi=balanced\nvery fast}  
+{%ali=Masafumi,  %elo=2006, %liu=[%MaNP=5000, %bfbp=0, %PlSt=Positional, %fdhdd=1, %MAJDTA=2, %KiAt=110, %KiSa=90,  %PaSt=75,  %PaPa=110, %PiSq=120, %PiAc=80,             %mate=90, %MaIm=25, %ToEB=25, %BPEg=50, %MoMa=35, %DePr=t, %DeMa=70, %fummm], %eng=toga, %idi=wide repertoire\nsolid, %boo=GMopenings}  
+{%ali=Nagasaki,  %elo=2117, %liu=[%MaNP=6800, %bfbp=0,                   %fdhdd=1, %MAJDTA=3, %KiAt=105, %PiAc=120, %PiIn=105, %MaIm=25,                                           %ToEB=25, %BPEg=50, %MoMa=50, %DePr=t, %DeMa=70, %fummm], %eng=toga, %idi=active\ncombative}  
+{%ali=Sugihara,  %elo=2204, %liu=[%MaNP=10000, %bfbp=0, %PlSt=Positional, %PoHV=90, %fdhdd=1, %MAJDTA=3,                             %PaPa=140, %PiSq=140, %PiIn=110, %mate=95, %MaIm=50,                            %ToEB=50, %BPEg=50, %MoMa=35, %DePr=t, %DeMa=90, %FuM1=90, %FuM2=180, %FuM3=270, %FuM4=360, %FuM5=450], %eng=toga, %idi=positional}
+
+{%ali=Akabana,    %elo=2166, %liu=[%MaNP=7800, %bfbp=0, %PlSt=Mixed,      %fdhdd=1, %MAJDTA=3, %KiAt=95,                                   %PiSq=110, %PiAc=90,  %PiIn=90,  %mate=95, %MaIm=25, %ToEB=25, %BPEg=50, %MoMa=100, %DePr=t, %DeMa=70, %fummm], %eng=toga, %idi=balanced\nvery fast}    
+{%ali=Chaiki,     %elo=2212, %liu=[%MaNP=13000, %bfbp=0,                   %fdhdd=1, %MAJDTA=3, %KiAt=105, %PiAc=120, %PiIn=105, %MaIm=25,                                           %ToEB=25, %BPEg=50, %MoMa=50, %DePr=t, %DeMa=70, %fummm], %eng=toga, %idi=active\ncombative}   
+{%ali=Fumiko,     %elo=2260, %liu=[%MaNP=20000, %bfbp=0, %PlSt=Positional, %PoHV=90, %fdhdd=1, %MAJDTA=3,                             %PaPa=140, %PiSq=140, %PiIn=110, %mate=95, %MaIm=50,                            %ToEB=50, %BPEg=50, %MoMa=35, %DePr=t, %DeMa=90, %FuM1=90, %FuM2=180, %FuM3=270, %FuM4=360, %FuM5=450], %eng=toga, %idi=positional, %boo=Ob2600}

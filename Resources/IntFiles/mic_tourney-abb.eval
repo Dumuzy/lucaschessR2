@@ -2,20 +2,34 @@
 # Allowed abbreviations defined here. Syntax of an abbrev line is: starts with #abb: , then regex to match, 
 # then 2 or more spaces, then regex for replacement. 
 
-#abb: %ali=([ \w]+\w)   "ALIAS": "\1" 
+#abb: %ali=([- \w]+\w)   "ALIAS": "\1" 
 #abb: %boo=([-\w]+)     "BOOK": "\1"
 #abb: %bmp=(\d+)      "BOOKMAXPLY": \1
 #abb: %elo=(\d+)      "ELO": \1
-#abb: %eng=(\w+)      "ENGINE": "\1"
+#abb: %eng=([-\w]+)      "ENGINE": "\1"
 #abb: %idi=([^,\}]+)    "IDINFO": "\1"
 #abb: %liu=           "LIUCI": 
 
 #abb: %ha=(\d+)        {"name": "Hash", "valor": \1}  
 #abb: %mupv=(\d+)      {"name": "MultiPV", "valor": \1}
 #abb: %ob=f            {"name": "OwnBook", "valor": False}
+#abb: %po=f            {"name": "Ponder", "valor": False}
 #abb: %uelo=(\d+)      {"name": "UCI_Elo", "valor": \1}
 #abb: %ulis=t          {"name": "UCI_LimitStrength", "valor": True}
 
+# rodent replacements
+#abb: %evbl=(\d+)        {"name": "EvalBlur", "valor": \1}
+#abb: %npli=(\d+)        {"name": "NpsLimit", "valor": \1}
+#abb: %paws=(\d+)        {"name": "PawnStructure", "valor": \1}
+#abb: %pefi=([\./\w]+)   {"name": "PersonalityFile", "valor": "\1"}
+#abb: %pipl=(\d+)        {"name": "PiecePlacement", "valor": \1}
+
+# maia replacements
+#abb: %thre=(\d+)      {"name": "Threads", "valor": \1}
+#abb: %npsl=([\.\d]+)  {"name": "NodesPerSecondLimit", "valor": "\1"} 
+#abb: %wefi=(\d+)      {"name": "WeightsFile", "valor": "maia-\1.pb.gz"}
+
+# greko replacements
 #abb: %boco=(\d+)      {"name": "BoardControl", "valor": \1}
 #abb: %drsc=([-\d]+)   {"name": "DrawScore", "valor": \1}
 #abb: %kisa=(\d+)      {"name": "KingSafety", "valor": \1}
@@ -24,9 +38,54 @@
 #abb: %mobi=(\d+)      {"name": "Mobility", "valor": \1}
 #abb: %papa=(\d+)      {"name": "PawnPassed", "valor": \1}
 #abb: %past=(\d+)      {"name": "PawnStruct", "valor": \1}
-#abb: %pefi=([\./\w]+)   {"name": "PersonalityFile", "valor": "\1"}
 #abb: %pers=([/\w]+)   {"name": "Personality", "valor": "\1"}
 #abb: %raev=(\d+)      {"name": "RandomEval", "valor": \1}
+#abb: %rape=(\d+)      {"name": "RandomPercent", "valor": \1}
 
 #abb: %nmmdpmlm    {"name": "NullMoveMinDepth", "valor": 3}, {"name": "PruningMargin1", "valor": 20}, {"name": "PruningMargin2", "valor": 40}, {"name": "PruningMargin3", "valor": 60}, {"name": "LmrMinMoveNumber", "valor": 3}
 #abb: %lemnmmpm    {"name": "LazyEvalMargin", "valor": 200}, {"name": "NullMoveMinDepth", "valor": 3}, {"name": "PruningMargin1", "valor": 40}, {"name": "PruningMargin2", "valor": 80}, {"name": "PruningMargin3", "valor": 120}, {"name": "LmrMinMoveNumber", "valor": 3}
+
+# fruit replacements
+
+#abb: %MaNPS=(\d+)    {"name": "Max NPS1", "valor": \1}, {"name": "Max NPS2", "valor": \1}, {"name": "Max NPS3", "valor": \1}, {"name": "Max NPS4", "valor": \1}, {"name": "Max NPS5", "valor": \1}
+#abb: %PaShe=(\d)      {"name": "Pawn Shelter", "valor": \1}
+#abb: %PaSto=(\d)      {"name": "Pawn Storm", "valor": \1}
+
+# toga replacements
+
+#abb: %fummm           %FuM1=70, %FuM2=140, %FuM3=210, %FuM4=280, %FuM5=350
+#abb: %MAJDTA=(\d)     %MaTD=\1, %JDHD=\1, %TaDe=\1 
+#abb: %bfbp=0          {"name": "BookFile", "valor": ""}, {"name": "Bitbases Path", "valor": ""}
+#abb: %PlSt=([/\w]+)   {"name": "Playing Style", "valor": "\1"}
+#abb: %fdhdd=1         {"name": "Futility Depth", "valor": 1}, {"name": "History Drop Depth", "valor": 1}
+
+
+#abb: %BPOp=(\d+)      {"name": "Bishop Pair Opening", "valor": \1}
+#abb: %BPEg=(\d+)      {"name": "Bishop Pair Endgame", "valor": \1}
+#abb: %DeMa=(\d+)  {"name": "Delta Margin", "valor": \1}
+#abb: %DePr=t      {"name": "Delta Pruning", "valor": True}
+#abb: %DePr=f      {"name": "Delta Pruning", "valor": False}
+ 
+#abb: %FuM(\d)=(\d+)   {"name": "Futility Margin \1", "valor": \2}        
+#abb: %JDHD=(\d+)      {"name": "JD's Hangers Depth", "valor": \1}
+#abb: %KiSa=(\d+)      {"name": "King Safety", "valor": \1}
+#abb: %KiAt=(\d+)      {"name": "King Attack", "valor": \1}
+#abb: %MaNP=(\d+)  {"name": "Max NPS", "valor": \1}
+#abb: %MaIm=(\d+)  {"name": "Material Imbalance", "valor": \1}
+#abb: %MaTD=(\d+)  {"name": "Mate Threat Depth", "valor": \1}
+#abb: %MoMa=(\d+)  {"name": "MovesToGo Max", "valor": \1}
+
+#abb: %PiAc=(\d+)  {"name": "Piece Activity", "valor": \1}
+#abb: %PiIn=(\d+)  {"name": "Piece Invasion", "valor": \1}
+#abb: %PiSq=(\d+)  {"name": "Piece Square Tables", "valor": \1}
+
+#abb: %PaPa=(\d+)      {"name": "Passed Pawns", "valor": \1}
+#abb: %PaSt=(\d+)      {"name": "Pawn Structure", "valor": \1}
+#abb: %PoHV=(\d+)      {"name": "Positional History Value", "valor": \1}
+#abb: %TaDe=(\d+)      {"name": "Tactical Depth", "valor": \1}
+#abb: %ToEB=(\d+)      {"name": "Toga Exchange Bonus", "valor": \1}
+
+
+
+ 
+

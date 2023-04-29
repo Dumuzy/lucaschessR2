@@ -1,39 +1,72 @@
 
-### SMALL FAMOUSes
-{%ali=Spasskyle,   %elo=1625, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/famous/spassky.txt], %boo=spassky, %bmp=25}    
 
 ### Finished Rodents
 
-## League
-{%ali=Matthew,    %elo=2027, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/matthew.txt]}    
-{%ali=Dorothy,    %elo=2142, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/dorothy.txt]}    
-{%ali=Frederick,  %elo=2145, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/frederick.txt], %boo=flank}   
-{%ali=Arthur,     %elo=2201, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/arthur.txt]}    
-{%ali=Patrick,    %elo=2221, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/patrick.txt]}   
+## Kindergarten
 
-## SMALL FAMOUSes
-{%ali=Petrosianle, %elo=1641, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/famous/petrosian.txt], %boo=petrosian, %bmp=20}    
+{%ali=Pamela Gerbillo, %elo=795, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=2, %evbl=700]} 
+{%ali=Paolina Gerbillo, %elo=978, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=20, %evbl=700]} 
+{%ali=Pasquale Gerbillo, %elo=1023, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=200, %evbl=700]} 
+
+{%ali=Oceania Gerbillo, %elo=1053, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=2, %evbl=50, %paws=50, %pipl=50]}                  
+{%ali=Ombra Gerbillo,   %elo=1065, %eng=rodentiip, %idi=defense oriented, %liu= [%pefi=personalities/school/giovanni.txt, %npli=4, %evbl=50, %pipl=10]}  
+{%ali=Oriella Gerbillo, %elo=1073, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/school/maurizio.txt, %npli=15, %evbl=40, %paws=40], %boo=low} 
+{%ali=Oddone Gerbillo,  %elo=1077, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=3, %evbl=50, %pipl=20]}       
+
+{%ali=Alfonso Gerbillo,  %elo=1127, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt]}             
+{%ali=Nettuno Gerbillo,  %elo=1152, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=12]}             
+{%ali=Ariana Gerbillo,   %elo=1177, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt]}   
+{%ali=Nerola Gerbillo,   %elo=1179, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=4]}                     
+
+{%ali=Onofrio Gerbillo,  %elo=1210, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=8, %evbl=70, %paws=10]}     
+{%ali=Giovanni Gerbillo, %elo=1214, %eng=rodentiip, %idi=defense oriented, %liu= [%pefi=personalities/school/giovanni.txt], %boo=Da1550}         
+{%ali=Marcello Gerbillo, %elo=1289, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=50]}             
+
+{%ali=Luise Gerbillo,    %elo=1306, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/school/maurizio.txt, %npli=60], %boo=low}  
+{%ali=Nina Gerbillo,     %elo=1323, %eng=rodentiip, %idi=defense oriented, %liu= [%pefi=personalities/school/giovanni.txt, %npli=17]}         
+{%ali=Patrizio Gerbillo, %elo=1341, %eng=rodentiip, %idi=defense oriented, %liu= [%pefi=personalities/school/giovanni.txt, %npli=1000, %evbl=700]} 
+{%ali=Georg Rode,        %elo=1342, %eng=rodentiip, %idi=attacking\ne4 + f4 on everything, %liu= [%pefi=personalities/school/georg.txt], %boo=ceme1920, %bmp=10}    
+{%ali=Miriam Gerbillo,   %elo=1349, %eng=rodentiip, %idi=defense oriented, %liu= [%pefi=personalities/school/giovanni.txt, %npli=70]}         
+{%ali=Frieda Raton,      %elo=1360, %eng=rodentiip, %idi=fianchettos\npawn storms, %liu= [%pefi=personalities/school/frieda.txt], %boo=flank}       
+{%ali=Moreno Gerbillo,   %elo=1362, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/school/maurizio.txt, %npli=90]}   
+{%ali=Otello Raton,   %elo=1375, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/club/mark.txt, %npli=100]}    
+
+## League
+{%ali=Matthew,    %elo=2027, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/matthew.txt]}                 
+{%ali=Dorothy,    %elo=2142, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/dorothy.txt]}                 
+{%ali=Frederick,  %elo=2195, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/frederick.txt], %boo=flank}   
+{%ali=Arthur,     %elo=2201, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/arthur.txt]}                  
+{%ali=Patrick,    %elo=2221, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/league/patrick.txt]}                 
+
+## WEAK FAMOUSes
+{%ali=Petrosianle, %elo=1641, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/famous/petrosianle.txt], %boo=petrosian, %bmp=20}    
+{%ali=Botwinnikle, %elo=1710, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/famous/botvinnikle.txt], %boo=botvinnik, %bmp=20}    
+{%ali=Spasskyle,   %elo=1848, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/famous/spasskyle.txt], %boo=spassky, %bmp=25}        
 
 
 ## School
-{%ali=Sasha Rode,    %elo=1550, %eng=rodentiip, %idi=active\nCatalan\nReti\nNajdorf, %liu= [%pefi=personalities/school/sasha.txt], %boo=Jack1918} 
-{%ali=Axel Rode,     %elo=1631, %eng=rodentiip, %idi=french\nqueen's gambit\nsolid, %liu= [%pefi=personalities/school/axel.txt], %boo=axel1950} 
-{%ali=Georg Rode,    %elo=1656, %eng=rodentiip, %idi=attacking\ne4 + f4 on everything, %liu= [%pefi=personalities/school/georg.txt], %boo=ceme1920, %bmp=10} 
+{%ali=Paulita Raton,    %elo=1447, %eng=rodentiip, %idi=pawn structure, %liu= [%pefi=personalities/school/pam.txt]}
+{%ali=Mafalda Gerbillo, %elo=1472, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=50]}         
+{%ali=Amalia Gerbillo,  %elo=1491, %eng=rodentiip, %idi=slow\ngambits, %liu= [%pefi=personalities/school/amy.txt], %boo=ph-gambitbook}             
 
-{%ali=Stefano Raton,   %elo=1653, %eng=rodentiip, %idi=likes simplification and knights, %liu= [%pefi=personalities/school/stan.txt], %boo=ph-exoticbook}
-{%ali=Frieda Raton,    %elo=1638, %eng=rodentiip, %idi=fianchettos\npawn storms, %liu= [%pefi=personalities/school/frieda.txt], %boo=flank} 
-{%ali=Paulita Raton,   %elo=1668, %eng=rodentiip, %idi=pawn structure, %liu= [%pefi=personalities/school/pam.txt], %boo=ph-rubinstein2}    
- 
-{%ali=Amalia Gerbillo, %elo=1491, %eng=rodentiip, %idi=slow\ngambits, %liu= [%pefi=personalities/school/amy.txt], %boo=ph-gambitbook}
-{%ali=Donata Gerbillo, %elo=1741, %eng=rodentiip, %idi=defense oriented, %liu= [%pefi=personalities/school/dory.txt], %boo=petrosian}   
-{%ali=Stella Gerbillo, %elo=1698, %eng=rodentiip, %idi=likes to sac\ngambits, %liu= [%pefi=personalities/school/sue.txt], %boo=ph-gambitbook}    
+{%ali=Octavia Raton, %elo=1529, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/club/passive.txt, %npli=120]}
+{%ali=Palma Raton,   %elo=1546, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/club/sam.txt, %npli=130], %boo=tal}
+{%ali=Sasha Rode,    %elo=1550, %eng=rodentiip, %idi=active\nCatalan\nReti\nNajdorf, %liu= [%pefi=personalities/school/sasha.txt], %boo=Jack1918}     
+
+{%ali=Axel Rode,       %elo=1631, %eng=rodentiip, %idi=french\nqueen's gambit\nsolid, %liu= [%pefi=personalities/school/axel.txt], %boo=axel1950}       
+{%ali=Stefano Raton,   %elo=1653, %eng=rodentiip, %idi=likes simplification and knights, %liu= [%pefi=personalities/school/stan.txt], %boo=ph-exoticbook}     
+{%ali=Pippa Gerbillo,  %elo=1692, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=2000, %evbl=700]} 
+{%ali=Stella Gerbillo, %elo=1698, %eng=rodentiip, %idi=likes to sac\ngambits, %liu= [%pefi=personalities/school/sue.txt], %boo=ph-gambitbook}     
+
+{%ali=Donata Gerbillo, %elo=1741, %eng=rodentiip, %idi=defense oriented, %liu= [%pefi=personalities/school/dory.txt], %boo=petrosian}             
 
 ## Club
+{%ali=Defender Hare,    %elo=1663, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/club/mark.txt]}    
 {%ali=Passive Hare,     %elo=1672, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/club/passive.txt]}
+{%ali=Attacker Hare,    %elo=1773, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/club/sam.txt], %boo=tal}
 {%ali=Materialist Hare, %elo=1818, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/club/materialist.txt]}    
 {%ali=Nerd Hare,        %elo=1890, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/club/nerd.txt], %boo=GMopenings}
 {%ali=Leader Hare,      %elo=1867, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/club/leader.txt]}    
-
 
 ## Fun
 {%ali=Kinghunter,  %elo=1920, %eng=rodentiip, %idi=+sf+, %liu= [%pefi=personalities/fun/kinghunter.txt]}    
