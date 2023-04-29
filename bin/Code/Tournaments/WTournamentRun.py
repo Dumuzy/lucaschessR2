@@ -1,3 +1,4 @@
+import sys
 import time
 
 from PySide2 import QtWidgets, QtCore
@@ -20,6 +21,8 @@ from Code.Base.Constantes import (
     ST_PAUSE,
     TERMINATION_UNKNOWN,
     TERMINATION_WIN_ON_TIME,
+    ENG_MICGM,
+    ENG_MICPER,
 )
 from Code.Board import Board
 from Code.Engines import EngineManager
@@ -296,8 +299,9 @@ class WTournamentRun(QtWidgets.QWidget):
 
         self.book = {}
         self.bookRR = {}
-
         self.xengine = {}
+
+        sys.stderr.writeln("############ procesa_game " + str(rival[WHITE].name) + " - " + str(rival[BLACK].name))
 
         for side in (WHITE, BLACK):
             rv = rival[side]
@@ -306,15 +310,18 @@ class WTournamentRun(QtWidgets.QWidget):
             self.xengine[side].set_gui_dispatch(self.gui_dispatch)
 
             bk = rv.book
-            if bk == "*":
-                bk = self.torneo.book()
-            if bk == "-":  # Puede que el torneo tenga "-"
-                bk = None
-            if bk:
-                self.book[side] = Books.Book("P", bk, bk, True)
-                self.book[side].polyglot()
+            if rv.type in [ENG_MICGM, ENG_MICPER]:
+                self.book[side] = Books.BookEx.createForTourneyByEngineRival(rv)
             else:
-                self.book[side] = None
+                if bk == "*":
+                    bk = self.torneo.book()
+                if bk == "-":  # Puede que el torneo tenga "-"
+                    bk = None
+                if bk:
+                    self.book[side] = Books.Book("P", bk, bk, True)
+                    self.book[side].polyglot()
+                else:
+                    self.book[side] = None
             self.bookRR[side] = rv.bookRR
 
         self.game = Game.Game(fen=self.fen_inicial)
@@ -454,7 +461,7 @@ class WTournamentRun(QtWidgets.QWidget):
         bdepth = self.torneo.bookDepth()
         if bdepth == 0 or len(self.game) < bdepth:
             fen = self.game.last_fen()
-            pv = book.eligeJugadaTipo(fen, tipo)
+            pv = book.eligeJugadaTipo(fen, tipo, len(self.game))
             if pv:
                 return True, pv[:2], pv[2:4], pv[4:]
         return False, None, None, None
