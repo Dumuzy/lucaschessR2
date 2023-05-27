@@ -1,37 +1,291 @@
 
-###  TODO: Remove ratings from names.
+### 
 
 ### Ct800
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1000], %elo=1036, %ali=Arturo Corto 1036}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1200], %elo=1298, %ali=David Corto 1298}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1400], %elo=1519, %ali=Laura Corto 1519}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1550], %elo=1550, %ali=George Corto 1550}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1000], %elo=1581, %ali=Arturo Corto}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1100], %elo=1676, %ali=Cristina Corto}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1200], %elo=1734, %ali=David Corto}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1400], %elo=1854, %ali=Laura Corto}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1550], %elo=1961, %ali=George Corto}
 
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1600], %elo=1600, %ali=Yasmin Corto 1600}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1700], %elo=1680, %ali=Rasmus Corto 1680}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1800], %elo=1790, %ali=Katrina Corto 1790}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1900], %elo=1890, %ali=Marcel Corto 1890}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1600], %elo=1977, %ali=Yasmin Corto}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1700], %elo=2002, %ali=Rasmus Corto}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1800], %elo=2085, %ali=Katrina Corto}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1900], %elo=2322, %ali=Marcel Corto}
 
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=2000], %elo=1990, %ali=Gianna Corto 1990}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=2100], %elo=2090, %ali=Morton Corto 2090}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=2000], %elo=2426, %ali=Gianna Corto}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=2100], %elo=2550, %ali=Morton Corto}
 
 ### Cheng
-{%ali=Zhang Tian 1135, %elo=1135, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ha=1, %ulis=t, %uelo=800, {"name": "Contempt", "valor": -30}]}
-{%ali=Xiao Dan 1552,   %elo=1552, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1280]}
-{%ali=Jin Chen 1694,   %elo=1694, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1330]}
-{%ali=Zhong Mian 1807, %elo=1807, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1370]}
+{%ali=Zhang Tian, %elo=1428, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ha=1, %ulis=t, %uelo=800, {"name": "Contempt", "valor": -30}]}
+{%ali=Gu Zemin,   %elo=1516, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ha=1, %ulis=t, %uelo=1000, {"name": "Contempt", "valor": -40}]}
+{%ali=Xiao Dan,   %elo=1866, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1280]}
+{%ali=Jin Chen,   %elo=2040, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1330]}
+{%ali=Zhong Mian, %elo=2120, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1370]}
 
-{%ali=Mai Mailin 2055, %elo=2055, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1550]}
-{%ali=Huang Bo 2217,   %elo=2217, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1700]}
-{%ali=Xu Yuhua 2400,   %elo=2400, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1880]}
+{%ali=Mai Mailin, %elo=2629, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1550]}
+{%ali=Huang Bo,   %elo=2854, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1700]}
+{%ali=Xu Yuhua,   %elo=3063, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1880]}
 
 ### Komodo
-{%ali=Kimi Komo 1747, %elo=1747, %eng=komodo, %idi=balanced\nsuper fast, %liu= [%ob=f, %ha=2, {"name": "Dynamism", "valor": 60}, {"name": "Skill", "valor": 13}]}
-{%ali=Komo Komo 2197, %elo=2197, %eng=komodo, %idi=balanced\nsuper fast, %liu= [%ob=f, %ha=2, {"name": "Dynamism", "valor": 60}, {"name": "Skill", "valor": 17}]}
+{%ali=Kimi Komo, %elo=2203, %eng=komodo, %idi=balanced\nsuper fast, %liu= [%ob=f, %ha=2, {"name": "Dynamism", "valor": 60}, {"name": "Skill", "valor": 13}]}
+{%ali=Komo Komo, %elo=2688, %eng=komodo, %idi=balanced\nsuper fast, %liu= [%ob=f, %ha=2, {"name": "Dynamism", "valor": 60}, {"name": "Skill", "valor": 17}]}
 
 ### Greko 9.8
-{%ali=Anaxagoras 1377, %elo=1377, %eng=greko98,   %liu=[%ob=f, %ha=1,   %ulis=t, %uelo=1600,           %kisa=55, %mate=54, %mobi=30, %past=65, %raev=30, %mupv=2], %boo=solid, %idi=solid\nslow}
-{%ali=Antiphon 1550, %elo=1550, %eng=greko98,     %liu=[%ob=f, %ha=3,   %ulis=t, %uelo=1600, %raev=15], %idi=balanced\nslow}
-{%ali=Arkesilaos 2 1777, %elo=1777, %eng=greko98, %liu=[%ob=f, %ha=8,   %ulis=t, %uelo=1720,           %kisa=50, %mate=60, %mobi=50, %past=50, %raev=5], %boo=solid, %idi=slightly materialistic\nslow}
-{%ali=El Greco 1853, %elo=1853, %eng=greko98,     %liu=[%ob=f, %ha=8,   %ulis=t, %uelo=1820, %boco=55, %kisa=50, %mate=52, %mobi=25, %past=65, %raev=5], %idi=solid\nslow}
-{%ali=Chrysipp 2323, %elo=2323, %eng=greko98,     %liu=[%ob=f, %ha=128, %ulis=t, %uelo=2390,           %kisa=50,           %mobi=40, %past=60], %idi=very solid\nslow}
+{%ali=Anaxagoras, %elo=1715, %eng=greko98,   %liu=[%ob=f, %ha=1,   %ulis=t, %uelo=1600,           %kisa=55, %mate=54, %mobi=30, %past=65, %raev=30, %mupv=2], %boo=solid, %idi=solid\nslow}
+{%ali=Antiphon,   %elo=2168, %eng=greko98,   %liu=[%ob=f, %ha=3,   %ulis=t, %uelo=1600, %raev=15], %idi=balanced\nslow}
+{%ali=Arkesilaos, %elo=2247, %eng=greko98,   %liu=[%ob=f, %ha=8,   %ulis=t, %uelo=1720,           %kisa=50, %mate=60, %mobi=50, %past=50, %raev=5], %boo=solid, %idi=slightly materialistic\nslow}
+{%ali=El Greco, %elo=2334, %eng=greko98,     %liu=[%ob=f, %ha=8,   %ulis=t, %uelo=1820, %boco=55, %kisa=50, %mate=52, %mobi=25, %past=65, %raev=5], %idi=solid\nslow}
+{%ali=Chrysipp, %elo=2908, %eng=greko98,     %liu=[%ob=f, %ha=128, %ulis=t, %uelo=2390,           %kisa=50,           %mobi=40, %past=60], %idi=very solid\nslow}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,6 @@
 ; Remy personality for Rodent II.
-; Author: Brendan J. Norman
-; Strength: 2478 CCRL
-;
+; Author: Brendan J. Norman, strength reduced by A.W.
+
 setoption name PawnValue value 80
 setoption name KnightValue value 325
 setoption name BishopValue value 335

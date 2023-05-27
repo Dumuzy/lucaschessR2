@@ -1,60 +1,320 @@
 
 ### Finished 
 # All are finished with an ok-tag at the end. Others are not finished and not needed for now. 
-# das sind 28 Stück, die ok sind. 
 
-# Remarks for greko 12 players:  
+
+# Remarks for greko 12 players:  In the original Michele's eval files    
 # %nmmdpmlm  is coupled with remark fast and tactically weak. 
 # %lemnmmpm  is coupled with remark fast and precise.
 # nothing of both is coupled with remark very precise. 
 
 
 # aggressive
-{%ali=jeremy,  %elo=1650, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=50, %mobi=70,           %papa=50, %kisa=40, %drsc=-50, %nmmdpmlm], %idi=aggressive\nfast}           #ok, 17.4.
-{%ali=albert,  %elo=1800, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=50, %mobi=70,           %papa=50, %kisa=40, %drsc=-50, %nmmdpmlm], %idi=aggressive\nfast}           #ok, 17.4.
-{%ali=dieter,  %elo=1950, %eng=greko, %liu=[%ha=16,          %likn=3, %mate=50, %boco=50, %mobi=70,           %papa=50, %kisa=40, %drsc=-50, %lemnmmpm], %idi=aggressive\nprecise\nfast}  #ok, 17.4.
-{%ali=gregor,  %elo=1985, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=50, %mobi=70,           %papa=50, %kisa=40, %drsc=-50],            %idi=aggressive\nvery precise}   #ok, 17.4.
+{%ali=emil,   %elo=1908, %eng=greko, %liu=[%ha=1,  %mupv=2, %likn=1, %mate=40, %boco=50, %mobi=60, %past=30, %papa=50, %kisa=40, %drsc=-20, %nmmdpmlm], %idi=aggressive\nslow}    
+{%ali=ignaz,  %elo=1880, %eng=greko, %liu=[%ha=1,  %mupv=2, %likn=1, %mate=50, %boco=50, %mobi=70,           %papa=50, %kisa=40, %drsc=-50, %nmmdpmlm], %idi=aggressive\nslow}           #ok, 17.4.
+{%ali=jeremy,  %elo=2007, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=50, %mobi=70,           %papa=50, %kisa=40, %drsc=-50, %nmmdpmlm], %idi=aggressive\nfast}           #ok, 17.4.
+{%ali=albert,  %elo=2221, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=50, %mobi=70,           %papa=50, %kisa=40, %drsc=-50, %nmmdpmlm], %idi=aggressive\nfast}           #ok, 17.4.
+{%ali=dieter,  %elo=2380, %eng=greko, %liu=[%ha=16,          %likn=3, %mate=50, %boco=50, %mobi=70,           %papa=50, %kisa=40, %drsc=-50, %lemnmmpm], %idi=aggressive\nprecise\nfast}  #ok, 17.4.
+{%ali=gregor,  %elo=2524, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=50, %mobi=70,           %papa=50, %kisa=40, %drsc=-50],            %idi=aggressive\nvery precise}   #ok, 17.4.
 
 # very aggressive
-{%ali=violeta, %elo=1760, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-100, %nmmdpmlm], %idi=very aggressive\ntactically weak\nfast}  #ok, 17.4.
-{%ali=mahdy,   %elo=1940, %eng=greko, %liu=[%ha=16,      %likn=1, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-100, %nmmdpmlm], %idi=very aggressive\nfast}          #ok, 17.4.
-{%ali=petar,   %elo=1900, %eng=greko, %liu=[%ha=16,      %likn=3, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-100, %lemnmmpm], %idi=very aggressive\nprecise\nfast} #ok, 17.4.
-{%ali=sandor,  %elo=2137, %eng=greko, %liu=[%ha=16,      %likn=7, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-100],            %idi=very aggressive\nvery precise}  #ok, 17.4.
-{%ali=ken,     %elo=2077, %eng=greko, %liu=[%ha=16,     %likn=10, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-150],            %idi=very aggressive\nvery precise\nvery combative}  #ok, 17.4.
+{%ali=zenzi,  %elo=1918, %eng=greko, %liu=[%ha=1,  %mupv=2, %likn=1, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-100, %nmmdpmlm], %idi=very aggressive\nslow}  #ok, 17.5.
+{%ali=violeta, %elo=2101, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-100, %nmmdpmlm], %idi=very aggressive\nslow}  #ok, 17.4.
+{%ali=mahdy,   %elo=2179, %eng=greko, %liu=[%ha=16,      %likn=1, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-100, %nmmdpmlm], %idi=very aggressive\nfast}          #ok, 17.4.
+{%ali=petar,   %elo=2342, %eng=greko, %liu=[%ha=16,      %likn=3, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-100, %lemnmmpm], %idi=very aggressive\nprecise\nfast} #ok, 17.4.
+{%ali=sandor,  %elo=2534, %eng=greko, %liu=[%ha=16,      %likn=7, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-100],            %idi=very aggressive\nvery precise}  #ok, 17.4.
+{%ali=ken,     %elo=2561, %eng=greko, %liu=[%ha=16,     %likn=10, %mate=50, %boco=50, %mobi=70, %past=30, %papa=50, %kisa=30, %drsc=-150],            %idi=very aggressive\nvery precise\nvery combative}  #ok, 17.4.
 
 #  creative or counterattacker
-{%ali=yasmina, %elo=1750, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=40, %boco=50, %mobi=60, %past=30, %papa=30, %nmmdpmlm], %idi=creative\ntactically weak\nfast}                 #ok, 17.4.
-{%ali=bill,    %elo=1900, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=20, %mobi=70, %past=50, %papa=40, %kisa=40, %drsc=-50, %nmmdpmlm], %idi=counterattacker\nfast}      #ok, 17.4.
-{%ali=brenda,  %elo=1886, %eng=greko, %liu=[%ha=16,          %likn=3, %mate=50, %boco=20, %mobi=70, %past=50, %papa=40, %kisa=40, %drsc=-50, %lemnmmpm], %idi=counterattacker\nfast}      #ok, 17.4.
+{%ali=herbert, %elo=1886, %eng=greko, %liu=[%ha=1, %mupv=2, %likn=1, %mate=30, %boco=30, %mobi=64, %past=10, %papa=30, %nmmdpmlm], %idi=creative\nslow}      
+{%ali=richelle, %elo=1891, %eng=greko, %liu=[%ha=1, %mupv=2, %likn=1, %mate=38, %boco=50, %mobi=64, %past=25, %papa=30, %nmmdpmlm], %idi=creative\nslow}     
+{%ali=yasmina, %elo=2046, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=40, %boco=50, %mobi=60, %past=30, %papa=30, %nmmdpmlm], %idi=creative\nfast}                 #ok, 17.4.
+{%ali=bill,    %elo=2196, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=20, %mobi=70, %past=50, %papa=40, %kisa=40, %drsc=-50, %nmmdpmlm], %idi=counterattacker\nfast}      #ok, 17.4.
+{%ali=brenda,  %elo=2357, %eng=greko, %liu=[%ha=16,          %likn=3, %mate=50, %boco=20, %mobi=70, %past=50, %papa=40, %kisa=40, %drsc=-50, %lemnmmpm], %idi=counterattacker\nfast}      #ok, 17.4.
 
-# solid   I don't use all of them for now. prob. have got enough balanced via cheng, ct800.
-{%ali=vugar,    %elo=1600, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=40, %mobi=30, %past=60, %papa=50, %kisa=70, %drsc=100, %nmmdpmlm], %idi=very solid\ntactically weak\nfast}    #ok, 17.4.
-{%ali=maria,    %elo=1826, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=40, %mobi=30, %past=60, %papa=50, %kisa=70, %drsc=100, %nmmdpmlm], %idi=very solid\nfast}                     #ok, 17.4.
-{%ali=simona,   %elo=2130, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=40, %mobi=30, %past=60, %papa=50, %kisa=70],              %idi=very solid}                       #ok, 17.4.
-{%ali=kim,      %elo=2027, %eng=greko, %liu=[%ha=16,         %likn=10, %mate=50, %boco=40, %mobi=30, %past=60, %papa=50, %kisa=70, %drsc=150],   %idi=very solid\nvery conservative}    #ok, 17.4. 
+# solid
+{%ali=vugar,    %elo=2117, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=40, %mobi=30, %past=60, %papa=50, %kisa=70, %drsc=100, %nmmdpmlm], %idi=very solid\ntactically weak\nfast}    #ok, 17.4.
+{%ali=maria,    %elo=2202, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=40, %mobi=30, %past=60, %papa=50, %kisa=70, %drsc=100, %nmmdpmlm], %idi=very solid\nfast}                     #ok, 17.4.
+{%ali=simona,   %elo=2638, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=40, %mobi=30, %past=60, %papa=50, %kisa=70],              %idi=very solid}                       #ok, 17.4.
+{%ali=kim,      %elo=2588, %eng=greko, %liu=[%ha=16,         %likn=10, %mate=50, %boco=40, %mobi=30, %past=60, %papa=50, %kisa=70, %drsc=150],   %idi=very solid\nvery conservative}    #ok, 17.4. 
 
-{%ali=jutta,    %elo=1600, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=40,           %past=60, %papa=50, %kisa=60, %drsc=50, %nmmdpmlm],  %idi=solid\nfast}                          #ok, 17.4.
-{%ali=greta,    %elo=2140, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=40,           %past=60, %papa=50, %kisa=60, %drsc=50],             %idi=solid}
-{%ali=Wilhelm,  %elo=2121, %eng=greko, %liu=[%ha=32,         %likn=25, %mate=45,                     %past=35, %papa=65, %kisa=60, %drsc=-50], %idi=solid\ncombative, %boo=steinitz}   # was STEINITZ
-{%ali=Emanuel,  %elo=2248, %eng=greko, %liu=[%ha=32,         %likn=20, %mate=50, %boco=40,           %past=50, %papa=55, %kisa=45, %drsc=-50], %idi=solid\ncombative, %boo=lasker}     # was LASKER, ok, 24.4. 
+{%ali=jutta,    %elo=2074, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=40,           %past=60, %papa=50, %kisa=60, %drsc=50, %nmmdpmlm],  %idi=solid\nfast}                          #ok, 17.4.
+{%ali=greta,    %elo=2526, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=40,           %past=60, %papa=50, %kisa=60, %drsc=50],             %idi=solid}
+{%ali=Wilhelm,  %elo=2768, %eng=greko, %liu=[%ha=32,         %likn=25, %mate=45,                     %past=35, %papa=65, %kisa=60, %drsc=-50], %idi=solid\ncombative, %boo=steinitz}   # was STEINITZ
+{%ali=Emanuel,  %elo=2697, %eng=greko, %liu=[%ha=32,         %likn=20, %mate=50, %boco=40,           %past=50, %papa=55, %kisa=45, %drsc=-50], %idi=solid\ncombative, %boo=lasker}     # was LASKER, ok, 24.4. 
 
 # balanced  I don't use them for now. prob. have got enough balanced via cheng, ct800.
-{%ali=jason,   %elo=1740, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=50, %mobi=50, %past=50, %papa=50, %nmmdpmlm]            , %idi=balanced\nfast}            #ok, 17.4.
-{%ali=adam,    %elo=1830, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=50, %mobi=50, %past=50, %papa=50, %nmmdpmlm]            , %idi=balanced\nfast}            #ok, 17.4.
-{%ali=david,   %elo=1918, %eng=greko, %liu=[%ha=16,          %likn=3, %mate=50, %boco=50, %mobi=50, %past=50, %papa=50, %drsc=-100, %lemnmmpm], %idi=balanced\nfast}     #ok, 17.4.
-{%ali=gad,     %elo=2093, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=50, %mobi=50, %past=50, %papa=50]                       , %idi=balanced}           #ok, 17.4.
+{%ali=jason,   %elo=2067, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=50, %mobi=50, %past=50, %papa=50, %nmmdpmlm]            , %idi=balanced\nfast}            #ok, 17.4.
+{%ali=adam,    %elo=2183, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=50, %mobi=50, %past=50, %papa=50, %nmmdpmlm]            , %idi=balanced\nfast}            #ok, 17.4.
+{%ali=david,   %elo=2404, %eng=greko, %liu=[%ha=16,          %likn=3, %mate=50, %boco=50, %mobi=50, %past=50, %papa=50, %drsc=-100, %lemnmmpm], %idi=balanced\nfast}     #ok, 17.4.
+{%ali=gad,     %elo=2623, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=50, %mobi=50, %past=50, %papa=50]                       , %idi=balanced}           #ok, 17.4.
 
 # positional
-{%ali=valery,  %elo=1630, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70,             %nmmdpmlm], %idi=positional\ntactically weak\nfast}         #ok, 17.4.
-{%ali=magnus,  %elo=1856, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70,             %nmmdpmlm], %idi=positional\ntactically weak\nfast}         #ok, 17.4.
-{%ali=pavel,   %elo=2055, %eng=greko, %liu=[%ha=16,          %likn=3, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70, %drsc=-100, %lemnmmpm], %idi=positional\nprecise\nfast}                 #ok, 17.4.
-{%ali=karina,  %elo=2128, %eng=greko, %liu=[%ha=16,          %likn=9, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70, %drsc=-150],            %idi=positional\nvery precise\nvery combative}  #ok, 17.4.
-{%ali=said,    %elo=2108, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70], %idi=positional\nvery precise}                                         #ok, 17.4
-{%ali=Wassili, %elo=2333, %eng=greko, %liu=[%ha=32,         %likn=60, %mate=50, %boco=55, %mobi=50, %past=45, %papa=65, %kisa=60], %idi=wide repertoire\npositionally oriented, %boo=smyslow}   # was SMYSLOW, ok, 24.4.
+{%ali=karl,  %elo=1939, %eng=greko, %liu=[%ha=1, %mupv=2, %likn=1, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70,             %nmmdpmlm], %idi=positional}         #ok, 17.4.
+{%ali=valery,  %elo=2162, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70,             %nmmdpmlm], %idi=positional\nfast}         #ok, 17.4.
+{%ali=magnus,  %elo=2280, %eng=greko, %liu=[%ha=16,          %likn=1, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70,             %nmmdpmlm], %idi=positional\nfast}         #ok, 17.4.
+{%ali=pavel,   %elo=2385, %eng=greko, %liu=[%ha=16,          %likn=3, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70, %drsc=-100, %lemnmmpm], %idi=positional\nfast}                 #ok, 17.4.
+{%ali=karina,  %elo=2600, %eng=greko, %liu=[%ha=16,          %likn=9, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70, %drsc=-150],            %idi=positional\nvery combative}  #ok, 17.4.
+{%ali=said,    %elo=2587, %eng=greko, %liu=[%ha=16,          %likn=7, %mate=50, %boco=70, %mobi=50, %past=70, %papa=70], %idi=positional\nvery precise}                                         #ok, 17.4
+{%ali=Wassili, %elo=2908, %eng=greko, %liu=[%ha=32,         %likn=60, %mate=50, %boco=55, %mobi=50, %past=45, %papa=65, %kisa=60], %idi=wide repertoire\npositional, %boo=smyslow}   # was SMYSLOW, ok, 24.4.
 
 #  technical
-{%ali=yllmira, %elo=1714, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=70, %boco=70, %mobi=70, %past=70, %papa=70, %kisa=70, %nmmdpmlm], %idi=technical\ntactically weak\nfast}        #ok, 17.4.
-{%ali=yoram,   %elo=1683, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=90, %boco=90, %mobi=90, %past=90, %papa=90, %kisa=90, %nmmdpmlm], %idi=very technical\ntactically weak\nfast}   #ok, 17.4.
+{%ali=yehudi, %elo=1925, %eng=greko, %liu=[%ha=1, %mupv=2, %likn=1, %mate=70, %boco=70, %mobi=70, %past=70, %papa=70, %kisa=70, %nmmdpmlm], %idi=technical\nfast}        #ok, 17.4.
+{%ali=yllmira, %elo=2082, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=70, %boco=70, %mobi=70, %past=70, %papa=70, %kisa=70, %nmmdpmlm], %idi=technical\nfast}        #ok, 17.4.
+{%ali=yoram,   %elo=2040, %eng=greko, %liu=[%ha=16, %mupv=2, %likn=3, %mate=90, %boco=90, %mobi=90, %past=90, %papa=90, %kisa=90, %nmmdpmlm], %idi=very technical\nfast}   #ok, 17.4.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

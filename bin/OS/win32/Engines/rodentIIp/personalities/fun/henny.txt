@@ -1,6 +1,5 @@
 ; Henny personality for Rodent II.
-; Author: Brendan J. Norman
-; Approx. strength: 2401 CCRL
+; Author: Brendan J. Norman, strength reduced by A.W. 
 ;
 setoption name PawnValue value 80
 setoption name KnightValue value 325

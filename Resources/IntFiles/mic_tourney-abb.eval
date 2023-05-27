@@ -23,6 +23,7 @@
 #abb: %paws=(\d+)        {"name": "PawnStructure", "valor": \1}
 #abb: %pefi=([\./\w]+)   {"name": "PersonalityFile", "valor": "\1"}
 #abb: %pipl=(\d+)        {"name": "PiecePlacement", "valor": \1}
+#abb: %slmo=(\d+)        {"name": "SlowMover", "valor": \1} 
 
 # maia replacements
 #abb: %thre=(\d+)      {"name": "Threads", "valor": \1}

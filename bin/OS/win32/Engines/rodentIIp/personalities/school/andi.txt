@@ -1,0 +1,50 @@
+; Andi personality for Rodent II
+; author: Andreas Wicker
+; Positionally weak attacker, a bit like me when younger.
+;
+setoption name PawnValue value 100
+setoption name KnightValue value 340
+setoption name BishopValue value 340
+setoption name RookValue value 500
+setoption name QueenValue value 1000
+setoption name KeepPawn value 0
+setoption name KeepKnight value 0
+setoption name KeepBishop value 0
+setoption name KeepRook value 0
+setoption name KeepQueen value 50
+setoption name BishopPair value 0
+setoption name KnightPair value 0
+setoption name ExchangeImbalance value 0
+setoption name KnightLikesClosed value 5
+setoption name RookLikesOpen value 2
+setoption name Material value 100
+setoption name OwnAttack value 200
+setoption name OppAttack value 100
+setoption name OwnMobility value 90
+setoption name OppMobility value 90
+setoption name KingTropism value 90
+setoption name PiecePlacement value 90
+setoption name PiecePressure value 30
+setoption name PassedPawns value 100
+setoption name PawnStructure value 10
+setoption name Lines value 10
+setoption name Outposts value 20
+setoption name PawnShield value 100
+setoption name PawnStorm value 100
+setoption name Forwardness value 60
+setoption name DoubledPawnMg value -8
+setoption name DoubledPawnEg value -16
+setoption name IsolatedPawnMg value -1
+setoption name IsolatedPawnEg value -2
+setoption name IsolatedOnOpenMg value -4
+setoption name BackwardPawnMg value 0
+setoption name BackwardPawnEg value -1
+setoption name BackwardOnOpenMg value -8
+setoption name PstStyle value 2
+setoption name MobilityStyle value 1
+setoption name NpsLimit value 200
+setoption name EvalBlur value 1
+setoption name Contempt value -40
+setoption name SlowMover value 120
+setoption name GuideBookFile value empty.bin
+setoption name MainBookFile value empty.bin

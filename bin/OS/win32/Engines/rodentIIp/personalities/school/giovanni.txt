@@ -1,6 +1,6 @@
 ; Dory personality for Rodent II
 ; author: Pawel Koziol
-; weak, defense oriented
+; strangles you
 ;
 setoption name PawnValue value 100
 setoption name KnightValue value 325

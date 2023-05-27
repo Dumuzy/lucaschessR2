@@ -1,70 +1,234 @@
 # Allowed abbreviations defined in ...abb.eval file. 
 
-
-### Greko 9.8 with RandomPercent 
-
-{"ENGINE": "greko98", "IDINFO": "balanced\nextremely imprecise\nslow", "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "MultiPV", "valor": 2}, {"name": "LimitKnps", "valor": 1}, {"name": "RandomEval", "valor": 1200}], "ELO": 1190, "ALIAS": "edna"}
-{"ENGINE": "greko98", "IDINFO": "aggressive\nextremely imprecise\nslow", "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "MultiPV", "valor": 2}, {"name": "LimitKnps", "valor": 1}, {"name": "Mobility", "valor": 70}, {"name": "PawnStruct", "valor": 40}, {"name": "KingSafety", "valor": 40}, {"name": "RandomEval", "valor": 1200}], "ELO": 1230, "ALIAS": "emilio"}
-{"ENGINE": "greko98", "IDINFO": "solid\nextremely imprecise\nslow", "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "MultiPV", "valor": 2}, {"name": "LimitKnps", "valor": 1}, {"name": "BoardControl", "valor": 40}, {"name": "Mobility", "valor": 40}, {"name": "PawnStruct", "valor": 60}, {"name": "KingSafety", "valor": 60}, {"name": "RandomEval", "valor": 1200}], "ELO": 1240, "ALIAS": "erika"}
-{"ENGINE": "greko98", "IDINFO": "balanced\nvery imprecise\nslow", "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "MultiPV", "valor": 2}, {"name": "LimitKnps", "valor": 1}, {"name": "RandomEval", "valor": 1000}], "ELO": 1300, "ALIAS": "hallgeir"}
-
-
-#{%ali=Agilulf,  %elo=1321,  %eng=greko98, %idi=balanced\nvery slow, %liu=[%ob=f, %ha=2, %likn=1, %raev=800, %rape=40]}
-#{%ali=Aripert,  %elo=1455,  %eng=greko98, %idi=balanced\nvery slow, %liu=[%ob=f, %ha=2, %likn=1, %raev=400, %rape=40]}
-#{%ali=Berengar, %elo=1532,  %eng=greko98, %idi=balanced\nvery slow, %liu=[%ob=f, %ha=2, %likn=1, %raev=250, %rape=40]}
-
-#{%ali=Adaloald, %elo=1150,  %eng=greko98, %idi=balanced\nvery slow, %liu=[%ob=f, %ha=2, %likn=1, %raev=1200, %rape=60]}
-#{%ali=Cunincpert,  %elo=1600, %eng=greko98, %idi=aggresive\nslow, %liu=[%ob=f, %ha=2, %likn=1, %raev=400, %rape=30, %boco=65, %mate=45, %mobi=65, %kisa=55, %past=30]}
-#{%ali=Garibald,    %elo=1700, %eng=greko98, %idi=aggresive\nslow, %liu=[%ob=f, %ha=2, %likn=1, %raev=200, %rape=30, %boco=65, %mate=45, %mobi=65, %kisa=55, %past=30]}
-#{%ali=Theudelinde, %elo=1800, %eng=greko98, %idi=aggresive\nslow, %liu=[%ob=f, %ha=2, %likn=1, %raev=100, %rape=30, %boco=65, %mate=45, %mobi=65, %kisa=55, %past=30]}
- 
 ##### FINISHED #####
 
 ### Maia 
-{%ali=Ah-Muzen-Cab,  %elo=1121, %eng=maia-1100, %idi=human-like,   %liu=[%thre=1, %wefi=1100, %npsl=0.04], %boo=Pj1450}  
-{%ali=Awi-Catlix,    %elo=1196, %eng=maia-1400, %idi=human-like,   %liu=[%thre=1, %wefi=1400, %npsl=0.08]}                 
-{%ali=Buluc-Chabtan, %elo=1263, %eng=maia-1500, %idi=human-like,   %liu=[%thre=1, %wefi=1500, %npsl=0.16], %boo=We1700}     
-{%ali=Chimal-Mat,    %elo=1326, %eng=maia-1600, %idi=human-like,   %liu=[%thre=1, %wefi=1600, %npsl=0.32], %boo=Ro1600}  
+{%ali=Ah-Muzen-Cab,  %elo=1184, %eng=maia-1100, %idi=human-like,   %liu=[%thre=1, %wefi=1100, %npsl=0.04], %boo=Pj1450}  
+{%ali=Awi-Catlix,    %elo=1435, %eng=maia-1400, %idi=human-like,   %liu=[%thre=1, %wefi=1400, %npsl=0.08]}                 
+{%ali=Buluc-Chabtan, %elo=1537, %eng=maia-1500, %idi=human-like,   %liu=[%thre=1, %wefi=1500, %npsl=0.16], %boo=We1700}     
+{%ali=Chimal-Mat,    %elo=1631, %eng=maia-1600, %idi=human-like,   %liu=[%thre=1, %wefi=1600, %npsl=0.32], %boo=Ro1600}  
 
-{%ali=Cit-Bolon-Tum,   %elo=1460, %eng=maia-1600, %idi=human-like, %liu=[%thre=1, %wefi=1600, %npsl=0.64]}                
-{%ali=Colop-U-Uichkin, %elo=1547, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.28], %boo=Javi6351}  
-{%ali=Ek-Chuaj,        %elo=1649, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.65]}  
-{%ali=Hachäk-Yum,      %elo=1716, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=2.56]}                
+{%ali=Cit-Bolon-Tum,   %elo=1722, %eng=maia-1600, %idi=human-like, %liu=[%thre=1, %wefi=1600, %npsl=0.64]}                
+{%ali=Cop-U-Ayaya,      %elo=1854, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=0.64]}  
 
-{%ali=Ix-Chel,        %elo=1914, %eng=maia-1800, %idi=human-like, %liu=[%thre=1, %wefi=1800, %npsl=5.0]}
-{%ali=Ix-Mucane,      %elo=1990, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=7.5]}     
-{%ali=Kinich-Ahau,    %elo=2075, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=15]}
+{%ali=Colop-U-Uichkin, %elo=1993, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.28], %boo=Javi6351}  
+{%ali=Ek-Chuaj,        %elo=2045, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.65]}  
+{%ali=Hachäk-Yum,      %elo=1848, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=2.56]}                
 
-{%ali=Noho-Chach-Yum, %elo=2134, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=30]}     
-{%ali=Tun-Ku-Ruchu,   %elo=2287, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=60]}
-{%ali=Vucub-Caquix,   %elo=2380, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=120]}      
+{%ali=Ix-Chel,        %elo=2305, %eng=maia-1800, %idi=human-like, %liu=[%thre=1, %wefi=1800, %npsl=5.0]}
+{%ali=Ix-Hunieta,     %elo=2449, %eng=maia-1800, %idi=human-like, %liu=[%thre=1, %wefi=1800, %npsl=7.5]}
+
+{%ali=Ix-Kabku,       %elo=2517, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=5.0]}
+{%ali=Ix-Mucane,      %elo=2540, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=7.5]}     
+{%ali=Kinich-Ahau,    %elo=2727, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=15]}
+
+{%ali=Noho-Chach-Yum, %elo=2799, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=30]}     
+{%ali=Tun-Ku-Ruchu,   %elo=2859, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=60]}
+{%ali=Vucub-Caquix,   %elo=3166, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=120]}      
 
 
-### Monkey, Donkey etc
-{%eng=irina, %idi=???, %liu= [%ob=f, %ha=2, %pers=Monkey], %elo=274, %ali=Monkey, %boo=empty}    
-{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Bull], %elo=378, %ali=Bull}    
-{%eng=irina, %idi=???, %liu= [%ob=f, %ha=2, %pers=Donkey], %elo=436, %ali=Donkey, %boo=empty}    
-{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Wolf], %elo=578, %ali=Wolf}    
+### Irina's Monkey, Donkey etc
+{%eng=irina, %idi=random moves, %liu= [%ob=f, %ha=2, %pers=Monkey], %elo=100, %ali=Monkey, %boo=empty}    
+{%eng=irina, %idi=lots and lots of blundering, %liu= [%ob=f, %ha=2, %pers=Bull], %elo=167, %ali=Bull}    
+{%eng=irina, %idi=lots and lots of blundering, %liu= [%ob=f, %ha=2, %pers=Donkey], %elo=168, %ali=Donkey, %boo=empty}    
+{%eng=irina, %idi=likes to capture, %liu= [%ob=f, %ha=2, %pers=Wolf], %elo=218, %ali=Wolf}    
 
-{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Lion], %elo=624, %ali=Lion}   
-{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Rat], %elo=701, %ali=Rat}     
-{%eng=irina, %idi=?!?, %liu= [%ob=f, %ha=2, %pers=Snake], %elo=788, %ali=Snake}    
-# {%eng=irina, %idi=balanced, %liu= [%ob=f, %ha=2, %pers=Steven], %elo=1705, %ali=Steven}  # not good usable, as it uses a core at full speed. 
+{%eng=irina, %idi=lots and lots of blundering, %liu= [%ob=f, %ha=2, %pers=Lion], %elo=371, %ali=Lion}   
+{%eng=irina, %idi=likes to capture, %liu= [%ob=f, %ha=2, %pers=Rat], %elo=464, %ali=Rat}     
+{%eng=irina, %idi=likes to capture, %liu= [%ob=f, %ha=2, %pers=Snake], %elo=473, %ali=Snake}    
 
+{%eng=irina, %idi=lots and lots of blundering, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Panda], %elo=529, %ali=Panda}   
+{%eng=irina, %idi=lots and lots of blundering, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Horse], %elo=497, %ali=Horse}     
+{%eng=irina, %idi=lots and lots of blundering, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Deer], %elo=543, %ali=Deer}    
+{%eng=irina, %idi=lots and lots of blundering, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Bear], %elo=573, %ali=Bear}    
+
+{%eng=irina, %idi=blunders a lot, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Crocodile], %elo=726, %ali=Crocodile}   
+{%eng=irina, %idi=blunders a lot, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Hippo], %elo=924, %ali=Hippo}     
+{%eng=irina, %idi=blunders a lot, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Rhino], %elo=1081, %ali=Rhino}    
+{%eng=irina, %idi=blunders a lot, %liu= [%ob=f, %ha=4, %npli=6000, %pers=Shark], %elo=1193, %ali=Shark}    
+
+##{%eng=irina, %idi=classical\nblunders, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Bulldog], %elo=1052, %ali=Bulldog}   
+
+##{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=666, %pers=Eagle], %elo=1024, %ali=Eagle666}     
+##{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Eagle], %elo=1118, %ali=Eagle}     
+##{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=12000, %pers=Eagle], %elo=1228, %ali=Eagle12000}     
+##{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=20000, %pers=Eagle], %elo=1163, %ali=Eagle20000}     
+
+##{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Tiger], %elo=1209, %ali=Tiger2000}    
+##{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Tiger], %elo=1355, %ali=Tiger}    
+##{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=12000, %pers=Tiger], %elo=1441, %ali=Tiger12000}    
+
+##{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=666, %pers=Elephant], %elo=1143, %ali=Elef666}   
+##{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Elephant], %elo=1261, %ali=Elef2000}   
+##{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Elephant], %elo=1375, %ali=Elef6000}   
+##{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=18000, %pers=Elephant], %elo=1506, %ali=Elef18000}   
+
+##{%eng=irina, %idi=classical,  %liu= [%ob=f, %ha=2,  %npli=30000, %pers=Irina], %elo=1797, %ali=Iri30000}   
+##{%eng=irina,  %idi=classical, %liu= [%ob=f, %ha=64, %npli=30000, %pers=Irina], %elo=1853, %ali=Iri30000-64}   
+##{%eng=irinaold,     %idi=?!?, %liu= [%ob=f, %ha=2,  %npli=30000, %pers=Irina], %elo=1906, %ali=Iriold30000}   
+##{%eng=irinaold,     %idi=?!?, %liu= [%ob=f, %ha=64, %npli=30000, %pers=Irina], %elo=1864, %ali=Iriold30000-64}   
+
+##{%eng=irina, %idi=attacker\nfast,       %liu= [%ob=f, %ha=2, %npli=2000, %pers=Steven], %elo=1291, %ali=Ste2000}   
+##{%eng=irina, %idi=likes to attack\nfast, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Steven], %elo=1434, %ali=Ste6000}   
+##{%eng=irina, %idi=attacker\nfast,       %liu= [%ob=f, %ha=2, %npli=18000, %pers=Steven], %elo=1540, %ali=Ste18000}   
+##{%eng=irina, %idi=?!?,                 %liu= [%ob=f, %ha=2, %npli=30000, %pers=Steven], %elo=1823, %ali=Ste30000}   
+##{%eng=irina, %idi=likes to attack\nfast, %liu= [%ob=f, %ha=64, %npli=30000, %pers=Steven], %elo=1570, %ali=Steven}   
+
+##{%eng=irina, %idi=balanced, %liu= [%ob=f, %ha=32, %pers=Steven], %elo=1705, %ali=Steven Irina}  # not good usable, as it uses a core at full speed. 
+##{%eng=irina, %idi=balanced, %liu= [%ob=f, %ha=32, %pers=Irina], %elo=1646, %ali=Irina Irina}  # not good usable, as it uses a core at full speed. 
+ 
+### Irina's called like persons - the better ones
+
+## Langobardi names for better Irinas with built in blundering 
+{%eng=irina, %idi=classical\nblunders, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Bulldog], %elo=1244, %ali=Adaloald}   
+
+{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=666, %pers=Eagle], %elo=1237, %ali=Agilulf}     
+{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Eagle], %elo=1305, %ali=Aripert}     
+##{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=12000, %pers=Eagle], %elo=1467, %ali=Berengar}     
+{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=20000, %pers=Eagle], %elo=1383, %ali=Claffo}     
+
+{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Tiger], %elo=1429, %ali=Cunincpert}    
+{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Tiger], %elo=1594, %ali=Garibald}    
+{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=12000, %pers=Tiger], %elo=1677, %ali=Godeoc}    
+
+{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=666, %pers=Elephant], %elo=1392, %ali=Radegundis}   
+{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Elephant], %elo=1498, %ali=Theudelinde}   
+{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Elephant], %elo=1624, %ali=Walthari}   
+{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=18000, %pers=Elephant], %elo=1769, %ali=Wisigarda}   
+
+## Hun's names for the Stevens.
+{%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=20,  %pers=Steven], %elo=869, %ali=Oktaruk}   
+{%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=60,  %pers=Steven], %elo=1027, %ali=Nordiruk}   
+{%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=2000,  %pers=Steven], %elo=1543, %ali=Mundzuk}   
+{%eng=irina, %idi=likes to attack\nfast, %liu= [%ob=f, %ha=2,  %npli=6000,  %pers=Steven], %elo=1664, %ali=Ellak}   
+{%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=18000, %pers=Steven], %elo=1788, %ali=Denghizik}   
+{%eng=irina, %idi=likes to attack\nfast, %liu= [%ob=f, %ha=64, %npli=30000, %pers=Steven], %elo=1835, %ali=Attila}   
+
+ 
 ### GREKO 9.8
-{%ali=Noob,     %elo=911,  %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1, %raev=150, %boco=10, %mobi=10, %past=0, %kisa=10, %mate=40], %idi=noob\nslow}
-{%ali=Curcuma,  %elo=1047, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1,  %raev=90, %boco=15, %mobi=20, %past=12, %kisa=70, %mate=50], %idi=noob\nslow}
-{%ali=Basilico, %elo=1210, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=8, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=slow}
-{%ali=Estragon, %elo=1296, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=4, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=development is nonsense\nslow}
-{%ali=Oregano,  %elo=1403, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=3, %likn=2,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=may forget development\nsolid\nslow}
+{%ali=Edna,     %elo=831, %eng=greko98, %idi=balanced\nvery slow, %liu=[%ob=f, %ha=16, %mupv=2, %likn=1, %raev=1200]}   # Michele's
+{%ali=Hallgeir, %elo=893, %eng=greko98, %idi=balanced\nvery slow, %liu=[%ob=f, %ha=16, %mupv=2, %likn=1, %raev=1000]}   # Michele's
 
-{%ali=Tlazolteotl,  %elo=1427, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=2, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=12], %idi=ignores pawn structure\nslow}
-{%ali=Tezcatlipoca, %elo=1617, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=4, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
-{%ali=Quetzalcoatl, %elo=1845, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=2, %mupv=1, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
+{%ali=Noob,     %elo=1315, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1, %raev=150, %boco=10, %mobi=10, %past=0, %kisa=10, %mate=40], %idi=noob\nslow}
+{%ali=Curcuma,  %elo=1499, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1,  %raev=90, %boco=15, %mobi=20, %past=12, %kisa=70, %mate=50], %idi=noob\nslow}
+{%ali=Basilico, %elo=1786, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=8, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=slow}
+{%ali=Estragon, %elo=1690, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=4, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=development is nonsense\nslow}
+{%ali=Oregano,  %elo=1794, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=3, %likn=2,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=may forget development\nsolid\nslow}
 
-{%ali=haflidi,  %elo=1126, %eng=greko98, %idi=aggresive\nslow, %liu=[%ob=f, %ha=3, %likn=1, %mupv=2, %raev=70, %boco=65, %mate=45, %mobi=65, %kisa=55, %past=30]}
-{%ali=halldis,  %elo=1414, %eng=greko98, %idi=balanced\nslow,  %liu=[%ob=f, %ha=6, %likn=2, %mupv=3, %raev=55]}
-{%ali=hallgrim, %elo=1507, %eng=greko98, %idi=no book\nslow,   %liu=[%ob=f, %ha=2, %likn=2, %mupv=3, %raev=50, %kisa=60, %past=30]}
+{%ali=Tlazolteotl,  %elo=1903, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=2, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=12], %idi=ignores pawn structure\nslow}
+{%ali=Tezcatlipoca, %elo=1941, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=4, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
+{%ali=Quetzalcoatl, %elo=2291, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=2, %mupv=1, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
+
+{%ali=Haflidi,  %elo=1554, %eng=greko98, %idi=aggresive\nslow, %liu=[%ob=f, %ha=3, %likn=1, %mupv=2, %raev=70, %boco=65, %mate=45, %mobi=65, %kisa=55, %past=30]}
+{%ali=Halldis,  %elo=1729, %eng=greko98, %idi=balanced\nslow,  %liu=[%ob=f, %ha=6, %likn=2, %mupv=3, %raev=55]}
+{%ali=Hallgrim, %elo=1739, %eng=greko98, %idi=no book\nslow,   %liu=[%ob=f, %ha=2, %likn=2, %mupv=3, %raev=50, %kisa=60, %past=30], %boo=empty}
+
+## ferenc & firuza by Michele, only for comparison. 
+{%ali=ferenc, %elo=1681, %eng=hamsters, %idi=aggressive\nimprecise, "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "Pawn Hash (MB)", "valor": 4}, {"name": "UCI_LimitStrength", "valor": True}, {"name": "UCI_Elo", "valor": 2000}, {"name": "King Safety", "valor": 50}, {"name": "Pawn Structure", "valor": 50}, {"name": "Passed Pawns", "valor": 50}, {"name": "Blunder", "valor": "Medium"}, {"name": "Limit KNPS", "valor": 50}, {"name": "Hide Score Threshold", "valor": 0}, {"name": "Hide PV Threshold", "valor": 0}, {"name": "Pick Percent Max", "valor": 0}]}
+{%ali=firuza, %elo=1577, %eng=hamsters, %idi=solid\nimprecise, "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "Pawn Hash (MB)", "valor": 4}, {"name": "UCI_LimitStrength", "valor": True}, {"name": "UCI_Elo", "valor": 2000}, {"name": "Piece Activity", "valor": 50}, {"name": "Passed Pawns", "valor": 50}, {"name": "Blunder", "valor": "Medium"}, {"name": "Limit KNPS", "valor": 50}, {"name": "Hide Score Threshold", "valor": 0}, {"name": "Hide PV Threshold", "valor": 0}, {"name": "Pick Percent Max", "valor": 0}]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

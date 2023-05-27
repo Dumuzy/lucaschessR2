@@ -1,5 +1,5 @@
 ; KingHunter personality for Rodent II.
-; Author: Ferdinand Mosca (modified to fit Rodent II)
+; Author: Ferdinand Mosca (modified to fit Rodent II), strength reduced by A.W.
 ; Mad attacker
 ;
 setoption name PawnValue value 100
