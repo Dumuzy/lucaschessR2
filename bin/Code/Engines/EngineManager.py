@@ -237,6 +237,9 @@ class EngineManager:
             elif re.search(r"\bmaia\Wlc0", self.engine.exe):
                 # Maia doesn't understand UCI_Elo and needs a high NPS value.
                 self.engine.set_option("NodesPerSecondLimit", "170")
+            elif re.search(r"\birina", self.engine.exe):
+                # Irina doesn't understand UCI_Elo.
+                self.engine.set_option("NpsLimit", "25000")
             self.engine.is_endgame_strength_handled = 1
 
     def play_time_tourney(self, game, seconds_white, seconds_black, seconds_move):
