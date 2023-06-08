@@ -5,152 +5,185 @@
 ## Kindergarten
 
 # Quite passive
-{%ali=Algeti Ziwa,     %elo=1053,  %eng=rodentiip, %idi=passive\nslow, %liu= [%pefi=personalities/school/bartleby.txt, %npli=1, %ha=1, %evbl=200, %slmo=200]}    
-{%ali=Bazaleti Ziwa,   %elo=1324, %eng=rodentiip, %idi=passive, %liu= [%pefi=personalities/school/bartleby.txt, %npli=1, %ha=1]}    
-{%ali=Parawani Ziwa,   %elo=1322, %eng=rodentiip, %idi=passive, %liu= [%pefi=personalities/school/bartleby.txt, %npli=9, %ha=1]}    
-{%ali=Paliastomi Ziwa, %elo=1618, %eng=rodentiip, %idi=passive, %liu= [%pefi=personalities/school/bartleby.txt, %npli=27, %ha=1]}    
-{%ali=Tabatsquri Ziwa, %elo=2080, %eng=rodentiip, %idi=passive, %liu= [%pefi=personalities/school/bartleby.txt, %npli=27, %ha=8]}    
+#{%ali=Algeti Ziwa,     %elo=1022,  %eng=rodentiip, %idi=passive\nslow, %liu= [%pefi=personalities/school/bartleby.txt, %npli=1, %ha=1, %evbl=200, %slmo=200]}    
+{%ali=Bazaleti Ziwa,   %elo=1279, %eng=rodentiip, %idi=passive, %liu= [%pefi=personalities/school/bartleby.txt, %npli=1, %ha=1]}    
+#{%ali=Parawani Ziwa,   %elo=1262, %eng=rodentiip, %idi=passive, %liu= [%pefi=personalities/school/bartleby.txt, %npli=9, %ha=1]}    
+#{%ali=Paliastomi Ziwa, %elo=1560, %eng=rodentiip, %idi=passive, %liu= [%pefi=personalities/school/bartleby.txt, %npli=27, %ha=1]}    
+{%ali=Tabatsquri Ziwa, %elo=1425, %eng=rodentiip, %idi=passive, %liu= [%pefi=personalities/school/bartleby.txt, %npli=27, %ha=8]}    
 
 # Materialistic
-{%ali=Aqberel River, %elo=1050, %eng=rodentiip, %idi=materialist\nslow, %liu= [%pefi=personalities/school/marta.txt, %npli=1, %ha=1, %evbl=350, %slmo=180]}    
-{%ali=Tobol River,  %elo=1170, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=1, %ha=1, %mate=400, %paws=10, %pipl=10]}    
-{%ali=Turgai River, %elo=1182, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=1, %ha=1, %mate=400]}    
-{%ali=Ayat River,   %elo=1316, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=1, %ha=1]}    
-{%ali=Katun River,  %elo=1338, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=3, %ha=4]}    
-{%ali=Kigach River, %elo=1941, %eng=rodentiip, %idi=materialist\nfast, %liu= [%pefi=personalities/school/marta.txt, %npli=9, %ha=4, %slmo=70]}    
-{%ali=Narym River,  %elo=1490, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=27, %ha=4, %mate=400]}    
+#{%ali=Aqberel River, %elo=1012, %eng=rodentiip, %idi=materialist\nslow, %liu= [%pefi=personalities/school/marta.txt, %npli=1, %ha=1, %evbl=350, %slmo=180]}    
+{%ali=Tobol River,  %elo=1112, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=1, %ha=1, %mate=400, %paws=10, %pipl=10]}    
+{%ali=Turgai River, %elo=1141, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=1, %ha=1, %mate=400]}    
+{%ali=Ayat River,   %elo=1262, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=1, %ha=1]}    
+#{%ali=Katun River,  %elo=1296, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=3, %ha=4]}    
+{%ali=Kigach River, %elo=1321, %eng=rodentiip, %idi=materialist\nfast, %liu= [%pefi=personalities/school/marta.txt, %npli=9, %ha=4, %slmo=70]}    
+#{%ali=Narym River,  %elo=1449, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/school/marta.txt, %npli=27, %ha=4, %mate=400]}    
 
 # Aggressive
-{%ali=Pamela Krolik,   %elo=1009, %eng=rodentiip, %idi=aggressive\nfast, %liu= [%pefi=personalities/school/ariana.txt, %npli=2, %evbl=700, %slmo=40]} 
-{%ali=Paolina Krolik,  %elo=1056, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=20, %evbl=700, %slmo=80]} 
-{%ali=Oceania Krolik,  %elo=1344, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=2, %evbl=50, %paws=50, %pipl=50, %slmo=111]}                  
-{%ali=Pasquale Krolik, %elo=1347, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=200, %evbl=700, %slmo=100]} 
-{%ali=Onofrio Krolik,  %elo=1366, %eng=rodentiip, %idi=aggressive\nslow, %liu= [%pefi=personalities/school/ariana.txt, %npli=8, %evbl=70, %paws=10, %slmo=130]}     
-{%ali=Ariana Krolik,   %elo=1468, %eng=rodentiip, %idi=aggressive\nslow, %liu= [%pefi=personalities/school/ariana.txt]}   
-{%ali=Nerola Krolik,   %elo=1501, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=4, %slmo=100]}         
-{%ali=Mafalda Krolik,  %elo=1715, %eng=rodentiip, %idi=aggressive\nslow, %liu= [%pefi=personalities/school/ariana.txt, %npli=50]}         
-{%ali=Pippa Krolik,    %elo=2125, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=2000, %evbl=700]} 
+#{%ali=Pamela Krolik,   %elo=974, %eng=rodentiip, %idi=aggressive\nfast, %liu= [%pefi=personalities/school/ariana.txt, %npli=2, %evbl=700, %slmo=40]} 
+#{%ali=Paolina Krolik,  %elo=1027, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=20, %evbl=700, %slmo=80]} 
+#{%ali=Oceania Krolik,  %elo=1318, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=2, %evbl=50, %paws=50, %pipl=50, %slmo=111]}                  
+{%ali=Pasquale Krolik, %elo=1322, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=200, %evbl=700, %slmo=100]} 
+#{%ali=Onofrio Krolik,  %elo=1357, %eng=rodentiip, %idi=aggressive\nslow, %liu= [%pefi=personalities/school/ariana.txt, %npli=8, %evbl=70, %paws=10, %slmo=130]}     
+#{%ali=Ariana Krolik,   %elo=1435, %eng=rodentiip, %idi=aggressive\nslow, %liu= [%pefi=personalities/school/ariana.txt]}   
+#{%ali=Nerola Krolik,   %elo=1460, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=4, %slmo=100]}         
+#{%ali=Mafalda Krolik,  %elo=1684, %eng=rodentiip, %idi=aggressive\nslow, %liu= [%pefi=personalities/school/ariana.txt, %npli=50]}         
+#{%ali=Pippa Krolik,    %elo=2085, %eng=rodentiip, %idi=aggressive, %liu= [%pefi=personalities/school/ariana.txt, %npli=2000, %evbl=700]} 
 
 # Strangler
-{%ali=Ornella Pitone,   %elo=1117,  %eng=rodentiip, %idi=strangler\nslow, %liu= [%pefi=personalities/school/giovanni.txt, %npli=1, %ha=1, %evbl=350, %pipl=8, %slmo=140]}  
-{%ali=Patrizia Pitone, %elo=1358,  %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt, %npli=1, %ha=1, %evbl=75, %pipl=2]} 
-{%ali=Angelo Pitone,   %elo=1325, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt, %npli=1, %evbl=25, %pipl=8]}  
-{%ali=Ombra Pitone,    %elo=1338, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt, %npli=4, %evbl=50, %pipl=10]}  
-{%ali=Giuseppe Gerbillo, %elo=1493, %eng=rodentiip, %idi=strangler\ncares for pawn structure, %liu= [%pefi=personalities/school/dory.txt, %npli=24, %pipl=20, %paws=200]}          
-{%ali=Nina Pitone,     %elo=1531, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt, %npli=17]}         
-{%ali=Giovanni Pitone, %elo=1672, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt], %boo=Da1550}         
-{%ali=Miriam Pitone,   %elo=1694, %eng=rodentiip, %idi=strangler\nfast, %liu= [%pefi=personalities/school/giovanni.txt, %npli=70, %slmo=60]}         
-{%ali=Octavia Raton, %elo=1938, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/club/passive.txt, %npli=120]}
-{%ali=Donata Gerbillo, %elo=2083, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/dory.txt], %boo=petrosian}           
+#{%ali=Ornella Pitone,   %elo=1084,  %eng=rodentiip, %idi=strangler\nslow, %liu= [%pefi=personalities/school/giovanni.txt, %npli=1, %ha=1, %evbl=350, %pipl=8, %slmo=140]}  
+#{%ali=Patrizia Pitone, %elo=1286,  %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt, %npli=1, %ha=1, %evbl=75, %pipl=2]} 
+{%ali=Angelo Pitone,   %elo=1277, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt, %npli=1, %evbl=25, %pipl=8]}  
+#{%ali=Ombra Pitone,    %elo=1303, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt, %npli=4, %evbl=50, %pipl=10]}  
+#{%ali=Giuseppe Gerbillo, %elo=1447, %eng=rodentiip, %idi=strangler\ncares for pawn structure, %liu= [%pefi=personalities/school/dory.txt, %npli=24, %pipl=20, %paws=200]}          
+#{%ali=Nina Pitone,     %elo=1515, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt, %npli=17]}         
+#{%ali=Giovanni Pitone, %elo=1651, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/giovanni.txt], %boo=Da1550}         
+#{%ali=Miriam Pitone,   %elo=1658, %eng=rodentiip, %idi=strangler\nfast, %liu= [%pefi=personalities/school/giovanni.txt, %npli=70, %slmo=60]}         
+#{%ali=Octavia Raton, %elo=1875, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/club/passive.txt, %npli=120]}
+#{%ali=Donata Gerbillo, %elo=2043, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/school/dory.txt], %boo=petrosian}           
 
 
-# Pawn storm
-{%ali=Cecilia Gerbillo, %elo=1315,  %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/maurizio.txt, %npli=1, %ha=1, %evbl=80, %paws=0, %pipl=8]} 
-{%ali=Nata Gerbillo,    %elo=1388,  %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/maurizio.txt, %npli=1, %ha=1, %evbl=60, %paws=10]} 
-{%ali=Onda Gerbillo,    %elo=1439, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/maurizio.txt, %npli=5, %evbl=40, %paws=30]} 
-{%ali=Oriella Gerbillo, %elo=1468, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/maurizio.txt, %npli=15, %evbl=40, %paws=40], %boo=low} 
-{%ali=Luise Gerbillo,   %elo=1791, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/maurizio.txt, %npli=60], %boo=low}  
-{%ali=Moreno Gerbillo,  %elo=1831, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/maurizio.txt, %npli=90]}   
-{%ali=Frieda Raton,    %elo=1845, %eng=rodentiip, %idi=fianchettos\npawn storms, %liu= [%pefi=personalities/school/frieda.txt], %boo=flank}       
+# Light pawn storm
+#{%ali=Cecilia Gerbillo, %elo=1259,  %eng=rodentiip, %idi=ignores pawn structure, %liu= [%pefi=personalities/school/maurizio.txt, %npli=1, %ha=1, %evbl=80, %paws=0, %pipl=8], %boo=1100-1500} 
+#{%ali=Nata Gerbillo,    %elo=1365,  %eng=rodentiip, %idi=ignores pawn structure, %liu= [%pefi=personalities/school/maurizio.txt, %npli=1, %ha=1, %evbl=60, %paws=10], %boo=micro} 
+#{%ali=Onda Gerbillo,    %elo=1421, %eng=rodentiip, %idi=italian\nsicilian\nscotch, %liu= [%pefi=personalities/school/maurizio.txt, %npli=5, %evbl=40, %paws=30], %boo=Ga1900} 
+#{%ali=Oriella Gerbillo, %elo=1422, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/maurizio.txt, %npli=15, %evbl=40, %paws=40], %boo=low} 
+#{%ali=Luise Gerbillo,   %elo=1733, %eng=rodentiip, %idi=weak opening, %liu= [%pefi=personalities/school/maurizio.txt, %npli=60], %boo=low}  
+#{%ali=Moreno Gerbillo,  %elo=1805, %eng=rodentiip, %idi=wide standard repertoire, %liu= [%pefi=personalities/school/maurizio.txt, %npli=90]}   
+#{%ali=Frieda Raton,    %elo=1815, %eng=rodentiip, %idi=fianchettos\npawn storms, %liu= [%pefi=personalities/school/frieda.txt], %boo=flank}       
+
+# Heavy pawn storm 
+{%ali=Taanea Matangi,    %elo=1292, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/storm.txt, %npli=1, %ha=1, %evbl=60, %paws=10], %boo=fics15} 
+{%ali=Ofisa Matangi,     %elo=1326, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/storm.txt, %npli=5, %evbl=40, %paws=30], %boo=Ob2600} 
+{%ali=Kau Matangi,       %elo=1721, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/storm.txt, %npli=60], %boo=lasker}  
+{%ali=Haapai Matangi,    %elo=1798, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/storm.txt, %npli=90], %boo=rodent}   
+{%ali=Fakakai Matangi,   %elo=1851, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/school/storm.txt, %npli=140], %boo=Ch2250}   
 
 # Simplifier
-{%ali=Sandro Castoro,   %elo=1273, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=1, %ha=1, %evbl=100, %paws=10, %pipl=17]}       
-{%ali=Adriano Castoro,  %elo=1412, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=1, %ha=1, %evbl=50, %pipl=17]}       
-{%ali=Oddone Castoro,   %elo=1367, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=3, %evbl=50, %pipl=20]}       
-{%ali=Nettuno Castoro,  %elo=1486, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=12]}             
-{%ali=Alfonso Castoro,  %elo=1513, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt]}             
-{%ali=Marcello Castoro, %elo=1755, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=50]}             
+#{%ali=Sandro Castoro,   %elo=1228, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=1, %ha=1, %evbl=100, %paws=10, %pipl=17]}       
+#{%ali=Adriano Castoro,  %elo=1328, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=1, %ha=1, %evbl=50, %pipl=17]}       
+#{%ali=Oddone Castoro,   %elo=1322, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=3, %evbl=50, %pipl=20]}       
+#{%ali=Nettuno Castoro,  %elo=1450, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=12]}             
+#{%ali=Alfonso Castoro,  %elo=1472, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt]}             
+#{%ali=Marcello Castoro, %elo=1719, %eng=rodentiip, %idi=likes to simplify, %liu= [%pefi=personalities/school/alfonso.txt, %npli=50]}             
 
 
 # Liking closed
-{%ali=Count Hanley,    %elo=1149, %eng=rodentiip, %idi=likes blocked positions\nslow, %liu= [%pefi=personalities/fun/tortoise.txt, %npli=1, %ha=1, %evbl=211], %boo=ph-exoticbook}
-{%ali=Abele Maus,     %elo=1255, %eng=rodentiip, %idi=likes closed positions, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=1, %ha=1, %evbl=111]}         
-{%ali=Achim Maus,     %elo=1392, %eng=rodentiip, %idi=likes closed positions\nfast, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=1, %evbl=51, %slmo=60]}         
-{%ali=Andreas Maus,   %elo=1460, %eng=rodentiip, %idi=likes closed positions\nslow, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=12, %slmo=200], %boo=low}         
-{%ali=Anna Maus,      %elo=1665, %eng=rodentiip, %idi=likes closed positions\nslow, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=40, %slmo=160], %boo=flank}         
-{%ali=Aron Maus,      %elo=1811, %eng=rodentiip, %idi=likes closed positions, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=80], %boo=Tca}         
-{%ali=Basima Maus,    %elo=2000, %eng=rodentiip, %idi=likes closed positions, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=160], %boo=capablanca}       
-{%ali=Daniela Maus,   %elo=2129, %eng=rodentiip, %idi=likes closed positions, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=280], %boo=flank}         
+#{%ali=Count Hanley,    %elo=1127, %eng=rodentiip, %idi=likes blocked positions\nslow, %liu= [%pefi=personalities/fun/tortoise.txt, %npli=1, %ha=1, %evbl=211], %boo=ph-exoticbook}
+#{%ali=Abele Maus,     %elo=1211, %eng=rodentiip, %idi=likes closed positions, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=1, %ha=1, %evbl=111]}         
+#{%ali=Achim Maus,     %elo=1332, %eng=rodentiip, %idi=likes closed positions\nfast, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=1, %evbl=51, %slmo=60]}         
+#{%ali=Andreas Maus,   %elo=1419, %eng=rodentiip, %idi=likes closed positions\nslow, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=12, %slmo=200], %boo=low}         
+{%ali=Anna Maus,      %elo=1632, %eng=rodentiip, %idi=likes closed positions\nslow, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=40, %slmo=160], %boo=flank}         
+#{%ali=Aron Maus,      %elo=1780, %eng=rodentiip, %idi=likes closed positions, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=80], %boo=Tca}         
+#{%ali=Basima Maus,    %elo=1963, %eng=rodentiip, %idi=likes closed positions, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=160], %boo=capablanca}       
+#{%ali=Daniela Maus,   %elo=2091, %eng=rodentiip, %idi=likes closed positions, %liu= [%pefi=personalities/famous/nimzowitsch.txt, %npli=280], %boo=flank}         
 
 
 # Liking endgame
-{%ali=Oziegbo Lokossa,  %elo=1135, %eng=rodentiip, %idi=likes endgames, %liu= [%pefi=personalities/school/ender.txt, %npli=1, %ha=1, %evbl=211, %paws=20]}       
-{%ali=Zulubo Sambesi,   %elo=1289, %eng=rodentiip, %idi=likes endgames, %liu= [%pefi=personalities/school/ender.txt, %npli=1, %ha=1, %evbl=111, %slmo=120]}         
-{%ali=Adaeze Bengula,   %elo=1411, %eng=rodentiip, %idi=likes endgames, %liu= [%pefi=personalities/school/ender.txt, %npli=6, %slmo=80]}         
-{%ali=Azagba Matabele,  %elo=1571, %eng=rodentiip, %idi=likes endgames\nslow, %liu= [%pefi=personalities/school/ender.txt, %npli=20, %slmo=140]}         
-{%ali=Nilaja Bulawayo,  %elo=1798, %eng=rodentiip, %idi=likes endgames\nvery slow, %liu= [%pefi=personalities/school/ender.txt, %npli=60, %slmo=200]}         
-{%ali=Olobunmi Tsvangirai,  %elo=1962, %eng=rodentiip, %idi=likes endgames, %liu= [%pefi=personalities/school/ender.txt, %npli=180], %boo=Tca}         
+#{%ali=Oziegbo Lokossa,  %elo=1098, %eng=rodentiip, %idi=likes endgames, %liu= [%pefi=personalities/school/ender.txt, %npli=1, %ha=1, %evbl=211, %paws=20]}       
+#{%ali=Zulubo Sambesi,   %elo=1225, %eng=rodentiip, %idi=likes endgames, %liu= [%pefi=personalities/school/ender.txt, %npli=1, %ha=1, %evbl=111, %slmo=120]}         
+#{%ali=Adaeze Bengula,   %elo=1353, %eng=rodentiip, %idi=likes endgames, %liu= [%pefi=personalities/school/ender.txt, %npli=6, %slmo=80]}         
+#{%ali=Azagba Matabele,  %elo=1536, %eng=rodentiip, %idi=likes endgames\nslow, %liu= [%pefi=personalities/school/ender.txt, %npli=20, %slmo=140]}         
+#{%ali=Nilaja Bulawayo,  %elo=1772, %eng=rodentiip, %idi=likes endgames\nvery slow, %liu= [%pefi=personalities/school/ender.txt, %npli=60, %slmo=200]}         
+#{%ali=Olobunmi Tsvangirai,  %elo=1918, %eng=rodentiip, %idi=likes endgames, %liu= [%pefi=personalities/school/ender.txt, %npli=180], %boo=Tca}         
 
 # Positionally weak attacker 
-{%ali=Padagong,  %elo=1244, %eng=rodentiip, %idi=positionally weak\nattacker\nslow, %liu= [%pefi=personalities/school/andi.txt, %npli=1, %ha=1, %evbl=111, %slmo=70]}       
-{%ali=Abadanang, %elo=1384, %eng=rodentiip, %idi=positionally weak\nattacker\nslow, %liu= [%pefi=personalities/school/andi.txt, %npli=2, %slmo=180]}       
-{%ali=Alintari,  %elo=1368, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=8]}       
-{%ali=Baliwari,  %elo=1533, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=24]}       
-{%ali=Kwomtari,  %elo=1683, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=60]}       
-{%ali=Madang,    %elo=1932, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=150]}       
-{%ali=Nagatamang, %elo=2195, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=375]}       
-{%ali=Sandaung,   %elo=2351, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=940]}       
+#{%ali=Padagong,  %elo=1194, %eng=rodentiip, %idi=positionally weak\nattacker\nslow, %liu= [%pefi=personalities/school/andi.txt, %npli=1, %ha=1, %evbl=111, %slmo=70]}       
+#{%ali=Abadanang, %elo=1368, %eng=rodentiip, %idi=positionally weak\nattacker\nslow, %liu= [%pefi=personalities/school/andi.txt, %npli=2, %slmo=180]}       
+#{%ali=Alintari,  %elo=1331, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=8]}       
+{%ali=Baliwari,  %elo=1502, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=24]}       
+#{%ali=Kwomtari,  %elo=1662, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=60]}       
+#{%ali=Madang,    %elo=1901, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=150]}       
+#{%ali=Nagatamang, %elo=2155, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=375]}       
+#{%ali=Sandaung,   %elo=2311, %eng=rodentiip, %idi=positionally weak\nattacker, %liu= [%pefi=personalities/school/andi.txt, %npli=940]}       
 
 ## WEAK FAMOUSes
-{%ali=Petrosianle, %elo=1884, %eng=rodentiip, %idi=likes closed positions\nstrangler, %liu= [%pefi=personalities/famous/petrosianle.txt], %boo=petrosian, %bmp=20}    
-{%ali=Botwinnikle, %elo=2109, %eng=rodentiip, %idi=balanced\ncares for pawn structure, %liu= [%pefi=personalities/famous/botvinnikle.txt], %boo=botvinnik, %bmp=20}    
-{%ali=Spasskyle,   %elo=2273, %eng=rodentiip, %idi=likes grabbing space\ncares for pawn structure, %liu= [%pefi=personalities/famous/spasskyle.txt], %boo=spassky, %bmp=25}        
+{%ali=Petrosianle, %elo=1848, %eng=rodentiip, %idi=likes closed positions\nstrangler, %liu= [%pefi=personalities/famous/petrosianle.txt], %boo=petrosian, %bmp=20}    
+#{%ali=Botwinnikle, %elo=2070, %eng=rodentiip, %idi=balanced\ncares for pawn structure, %liu= [%pefi=personalities/famous/botvinnikle.txt], %boo=botvinnik, %bmp=20}    
+#{%ali=Spasskyle,   %elo=2233, %eng=rodentiip, %idi=likes grabbing space\ncares for pawn structure, %liu= [%pefi=personalities/famous/spasskyle.txt], %boo=spassky, %bmp=25}        
 
 
 ## School
 # Pawns
-{%ali=Ajer Raton,       %elo=1385, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pawns.txt, %npli=1, %ha=1, %evbl=101, %slmo=110]}
-{%ali=Macario Raton,    %elo=1393, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pawns.txt, %npli=6]}
-{%ali=Jose Raton,       %elo=1290, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pam.txt, %npli=14]}
-{%ali=Gloria Raton,     %elo=1549, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pawns.txt, %npli=24]}
-{%ali=Paulita Raton,    %elo=1897, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pam.txt]}
+#{%ali=Ajer Raton,       %elo=1337, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pawns.txt, %npli=1, %ha=1, %evbl=101, %slmo=110]}
+{%ali=Macario Raton,    %elo=1332, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pawns.txt, %npli=6]}
+{%ali=Jose Raton,       %elo=1253, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pam.txt, %npli=14]}
+#{%ali=Gloria Raton,     %elo=1499, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pawns.txt, %npli=24]}
+#{%ali=Paulita Raton,    %elo=1862, %eng=rodentiip, %idi=overvalues pawns\npawn structure, %liu= [%pefi=personalities/school/pam.txt]}
 
 # Gambits
-{%ali=Lea Gerbillo,     %elo=1382, %eng=rodentiip, %idi=slow\ngambits, %liu= [%pefi=personalities/school/amy.txt, %npli=1, %ha=1], %boo=ph-gambitbook}             
-{%ali=Amalia Gerbillo,  %elo=1740, %eng=rodentiip, %idi=slow\ngambits, %liu= [%pefi=personalities/school/amy.txt], %boo=ph-gambitbook}             
-{%ali=Palma Raton,      %elo=1868, %eng=rodentiip, %idi=sacrificing attacker\nweak endgame, %liu= [%pefi=personalities/club/sam.txt, %npli=130], %boo=tal}
-{%ali=Stella Gerbillo, %elo=2078, %eng=rodentiip, %idi=likes to sac\ngambits, %liu= [%pefi=personalities/school/sue.txt], %boo=ph-gambitbook}     
+#{%ali=Lea Gerbillo,     %elo=1335, %eng=rodentiip, %idi=slow\ngambits, %liu= [%pefi=personalities/school/amy.txt, %npli=1, %ha=1], %boo=ph-gambitbook}             
+#{%ali=Amalia Gerbillo,  %elo=1701, %eng=rodentiip, %idi=slow\ngambits, %liu= [%pefi=personalities/school/amy.txt], %boo=ph-gambitbook}             
+#{%ali=Palma Raton,      %elo=1835, %eng=rodentiip, %idi=sacrificing attacker\nweak endgame, %liu= [%pefi=personalities/club/sam.txt, %npli=130], %boo=tal}
+#{%ali=Stella Gerbillo, %elo=2038, %eng=rodentiip, %idi=likes to sac\ngambits, %liu= [%pefi=personalities/school/sue.txt], %boo=ph-gambitbook}     
 
 ## Special Openings and Personalities
-{%ali=Sasha Rode,    %elo=1845, %eng=rodentiip, %idi=active\nCatalan\nReti\nNajdorf, %liu= [%pefi=personalities/school/sasha.txt], %boo=Jack1918}     
+#{%ali=Sasha Rode,    %elo=1808, %eng=rodentiip, %idi=active\nCatalan\nReti\nNajdorf, %liu= [%pefi=personalities/school/sasha.txt], %boo=Jack1918}     
 
-{%ali=Bobby Rode,      %elo=1397, %eng=rodentiip, %idi=french\nqueen's gambit\nsolid, %liu= [%pefi=personalities/school/axel.txt, %npli=1, %ha=1], %boo=axel1950}       
-{%ali=Tony Rode,       %elo=1421, %eng=rodentiip, %idi=french\nqueen's gambit\nsolid, %liu= [%pefi=personalities/school/axel.txt, %npli=17], %boo=axel1950}       
-{%ali=Axel Rode,       %elo=1907, %eng=rodentiip, %idi=french\nqueen's gambit\nsolid, %liu= [%pefi=personalities/school/axel.txt], %boo=axel1950}       
+{%ali=Bobby Rode,      %elo=1352, %eng=rodentiip, %idi=french\nqueen's gambit\nsolid, %liu= [%pefi=personalities/school/axel.txt, %npli=1, %ha=1], %boo=axel1950}       
+#{%ali=Tony Rode,       %elo=1360, %eng=rodentiip, %idi=french\nqueen's gambit\nsolid, %liu= [%pefi=personalities/school/axel.txt, %npli=17], %boo=axel1950}       
+#{%ali=Axel Rode,       %elo=1869, %eng=rodentiip, %idi=french\nqueen's gambit\nsolid, %liu= [%pefi=personalities/school/axel.txt], %boo=axel1950}       
 
-{%ali=Lucia Raton,     %elo=1506, %eng=rodentiip, %idi=likes simplification and knights, %liu= [%pefi=personalities/school/stan.txt, %npli=25], %boo=ph-exoticbook}     
-{%ali=Stefano Raton,   %elo=2084, %eng=rodentiip, %idi=likes simplification and knights, %liu= [%pefi=personalities/school/stan.txt], %boo=ph-exoticbook}     
+#{%ali=Lucia Raton,     %elo=1475, %eng=rodentiip, %idi=likes simplification and knights, %liu= [%pefi=personalities/school/stan.txt, %npli=25], %boo=ph-exoticbook}     
+#{%ali=Stefano Raton,   %elo=2045, %eng=rodentiip, %idi=likes simplification and knights, %liu= [%pefi=personalities/school/stan.txt], %boo=ph-exoticbook}     
 
-{%ali=Georg Rode,       %elo=1896, %eng=rodentiip, %idi=attacking\ne4 + f4 on everything, %liu= [%pefi=personalities/school/georg.txt], %boo=ceme1920, %bmp=10}    
-{%ali=Otello Raton,   %elo=1820, %eng=rodentiip, %idi=?, %liu= [%pefi=personalities/club/mark.txt, %npli=100]}    
+#{%ali=Georg Rode,       %elo=1879, %eng=rodentiip, %idi=attacking\ne4 + f4 on everything, %liu= [%pefi=personalities/school/georg.txt], %boo=ceme1920, %bmp=10}    
+{%ali=Otello Raton,   %elo=1791, %eng=rodentiip, %idi=?, %liu= [%pefi=personalities/club/mark.txt, %npli=100]}    
 
 
 ### Following some personalities quite original from Pavel Koziol's Rodent Packages, but weaker.
 ## Club
-{%ali=Defender Hare,    %elo=1937, %eng=rodentiip, %idi=defensive, %liu= [%pefi=personalities/club/mark.txt]}    
-{%ali=Passive Hare,     %elo=2026, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/club/passive.txt]}
-{%ali=Attacker Hare,    %elo=2083, %eng=rodentiip, %idi=sacrifices\nattacker\nweak endgame, %liu= [%pefi=personalities/club/sam.txt], %boo=tal}
-{%ali=Materialist Hare, %elo=2093, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/club/materialist.txt]}    
-{%ali=Nerd Hare,        %elo=2209, %eng=rodentiip, %idi=positional\nmany openings, %liu= [%pefi=personalities/club/nerd.txt], %boo=GMopenings}
-{%ali=Leader Hare,      %elo=2287, %eng=rodentiip, %idi=sacrifices\nattacker, %liu= [%pefi=personalities/club/leader.txt]}    
-##{%ali=Mark Orig,        %elo=2171, %eng=rodentiip, %idi=defensive, %liu= [%pefi=personalities/club/markorig.txt]}
-##{%ali=Sam Orig,         %elo=2195, %eng=rodentiip, %idi=sacrifices\nattacker, %liu= [%pefi=personalities/club/samorig.txt]}    
+{%ali=Defender Hare,    %elo=1878, %eng=rodentiip, %idi=defensive, %liu= [%pefi=personalities/club/mark.txt]}    
+#{%ali=Passive Hare,     %elo=1988, %eng=rodentiip, %idi=strangler, %liu= [%pefi=personalities/club/passive.txt]}
+#{%ali=Attacker Hare,    %elo=2044, %eng=rodentiip, %idi=sacrifices\nattacker\nweak endgame, %liu= [%pefi=personalities/club/sam.txt], %boo=tal}
+#{%ali=Materialist Hare, %elo=2052, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/club/materialist.txt]}    
+#{%ali=Nerd Hare,        %elo=2169, %eng=rodentiip, %idi=positional\nmany openings, %liu= [%pefi=personalities/club/nerd.txt], %boo=GMopenings}
+#{%ali=Leader Hare,      %elo=2247, %eng=rodentiip, %idi=sacrifices\nattacker, %liu= [%pefi=personalities/club/leader.txt]}    
+##{%ali=Mark Orig,        %elo=2131, %eng=rodentiip, %idi=defensive, %liu= [%pefi=personalities/club/markorig.txt]}
+##{%ali=Sam Orig,         %elo=2155, %eng=rodentiip, %idi=sacrifices\nattacker, %liu= [%pefi=personalities/club/samorig.txt]}    
 
 ## League
-{%ali=Matthew,    %elo=2754, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/league/matthew.txt]}                 
-{%ali=Dorothy,    %elo=2744, %eng=rodentiip, %idi=classical\nstrangler, %liu= [%pefi=personalities/league/dorothy.txt]}                 
-{%ali=Frederick,  %elo=2760, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/league/frederick.txt], %boo=flank}   
-{%ali=Arthur,     %elo=2687, %eng=rodentiip, %idi=classical, %liu= [%pefi=personalities/league/arthur.txt]}                  
-{%ali=Patrick,    %elo=2720, %eng=rodentiip, %idi=attacker, %liu= [%pefi=personalities/league/patrick.txt]}                 
+#{%ali=Matthew,    %elo=2714, %eng=rodentiip, %idi=materialist, %liu= [%pefi=personalities/league/matthew.txt]}                 
+#{%ali=Dorothy,    %elo=2704, %eng=rodentiip, %idi=classical\nstrangler, %liu= [%pefi=personalities/league/dorothy.txt]}                 
+#{%ali=Frederick,  %elo=2720, %eng=rodentiip, %idi=pawn storm, %liu= [%pefi=personalities/league/frederick.txt], %boo=flank}   
+#{%ali=Arthur,     %elo=2647, %eng=rodentiip, %idi=classical, %liu= [%pefi=personalities/league/arthur.txt]}                  
+#{%ali=Patrick,    %elo=2680, %eng=rodentiip, %idi=attacker, %liu= [%pefi=personalities/league/patrick.txt]}                 
 
 ## Fun
-{%ali=Weak Kinghunter,  %elo=1399, %eng=rodentiip, %idi=very aggressive, %liu= [%pefi=personalities/fun/kinghunter.txt, %npli=2, %ha=2]}    
-{%ali=Kinghunter,  %elo=2409, %eng=rodentiip, %idi=very aggressive, %liu= [%pefi=personalities/fun/kinghunter.txt]}    
-{%ali=Tortoise,    %elo=2194, %eng=rodentiip, %idi=likes blocked positions\nslow, %liu= [%pefi=personalities/fun/tortoise.txt], %boo=ph-exoticbook}
-{%ali=Henny,       %elo=2230, %eng=rodentiip, %idi=mad attacker, %liu= [%pefi=personalities/fun/henny.txt]}   
-{%ali=Remy,        %elo=1913, %eng=rodentiip, %idi=gambits, %liu= [%pefi=personalities/fun/remy.txt], %boo=ph-gambitbook}   
-{%ali=Drunk,       %elo=1699, %eng=rodentiip, %idi=might blunder, %liu= [%pefi=personalities/fun/drunk.txt]}    
-{%ali=Wilma,  %elo=2456, %eng=rodentiip, %idi=mad attacker\ngambits, %liu= [%pefi=personalities/fun/kinghunter.txt, %npli=6500], %boo=ph-gambitbook}    
+#{%ali=Weak Kinghunter,  %elo=1352, %eng=rodentiip, %idi=very aggressive, %liu= [%pefi=personalities/fun/kinghunter.txt, %npli=2, %ha=2]}    
+#{%ali=Kinghunter,  %elo=2369, %eng=rodentiip, %idi=very aggressive, %liu= [%pefi=personalities/fun/kinghunter.txt]}    
+#{%ali=Tortoise,    %elo=2154, %eng=rodentiip, %idi=likes blocked positions\nslow, %liu= [%pefi=personalities/fun/tortoise.txt], %boo=ph-exoticbook}
+#{%ali=Henny,       %elo=2190, %eng=rodentiip, %idi=mad attacker, %liu= [%pefi=personalities/fun/henny.txt]}   
+#{%ali=Remy,        %elo=1871, %eng=rodentiip, %idi=gambits, %liu= [%pefi=personalities/fun/remy.txt], %boo=ph-gambitbook}   
+{%ali=Drunk,       %elo=1677, %eng=rodentiip, %idi=might blunder, %liu= [%pefi=personalities/fun/drunk.txt]}    
+#{%ali=Wilma,  %elo=2415, %eng=rodentiip, %idi=mad attacker\ngambits, %liu= [%pefi=personalities/fun/kinghunter.txt, %npli=6500], %boo=ph-gambitbook}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
