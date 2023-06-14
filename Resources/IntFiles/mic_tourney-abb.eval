@@ -9,13 +9,20 @@
 #abb: %eng=([-\w]+)      "ENGINE": "\1"
 #abb: %idi=([^,\}]+)    "IDINFO": "\1"
 #abb: %liu=           "LIUCI": 
+#abb: %emt=(\d+(\.\d+)?)      "EMULATEMOVETIME": \1
 
 #abb: %ha=(\d+)        {"name": "Hash", "valor": \1}  
 #abb: %mupv=(\d+)      {"name": "MultiPV", "valor": \1}
 #abb: %ob=f            {"name": "OwnBook", "valor": False}
 #abb: %po=f            {"name": "Ponder", "valor": False}
+#abb: %ski=(\d+)       {"name": "Skill", "valor": \1}
 #abb: %uelo=(\d+)      {"name": "UCI_Elo", "valor": \1}
 #abb: %ulis=t          {"name": "UCI_LimitStrength", "valor": True}
+
+# Ct800 replacemens
+#abb: %evno=(\d+)       {"name": "Eval Noise [%]", "valor": \1}
+#abb: %cknp=(\d+)       {"name": "CPU Speed [kNPS]", "valor": \1}
+#abb: %cper=(\d+)       {"name": "CPU Speed [%]", "valor": \1}
 
 # rodent replacements
 #abb: %evbl=(\d+)        {"name": "EvalBlur", "valor": \1}
@@ -51,6 +58,10 @@
 #abb: %MaNPS=(\d+)    {"name": "Max NPS1", "valor": \1}, {"name": "Max NPS2", "valor": \1}, {"name": "Max NPS3", "valor": \1}, {"name": "Max NPS4", "valor": \1}, {"name": "Max NPS5", "valor": \1}
 #abb: %PaShe=(\d)      {"name": "Pawn Shelter", "valor": \1}
 #abb: %PaSto=(\d)      {"name": "Pawn Storm", "valor": \1}
+
+# texel replacements
+
+#abb: %str=(\d+)      {"name": "Strength", "valor": \1}
 
 # toga replacements
 

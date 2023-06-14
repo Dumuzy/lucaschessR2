@@ -2,192 +2,46 @@
 ### 
 
 ### Ct800
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1000], %elo=1581, %ali=Arturo Corto}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1100], %elo=1676, %ali=Cristina Corto}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1200], %elo=1734, %ali=David Corto}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1400], %elo=1854, %ali=Laura Corto}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1550], %elo=1961, %ali=George Corto}
+{%eng=ct800, %idi=blunders a lot\nKarpov's openings, %liu=[%ob=f, %ha=1, %evno=98, %cknp=1],  %elo=459, %ali=Iisalmi Lyhyt, %boo=karpov}
+{%eng=ct800, %idi=blunders a lot, %liu=[%ob=f, %ha=1, %evno=96, %cknp=1],  %elo=795, %ali=Kajaani Lyhyt, %boo=Qs1450}
+{%eng=ct800, %idi=blunders, %liu=[%ob=f, %ha=1, %evno=94, %cknp=1],  %elo=955, %ali=Lahti Lyhyt, %boo=Ro1600}
+{%eng=ct800, %idi=may blunder, %liu=[%ob=f, %ha=1, %evno=92, %cknp=1],  %elo=1137, %ali=Mikkeli Lyhyt, %boo=Ia2660}
+{%eng=ct800, %idi=balanced, %liu=[%ob=f, %ha=1, %evno=90, %cknp=1],  %elo=1220, %ali=Oulujoki Lyhyt, %boo=We1700}
+{%eng=ct800, %idi=balanced, %liu=[%ob=f, %ha=1, %evno=83, %cknp=1],  %elo=1345, %ali=Seinajoki Lyhyt, %boo=Pe1600}
 
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1600], %elo=1977, %ali=Yasmin Corto}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1700], %elo=2002, %ali=Rasmus Corto}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1800], %elo=2085, %ali=Katrina Corto}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1900], %elo=2322, %ali=Marcel Corto}
+{%eng=ct800, %idi=balanced\ngambit openings, %liu= [%ob=f, %ulis=t, %uelo=1000], %elo=1445, %ali=Arturo Corto, %boo=ph-gambitbook}
+{%eng=ct800, %idi=balanced\nexotic openings, %liu= [%ob=f, %ulis=t, %uelo=1100], %elo=1542, %ali=Cristina Corto, %boo=ph-exoticbook}
+{%eng=ct800, %idi=balanced\nfianchettos\nflank openings, %liu= [%ob=f, %ulis=t, %uelo=1200], %elo=1604, %ali=David Corto, %boo=flank}
+{%eng=ct800, %idi=balanced\nsmall repertoire, %liu= [%ob=f, %ulis=t, %uelo=1400], %elo=1750, %ali=Laura Corto, %boo=guide}
+{%eng=ct800, %idi=balanced\nCapablanca's openings, %liu= [%ob=f, %ulis=t, %uelo=1550], %elo=1784, %ali=George Corto, %boo=capablanca}
 
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=2000], %elo=2426, %ali=Gianna Corto}
-{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=2100], %elo=2550, %ali=Morton Corto}
+{%eng=ct800, %idi=balanced\nEuwe's openings, %liu= [%ob=f, %ulis=t, %uelo=1600], %elo=1839, %ali=Yasmin Corto, %boo=euwe}
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1700], %elo=1878, %ali=Rasmus Corto, %boo=Ob2600}
+{%eng=ct800, %idi=balanced\nKarpov's openings, %liu= [%ob=f, %ulis=t, %uelo=1800], %elo=1962, %ali=Katrina Corto, %boo=karpov}
+{%eng=ct800, %idi=balanced\nEuwe's openings, %liu= [%ob=f, %ulis=t, %uelo=1900], %elo=2199, %ali=Marcel Corto, %boo=euwe}
+
+{%eng=ct800, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=2000], %elo=2302, %ali=Gianna Corto, %boo=Kk2440}
+{%eng=ct800, %idi=balanced\nsmall repertoire, %liu= [%ob=f, %ulis=t, %uelo=2100], %elo=2427, %ali=Morton Corto, %boo=guide}
 
 ### Cheng
-{%ali=Zhang Tian, %elo=1428, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ha=1, %ulis=t, %uelo=800, {"name": "Contempt", "valor": -30}]}
-{%ali=Gu Zemin,   %elo=1516, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ha=1, %ulis=t, %uelo=1000, {"name": "Contempt", "valor": -40}]}
-{%ali=Xiao Dan,   %elo=1866, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1280]}
-{%ali=Jin Chen,   %elo=2040, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1330]}
-{%ali=Zhong Mian, %elo=2120, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1370]}
-
-{%ali=Mai Mailin, %elo=2629, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1550]}
-{%ali=Huang Bo,   %elo=2854, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1700]}
-{%ali=Xu Yuhua,   %elo=3063, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1880]}
-
-### Komodo
-{%ali=Kimi Komo, %elo=2203, %eng=komodo, %idi=balanced\nsuper fast, %liu= [%ob=f, %ha=2, {"name": "Dynamism", "valor": 60}, {"name": "Skill", "valor": 13}]}
-{%ali=Komo Komo, %elo=2688, %eng=komodo, %idi=balanced\nsuper fast, %liu= [%ob=f, %ha=2, {"name": "Dynamism", "valor": 60}, {"name": "Skill", "valor": 17}]}
+{%ali=Zhang Tian, %elo=1338, %eng=cheng, %idi=balanced\nItalian\nScotch\nSicilian, %liu= [%ob=f, %ha=1, %ulis=t, %uelo=800, {"name": "Contempt", "valor": -30}], %boo=Ga1900}
+{%ali=Gu Zemin,   %elo=1375, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ha=1, %ulis=t, %uelo=1000, {"name": "Contempt", "valor": -40}], %boo=Ch2100}
+{%ali=Chan Yema,   %elo=1327, %eng=cheng, %idi=balanced\nAnand's openings, %liu= [%ob=f, %ha=1, %ulis=t, %uelo=1100, {"name": "Contempt", "valor": -30}], %boo=anand}
+{%ali=Fong Shixin, %elo=1482, %eng=cheng, %idi=balanced\nAlekhine's openings, %liu= [%ob=f, %ha=4,  %ulis=t, %uelo=1190, {"name": "Contempt", "valor": -50}], %boo=alekhine}
+{%ali=Dong Yamei,  %elo=1601, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ha=16, %ulis=t, %uelo=1220, {"name": "Contempt", "valor": -20}], %boo=Kk2440}
+{%ali=Xiao Dan,   %elo=1757, %eng=cheng, %idi=balanced\nCarlsen's openings, %liu= [%ob=f, %ulis=t, %uelo=1280], %boo=carlsen}
+{%ali=Jin Chen,   %elo=1925, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1330], %boo=Ia2660}
+{%ali=Zhong Mian, %elo=1995, %eng=cheng, %idi=balanced\nsmall repertoire, %liu= [%ob=f, %ulis=t, %uelo=1370], %boo=guide}
+{%ali=Mai Mailin, %elo=2507, %eng=cheng, %idi=balanced, %liu= [%ob=f, %ulis=t, %uelo=1550], %boo=Tca}
+{%ali=Huang Bo,   %elo=2733, %eng=cheng, %idi=balanced\nwide repertoire, %liu= [%ob=f, %ulis=t, %uelo=1700], %boo=GMopenings}
+{%ali=Xu Yuhua,   %elo=2942, %eng=cheng, %idi=balanced\nsmall repertoire, %liu= [%ob=f, %ulis=t, %uelo=1880], %boo=guide}
 
 ### Greko 9.8
-{%ali=Anaxagoras, %elo=1715, %eng=greko98,   %liu=[%ob=f, %ha=1,   %ulis=t, %uelo=1600,           %kisa=55, %mate=54, %mobi=30, %past=65, %raev=30, %mupv=2], %boo=solid, %idi=solid\nslow}
-{%ali=Antiphon,   %elo=2168, %eng=greko98,   %liu=[%ob=f, %ha=3,   %ulis=t, %uelo=1600, %raev=15], %idi=balanced\nslow}
-{%ali=Arkesilaos, %elo=2247, %eng=greko98,   %liu=[%ob=f, %ha=8,   %ulis=t, %uelo=1720,           %kisa=50, %mate=60, %mobi=50, %past=50, %raev=5], %boo=solid, %idi=slightly materialistic\nslow}
-{%ali=El Greco, %elo=2334, %eng=greko98,     %liu=[%ob=f, %ha=8,   %ulis=t, %uelo=1820, %boco=55, %kisa=50, %mate=52, %mobi=25, %past=65, %raev=5], %idi=solid\nslow}
-{%ali=Chrysipp, %elo=2908, %eng=greko98,     %liu=[%ob=f, %ha=128, %ulis=t, %uelo=2390,           %kisa=50,           %mobi=40, %past=60], %idi=very solid\nslow}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{%ali=Anaxagoras, %elo=1585, %eng=greko98,   %liu=[%ob=f, %ha=1,   %ulis=t, %uelo=1600,           %kisa=55, %mate=54, %mobi=30, %past=65, %raev=30, %mupv=2], %boo=solid, %idi=solid\nslow}
+{%ali=Antiphon,   %elo=2047, %eng=greko98,   %liu=[%ob=f, %ha=3,   %ulis=t, %uelo=1600, %raev=15], %idi=balanced\nslow}
+{%ali=Arkesilaos, %elo=2124, %eng=greko98,   %liu=[%ob=f, %ha=8,   %ulis=t, %uelo=1720,           %kisa=50, %mate=60, %mobi=50, %past=50, %raev=5], %boo=solid, %idi=slightly materialistic\nslow}
+{%ali=El Greco, %elo=2212, %eng=greko98,     %liu=[%ob=f, %ha=8,   %ulis=t, %uelo=1820, %boco=55, %kisa=50, %mate=52, %mobi=25, %past=65, %raev=5], %idi=solid\nslow}
+{%ali=Chrysipp, %elo=2787, %eng=greko98,     %liu=[%ob=f, %ha=128, %ulis=t, %uelo=2390,           %kisa=50,           %mobi=40, %past=60], %idi=very solid\nslow}
 
 
 
