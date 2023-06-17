@@ -4,27 +4,27 @@
 
 ### Maia 
 {%ali=Ah-Muzen-Cab,  %elo=1090, %eng=maia-1100, %idi=human-like,   %liu=[%thre=1, %wefi=1100, %npsl=0.04], %boo=Pj1450}  
-{%ali=Awi-Catlix,    %elo=1327, %eng=maia-1400, %idi=human-like,   %liu=[%thre=1, %wefi=1400, %npsl=0.08], %boo=Kk2440}                 
+{%ali=Awi-Catlix,    %elo=1326, %eng=maia-1400, %idi=human-like,   %liu=[%thre=1, %wefi=1400, %npsl=0.08], %boo=Kk2440}                 
 {%ali=Buluc-Chabtan, %elo=1410, %eng=maia-1500, %idi=human-like,   %liu=[%thre=1, %wefi=1500, %npsl=0.16], %boo=We1700}     
 {%ali=Chimal-Mat,    %elo=1500, %eng=maia-1600, %idi=human-like,   %liu=[%thre=1, %wefi=1600, %npsl=0.32], %boo=Ro1600}  
 
-{%ali=Cit-Bolon-Tum,   %elo=1628, %eng=maia-1600, %idi=human-like, %liu=[%thre=1, %wefi=1600, %npsl=0.64], %boo=Zv2300}                
+{%ali=Cit-Bolon-Tum,   %elo=1627, %eng=maia-1600, %idi=human-like, %liu=[%thre=1, %wefi=1600, %npsl=0.64], %boo=Zv2300}                
 {%ali=Cop-U-Ayaya,      %elo=1740, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=0.64], %boo=Pc1800}  
 
-{%ali=Colop-U-Uichkin, %elo=1885, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.28], %boo=Javi6351}  
-{%ali=Ek-Chuaj,        %elo=1867, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.65], %boo=Ch2250}  
+{%ali=Colop-U-Uichkin, %elo=1888, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.28], %boo=Javi6351}  
+{%ali=Ek-Chuaj,        %elo=1870, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.65], %boo=Ch2250}  
 #{%ali=Hachäk-Yum,      %elo=2040, %eng=maia-1700, %idi=human-like\nwide repertoire, %liu=[%thre=1, %wefi=1700, %npsl=2.56], %boo=rodent} 
 
-{%ali=Ix-Chel,        %elo=2182, %eng=maia-1800, %idi=human-like, %liu=[%thre=1, %wefi=1800, %npsl=5.0]}
-{%ali=Ix-Hunieta,     %elo=2325, %eng=maia-1800, %idi=human-like, %liu=[%thre=1, %wefi=1800, %npsl=7.5]}
+{%ali=Ix-Chel,        %elo=2190, %eng=maia-1800, %idi=human-like, %liu=[%thre=1, %wefi=1800, %npsl=5.0]}
+{%ali=Ix-Hunieta,     %elo=2334, %eng=maia-1800, %idi=human-like, %liu=[%thre=1, %wefi=1800, %npsl=7.5]}
 
-{%ali=Ix-Kabku,       %elo=2394, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=5.0], %boo=fics15}
-{%ali=Ix-Mucane,      %elo=2417, %eng=maia-1900, %idi=human-like\nTal's openings, %liu=[%thre=1, %wefi=1900, %npsl=7.5], %boo=tal}     
-{%ali=Kinich-Ahau,    %elo=2605, %eng=maia-1900, %idi=human-like\nwide repertoire, %liu=[%thre=1, %wefi=1900, %npsl=15], %boo=GMopenings}
+{%ali=Ix-Kabku,       %elo=2402, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=5.0], %boo=fics15}
+{%ali=Ix-Mucane,      %elo=2425, %eng=maia-1900, %idi=human-like\nTal's openings, %liu=[%thre=1, %wefi=1900, %npsl=7.5], %boo=tal}     
+{%ali=Kinich-Ahau,    %elo=2613, %eng=maia-1900, %idi=human-like\nwide repertoire, %liu=[%thre=1, %wefi=1900, %npsl=15], %boo=GMopenings}
 
-{%ali=Noho-Chach-Yum, %elo=2678, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=30], %boo=Ia2660}     
-{%ali=Tun-Ku-Ruchu,   %elo=2738, %eng=maia-1900, %idi=human-like\nsolid openings, %liu=[%thre=1, %wefi=1900, %npsl=60], %boo=solid}
-{%ali=Vucub-Caquix,   %elo=3045, %eng=maia-1900, %idi=human-like\nCarlsen's openings, %liu=[%thre=1, %wefi=1900, %npsl=120], %boo=carlsen}
+{%ali=Noho-Chach-Yum, %elo=2686, %eng=maia-1900, %idi=human-like, %liu=[%thre=1, %wefi=1900, %npsl=30], %boo=Ia2660}     
+{%ali=Tun-Ku-Ruchu,   %elo=2746, %eng=maia-1900, %idi=human-like\nsolid openings, %liu=[%thre=1, %wefi=1900, %npsl=60], %boo=solid}
+{%ali=Vucub-Caquix,   %elo=3054, %eng=maia-1900, %idi=human-like\nCarlsen's openings, %liu=[%thre=1, %wefi=1900, %npsl=120], %boo=carlsen}
 
 
 ### Irina's Monkey, Donkey etc
@@ -63,9 +63,9 @@
 ##{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Elephant], %elo=1375, %ali=Elef6000}   
 ##{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=18000, %pers=Elephant], %elo=1506, %ali=Elef18000}   
 
-##{%eng=irina, %idi=classical,  %liu= [%ob=f, %ha=2,  %npli=30000, %pers=Irina], %elo=1677, %ali=Iri30000}   
+##{%eng=irina, %idi=classical,  %liu= [%ob=f, %ha=2,  %npli=30000, %pers=Irina], %elo=1678, %ali=Iri30000}   
 ##{%eng=irina,  %idi=classical, %liu= [%ob=f, %ha=64, %npli=30000, %pers=Irina], %elo=1733, %ali=Iri30000-64}   
-##{%eng=irinaold,     %idi=?!?, %liu= [%ob=f, %ha=2,  %npli=30000, %pers=Irina], %elo=1789, %ali=Iriold30000}   
+##{%eng=irinaold,     %idi=?!?, %liu= [%ob=f, %ha=2,  %npli=30000, %pers=Irina], %elo=1788, %ali=Iriold30000}   
 ##{%eng=irinaold,     %idi=?!?, %liu= [%ob=f, %ha=64, %npli=30000, %pers=Irina], %elo=1744, %ali=Iriold30000-64}   
 
 ##{%eng=irina, %idi=attacker\nfast,       %liu= [%ob=f, %ha=2, %npli=2000, %pers=Steven], %elo=1291, %ali=Ste2000}   
@@ -80,10 +80,10 @@
 ### Irina's called like persons - the better ones
 
 ## Langobardi names for better Irinas with built in blundering 
-{%eng=irina, %idi=classical\nblunders\nCatalan\nNajdorf, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Bulldog], %elo=1132, %ali=Adaloald, %boo=Jack1918}   
+{%eng=irina, %idi=classical\nblunders\nCatalan\nNajdorf, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Bulldog], %elo=1131, %ali=Adaloald, %boo=Jack1918}   
 
-{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=666, %pers=Eagle], %elo=1109, %ali=Agilulf, %boo=Da1550}     
-{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Eagle], %elo=1203, %ali=Aripert, %boo=Pj1450}     
+{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=666, %pers=Eagle], %elo=1108, %ali=Agilulf, %boo=Da1550}     
+{%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Eagle], %elo=1202, %ali=Aripert, %boo=Pj1450}     
 ##{%eng=irina, %idi=classical\nmay blunder\nsmall repertoire, %liu= [%ob=f, %ha=2, %npli=12000, %pers=Eagle], %elo=1352, %ali=Berengar, %boo=guide}     
 {%eng=irina, %idi=classical\nmay blunder, %liu= [%ob=f, %ha=2, %npli=20000, %pers=Eagle], %elo=1298, %ali=Claffo, %boo=Pe1600}     
 
@@ -92,16 +92,16 @@
 {%eng=irina, %idi=classical\nmay blunder\nsolid openings, %liu= [%ob=f, %ha=2, %npli=12000, %pers=Tiger], %elo=1561, %ali=Godeoc, %boo=solid}    
 
 {%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=666, %pers=Elephant], %elo=1284, %ali=Radegundis, %boo=Javi6351}   
-{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Elephant], %elo=1386, %ali=Theudelinde, %boo=fics15}   
-{%eng=irina, %idi=classical\nmight blunder\nLasker's openings, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Elephant], %elo=1502, %ali=Walthari, %boo=lasker}   
-{%eng=irina, %idi=classical\nmight blunder\nexotic openings, %liu= [%ob=f, %ha=2, %npli=18000, %pers=Elephant], %elo=1644, %ali=Wisigarda, %boo=ph-exoticbook}   
+{%eng=irina, %idi=classical\nmight blunder, %liu= [%ob=f, %ha=2, %npli=2000, %pers=Elephant], %elo=1385, %ali=Theudelinde, %boo=fics15}   
+{%eng=irina, %idi=classical\nmight blunder\nLasker's openings, %liu= [%ob=f, %ha=2, %npli=6000, %pers=Elephant], %elo=1501, %ali=Walthari, %boo=lasker}   
+{%eng=irina, %idi=classical\nmight blunder\nexotic openings, %liu= [%ob=f, %ha=2, %npli=18000, %pers=Elephant], %elo=1637, %ali=Wisigarda, %boo=ph-exoticbook}   
 
 ## Hun's names for the Stevens.
 {%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=20,  %pers=Steven], %elo=762, %ali=Oktaruk, %boo=Da1550}   
 {%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=60,  %pers=Steven], %elo=950, %ali=Nordiruk, %boo=clon2180}   
-{%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=2000,  %pers=Steven], %elo=1439, %ali=Mundzuk, %boo=Zv2300}   
-{%eng=irina, %idi=likes to attack\nfast\nItalian\nScotch\nSicilian, %liu= [%ob=f, %ha=2,  %npli=6000,  %pers=Steven], %elo=1550, %ali=Ellak, %boo=Ga1900}
-{%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=18000, %pers=Steven], %elo=1657, %ali=Denghizik, %boo=Tca}   
+{%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=2000,  %pers=Steven], %elo=1438, %ali=Mundzuk, %boo=Zv2300}   
+{%eng=irina, %idi=likes to attack\nfast\nItalian\nScotch\nSicilian, %liu= [%ob=f, %ha=2,  %npli=6000,  %pers=Steven], %elo=1549, %ali=Ellak, %boo=Ga1900}
+{%eng=irina, %idi=attacker\nfast,        %liu= [%ob=f, %ha=2,  %npli=18000, %pers=Steven], %elo=1656, %ali=Denghizik, %boo=Tca}   
 {%eng=irina, %idi=likes to attack\nfast\nsmall repertoire, %liu= [%ob=f, %ha=64, %npli=30000, %pers=Steven], %elo=1743, %ali=Attila, %boo=guide}   
 
  
@@ -109,23 +109,38 @@
 {%ali=Edna Oll,     %elo=745, %eng=greko98, %idi=balanced\nvery slow, %liu=[%ob=f, %ha=16, %mupv=2, %likn=1, %raev=1200], %boo=Ch2100}   # Michele's
 {%ali=Hallgeir Oll, %elo=808, %eng=greko98, %idi=balanced\nvery slow\nItalian\nScotch\nSicilian, %liu=[%ob=f, %ha=16, %mupv=2, %likn=1, %raev=1000], %boo=Ga1900}   # Michele's
 
-{%ali=Noob,     %elo=1204, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1, %raev=150, %boco=10, %mobi=10, %past=0, %kisa=10, %mate=40], %idi=noob\nslow}
-{%ali=Curcuma,  %elo=1391, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1,  %raev=90, %boco=15, %mobi=20, %past=12, %kisa=70, %mate=50], %idi=noob\nslow}
-{%ali=Basilico, %elo=1647, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=8, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=slow}
-{%ali=Estragon, %elo=1593, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=4, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=development is nonsense\nslow}
-{%ali=Oregano,  %elo=1683, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=3, %likn=2,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=may forget development\nsolid\nslow}
+{%ali=Noob,     %elo=1203, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1, %raev=150, %boco=10, %mobi=10, %past=0, %kisa=10, %mate=40], %idi=noob\nslow}
+{%ali=Curcuma,  %elo=1390, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=6, %likn=1,  %raev=90, %boco=15, %mobi=20, %past=12, %kisa=70, %mate=50], %idi=noob\nslow}
+{%ali=Basilico, %elo=1645, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=8, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=slow}
+{%ali=Estragon, %elo=1589, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=4, %likn=1,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=development is nonsense\nslow}
+{%ali=Oregano,  %elo=1677, %eng=greko98, %liu=[%ob=f, %ha=1, %mupv=3, %likn=2,  %raev=12, %boco=15, %mobi=15, %past=50, %kisa=50, %mate=50], %idi=may forget development\nsolid\nslow}
 
-{%ali=Tlazolteotl,  %elo=1786, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=2, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=12], %idi=ignores pawn structure\nslow}
-{%ali=Tezcatlipoca, %elo=1843, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=4, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
-{%ali=Quetzalcoatl, %elo=2168, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=2, %mupv=1, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
+{%ali=Tlazolteotl,  %elo=1787, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=2, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=12], %idi=ignores pawn structure\nslow}
+{%ali=Tezcatlipoca, %elo=1845, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=4, %mupv=5, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
+{%ali=Quetzalcoatl, %elo=2176, %eng=greko98, %liu=[%ob=f, %ha=1, %likn=2, %mupv=1, %boco=30, %past=0, %kisa=50, %mate=49, %raev=10], %idi=ignores pawn structure\nslow}
 
 {%ali=Haflidi,  %elo=1461, %eng=greko98, %idi=aggresive\nslow, %liu=[%ob=f, %ha=3, %likn=1, %mupv=2, %raev=70, %boco=65, %mate=45, %mobi=65, %kisa=55, %past=30], %boo=Ia2660}
 {%ali=Halldis,  %elo=1612, %eng=greko98, %idi=balanced\nslow,  %liu=[%ob=f, %ha=6, %likn=2, %mupv=3, %raev=55]}
 {%ali=Hallgrim, %elo=1615, %eng=greko98, %idi=no book\nslow\nno openings book,   %liu=[%ob=f, %ha=2, %likn=2, %mupv=3, %raev=50, %kisa=60, %past=30], %boo=empty}
 
 ## ferenc & firuza by Michele, only for comparison. 
-##{%ali=ferenc, %elo=1557, %eng=hamsters, %idi=aggressive\nimprecise, "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "Pawn Hash (MB)", "valor": 4}, {"name": "UCI_LimitStrength", "valor": True}, {"name": "UCI_Elo", "valor": 2000}, {"name": "King Safety", "valor": 50}, {"name": "Pawn Structure", "valor": 50}, {"name": "Passed Pawns", "valor": 50}, {"name": "Blunder", "valor": "Medium"}, {"name": "Limit KNPS", "valor": 50}, {"name": "Hide Score Threshold", "valor": 0}, {"name": "Hide PV Threshold", "valor": 0}, {"name": "Pick Percent Max", "valor": 0}]}
-##{%ali=firuza, %elo=1477, %eng=hamsters, %idi=solid\nimprecise, "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "Pawn Hash (MB)", "valor": 4}, {"name": "UCI_LimitStrength", "valor": True}, {"name": "UCI_Elo", "valor": 2000}, {"name": "Piece Activity", "valor": 50}, {"name": "Passed Pawns", "valor": 50}, {"name": "Blunder", "valor": "Medium"}, {"name": "Limit KNPS", "valor": 50}, {"name": "Hide Score Threshold", "valor": 0}, {"name": "Hide PV Threshold", "valor": 0}, {"name": "Pick Percent Max", "valor": 0}]}
+##{%ali=ferenc, %elo=1556, %eng=hamsters, %idi=aggressive\nimprecise, "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "Pawn Hash (MB)", "valor": 4}, {"name": "UCI_LimitStrength", "valor": True}, {"name": "UCI_Elo", "valor": 2000}, {"name": "King Safety", "valor": 50}, {"name": "Pawn Structure", "valor": 50}, {"name": "Passed Pawns", "valor": 50}, {"name": "Blunder", "valor": "Medium"}, {"name": "Limit KNPS", "valor": 50}, {"name": "Hide Score Threshold", "valor": 0}, {"name": "Hide PV Threshold", "valor": 0}, {"name": "Pick Percent Max", "valor": 0}]}
+##{%ali=firuza, %elo=1476, %eng=hamsters, %idi=solid\nimprecise, "LIUCI": [{"name": "Hash", "valor": 16}, {"name": "Pawn Hash (MB)", "valor": 4}, {"name": "UCI_LimitStrength", "valor": True}, {"name": "UCI_Elo", "valor": 2000}, {"name": "Piece Activity", "valor": 50}, {"name": "Passed Pawns", "valor": 50}, {"name": "Blunder", "valor": "Medium"}, {"name": "Limit KNPS", "valor": 50}, {"name": "Hide Score Threshold", "valor": 0}, {"name": "Hide PV Threshold", "valor": 0}, {"name": "Pick Percent Max", "valor": 0}]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
