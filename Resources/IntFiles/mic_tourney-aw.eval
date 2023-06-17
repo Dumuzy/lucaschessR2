@@ -13,7 +13,7 @@
 
 {%ali=Colop-U-Uichkin, %elo=1888, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.28], %boo=Javi6351}  
 {%ali=Ek-Chuaj,        %elo=1870, %eng=maia-1700, %idi=human-like, %liu=[%thre=1, %wefi=1700, %npsl=1.65], %boo=Ch2250}  
-#{%ali=Hachäk-Yum,      %elo=2040, %eng=maia-1700, %idi=human-like\nwide repertoire, %liu=[%thre=1, %wefi=1700, %npsl=2.56], %boo=rodent} 
+{%ali=Hachäk-Yum,      %elo=2040, %eng=maia-1700, %idi=human-like\nwide repertoire, %liu=[%thre=1, %wefi=1700, %npsl=2.56], %boo=rodent} 
 
 {%ali=Ix-Chel,        %elo=2190, %eng=maia-1800, %idi=human-like, %liu=[%thre=1, %wefi=1800, %npsl=5.0]}
 {%ali=Ix-Hunieta,     %elo=2334, %eng=maia-1800, %idi=human-like, %liu=[%thre=1, %wefi=1800, %npsl=7.5]}
